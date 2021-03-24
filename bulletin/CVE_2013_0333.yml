@@ -1,0 +1,43 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2013-0333
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cwe: ''
+cve:
+osvdb:
+owasp: A9
+release_date: 2013-01-30
+kind: :dependency_check
+message: lib/active_support/json/backends/yaml.rb in Ruby on Rails 2.3.x before 2.3.16
+  and 3.0.x before 3.0.20 does not properly convert JSON data to YAML data for processing
+  by a YAML parser, which allows remote attackers to execute arbitrary code, conduct
+  SQL injection attacks, or bypass authentication via crafted data that triggers unsafe
+  decoding, a different vulnerability than CVE-2013-0156.
+remediation: Please upgrade rails version at least to 2.3.16 or 3.0.20. As a general
+  rule, using the latest stable rails version is recommended.
+aux_links:
+- https://groups.google.com/forum/?fromgroups=#!topic/rubyonrails-security/1h2DR63ViGo
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor:
+save_major:
+safe_dependencies:
+- :name: rails
+  :version:
+  - 2.3.16
+  - 3.0.20
+aux_mitigation_gem:
+  :name: yajl
+  :versione:
+  - any

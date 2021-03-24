@@ -1,0 +1,114 @@
+--- !ruby/object:Dawn::Kb::ComboCheck
+applies: &1
+- rails
+- sinatra
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2013-6460
+cvss: AV:N/AC:M/Au:N/C:N/I:N/A:P
+cwe: ''
+cve:
+osvdb:
+owasp: A9
+release_date: 2013-12-15
+kind: :combo_check
+message: There is a vulnerability in Nokogiri when using JRuby where the parser can
+  enter an infinite loop and exhaust the process memory. Nokogiri users on JRuby using
+  the native Java extension.  Attackers can send XML documents with carefully crafted
+  documents which can cause the XML processor to enter an infinite loop, causing the
+  server to run out of memory and crash.
+remediation: Please upgrade nokogiri gem to a newer version
+aux_links: &2
+- https://groups.google.com/forum/#!topic/ruby-security-ann/DeJpjTAg1FA
+- https://access.redhat.com/security/cve/CVE-2013-6460
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+vuln_if_all_fails: true
+checks: &3
+- !ruby/object:Dawn::Kb::DependencyCheck
+  applies: []
+  ruby_version:
+  ruby_vulnerable_versions: []
+  title:
+  name: CVE_2013_6460_a
+  cvss:
+  cwe:
+  cve:
+  osvdb:
+  owasp:
+  release_date:
+  kind: :dependency_check
+  message:
+  remediation:
+  aux_links:
+  target_version:
+  fixes_version:
+  evidences: []
+  mitigated: false
+  status: false
+  debug: false
+  severity: :none
+  priority: :none
+  check_family: :generic_check
+  save_minor:
+  save_major:
+  safe_dependencies:
+  - :name: nokogiri
+    :version:
+    - 1.6.1
+    - 1.5.11
+- !ruby/object:Dawn::Kb::RubyVersionCheck
+  applies: []
+  ruby_version:
+  ruby_vulnerable_versions: []
+  title:
+  name: CVE_2013_6460_b
+  cvss:
+  cwe:
+  cve:
+  osvdb:
+  owasp:
+  release_date:
+  kind: :ruby_version_check
+  message:
+  remediation:
+  aux_links:
+  target_version:
+  fixes_version:
+  evidences: []
+  mitigated: false
+  status: false
+  debug: false
+  severity: :none
+  priority: :none
+  check_family: :generic_check
+  safe_rubies:
+  - :engine: jruby
+    :version: 99.99.99
+    :patchlevel: p999
+vulnerable_checks: []
+options:
+  :name: CVE-2013-6460
+  :cvss: AV:N/AC:M/Au:N/C:N/I:N/A:P
+  :release_date: 2013-12-15
+  :cwe: ''
+  :owasp: A9
+  :applies: *1
+  :kind: :combo_check
+  :message: There is a vulnerability in Nokogiri when using JRuby where the parser
+    can enter an infinite loop and exhaust the process memory. Nokogiri users on JRuby
+    using the native Java extension.  Attackers can send XML documents with carefully
+    crafted documents which can cause the XML processor to enter an infinite loop,
+    causing the server to run out of memory and crash.
+  :mitigation: Please upgrade nokogiri gem to a newer version
+  :aux_links: *2
+  :checks: *3

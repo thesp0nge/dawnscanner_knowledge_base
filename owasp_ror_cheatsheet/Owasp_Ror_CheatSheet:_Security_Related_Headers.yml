@@ -1,0 +1,45 @@
+--- !ruby/object:Dawn::Kb::PatternMatchCheck
+applies:
+- rails
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: 'Owasp Ror CheatSheet: Security Related Headers'
+cvss:
+cwe:
+cve:
+osvdb:
+owasp:
+release_date:
+kind: :pattern_match_check
+message: To set a header value, simply access the response.headers object as a hash
+  inside your controller (often in a before/after_filter). Rails 4 provides the "default_headers"
+  functionality that will automatically apply the values supplied. This works for
+  most headers in almost all cases.
+remediation: Use response headers like X-Frame-Options, X-Content-Type-Options, X-XSS-Protection
+  in your project.
+aux_links:
+- https://www.owasp.org/index.php/Ruby_on_Rails_Cheatsheet
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :info
+priority: :none
+check_family: :owasp_ror_cheatsheet
+negative_search: true
+avoid_comments: false
+attack_pattern_is_regex: false
+glob: "**/**/controllers/*.rb"
+attack_pattern:
+- response.headers\['X-Frame-Options'\] = 'DENY'
+- response.headers\['X-Content-Type-Options'\] = 'nosniff'
+- response.headers\['X-XSS-Protection'\] = '1'
+- |-
+  ActionDispatch::Response.default_headers = {
+                      'X-Frame-Options' => 'DENY',
+                      'X-Content-Type-Options' => 'nosniff',
+                      'X-XSS-Protection' => '1;'
+                    }

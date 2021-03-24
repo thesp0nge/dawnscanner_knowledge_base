@@ -1,0 +1,41 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: OSVDB_119927
+cvss: ''
+cwe: ''
+cve: 2015-1828
+osvdb: '119927'
+owasp: A9
+release_date: 2015-03-25
+kind: :dependency_check
+message: http Gem for Ruby contains a flaw related to certificate validation. The
+  issue is due to a failure to call the OpenSSL::SSL::SSLSocket#post_connection_check
+  method, leading to hostnames not being properly verified. By spoofing the TLS/SSL
+  server via a certificate that appears valid, an attacker with the ability to intercept
+  network traffic (e.g. MiTM, DNS cache poisoning) can disclose and optionally manipulate
+  transmitted data.
+remediation: Please upgrade http gem version at least to 0.8.0. As a general rule,
+  using the latest stable version is recommended.
+aux_links:
+- ''
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor:
+save_major:
+safe_dependencies:
+- :name: http
+  :version:
+  - 0.8.0

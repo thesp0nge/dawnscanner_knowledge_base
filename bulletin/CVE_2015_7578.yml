@@ -1,0 +1,37 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2015-7578
+cvss: ''
+cwe: ''
+cve: 2015-7578
+osvdb: ''
+owasp: A9
+release_date: 2016-01-26
+kind: :dependency_check
+message: There is a possible XSS vulnerability in rails-html-sanitizer. Certain attributes
+  are not removed from tags when they are sanitized, and these attributes can lead
+  to an XSS attack on target applications.
+remediation: Please upgrade rails-html-sanitizer gem to version 1.0.3 or later.
+aux_links:
+- http://securitytracker.com/id/1034816
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor:
+save_major:
+safe_dependencies:
+- :name: rails-html-sanitizer
+  :version:
+  - 1.0.3

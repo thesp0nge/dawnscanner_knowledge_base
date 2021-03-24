@@ -1,0 +1,41 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2011-0447
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cwe: '352'
+cve:
+osvdb:
+owasp: A9
+release_date: 2011-02-14
+kind: :dependency_check
+message: Ruby on Rails 2.1.x, 2.2.x, and 2.3.x before 2.3.11, and 3.x before 3.0.4,
+  does not properly validate HTTP requests that contain an X-Requested-With header,
+  which makes it easier for remote attackers to conduct cross-site request forgery
+  (CSRF) attacks via forged (1) AJAX or (2) API requests that leverage "combinations
+  of browser plugins and HTTP redirects," a related issue to CVE-2011-0696.
+remediation: Please upgrade rails version at least to 2.3.11 or 3.0.4. As a general
+  rule, using the latest stable rails version is recommended.
+aux_links:
+- http://weblog.rubyonrails.org/2011/2/8/csrf-protection-bypass-in-ruby-on-rails
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor:
+save_major:
+safe_dependencies:
+- :name: rails
+  :version:
+  - 2.1.9999
+  - 2.2.9999
+  - 2.3.11
+  - 3.0.4

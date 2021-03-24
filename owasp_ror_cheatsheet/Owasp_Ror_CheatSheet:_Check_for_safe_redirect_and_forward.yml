@@ -1,0 +1,52 @@
+--- !ruby/object:Dawn::Kb::PatternMatchCheck
+applies:
+- rails
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: 'Owasp Ror CheatSheet: Check for safe redirect and forward'
+cvss:
+cwe:
+cve:
+osvdb:
+owasp:
+release_date:
+kind: :pattern_match_check
+message: |
+  Web applications often require the ability to dynamically redirect users based
+  on client-supplied data. To clarify, dynamic redirection usually entails the
+  client including a URL in a parameter within a request to the application. Once
+  received by the application, the user is redirected to the URL specified in the
+  request.
+
+  For example: http://www.example.com/redirect?url=http://www.example_commerce_site.com/checkout
+
+  The above request would redirect the user to http://www.example.com/checkout.
+
+  The security concern associated with this functionality is leveraging an
+  organization's trusted brand to phish users and trick them into visiting a
+  malicious site, in our example, "badhacker.com".
+
+  Example: http://www.example.com/redirect?url=http://badhacker.com
+
+  The most basic, but restrictive protection is to use the :only_path option.
+  Setting this to true will essentially strip out any host information.
+remediation: The most basic, but restrictive protection is to use the :only_path option.
+  Setting this to true will essentially strip out any host information.
+aux_links:
+- https://www.owasp.org/index.php/Ruby_on_Rails_Cheatsheet
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :info
+priority: :none
+check_family: :owasp_ror_cheatsheet
+negative_search: false
+avoid_comments: false
+attack_pattern_is_regex: false
+glob: "**/*.rb"
+attack_pattern:
+- redirect_to

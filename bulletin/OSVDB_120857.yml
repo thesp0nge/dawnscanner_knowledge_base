@@ -1,0 +1,41 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title: refile Gem for Ruby remote_image_url Attachment Remote Command Execution
+name: OSVDB_120857
+cvss: ''
+cwe: ''
+cve: ''
+osvdb: '120857'
+owasp: A9
+release_date: 2015-04-15
+kind: :dependency_check
+message: refile Gem for Ruby contains a flaw that is triggered when input is not sanitized
+  when handling the 'remote_image_url' field in a form, where 'image' is the name
+  of the attachment. This may allow a remote attacker to execute arbitrary shell commands.
+remediation: Please upgrade refile gem to version 0.5.4 or later.
+aux_links:
+- ''
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor: true
+save_major:
+safe_dependencies:
+- :name: refile
+  :version:
+  - 0.5.4
+  - 0.4.-1
+  - 0.3.-1
+  - 0.2.-1
+  - 0.1.-1

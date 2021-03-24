@@ -1,0 +1,39 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rack
+- sinatra
+- padrino
+- rails
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: OSVDB-105971
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cwe: ''
+cve: 2014-2888
+osvdb: '105971'
+owasp: A9
+release_date: 2014-04-16
+kind: :dependency_check
+message: sfpagent Gem for Ruby contains a flaw that is triggered as JSON[body] input
+  is not properly sanitized when handling module names with shell metacharacters.
+  This may allow a context-dependent attacker to execute arbitrary commands.
+remediation: Please upgrade sfpagent version at least to 0.4.15. As a general rule,
+  using the latest stable version is recommended.
+aux_links:
+- http://seclists.org/oss-sec/2014/q2/118
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor:
+save_major:
+safe_dependencies:
+- :name: sfpagent
+  :version:
+  - 0.4.15

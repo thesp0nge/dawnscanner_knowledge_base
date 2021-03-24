@@ -1,0 +1,39 @@
+--- !ruby/object:Dawn::Kb::RubyVersionCheck
+applies:
+- rails
+- sinatra
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2013-1821
+cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
+cwe: '20'
+cve:
+osvdb:
+owasp: A9
+release_date: 2013-04-09
+kind: :ruby_version_check
+message: lib/rexml/text.rb in the REXML parser in Ruby before 1.9.3-p392 and 2.0.0-p0
+  allows remote attackers to cause a denial of service (memory consumption and crash)
+  via crafted text nodes in an XML document, aka an XML Entity Expansion (XEE) attack.
+remediation: Please upgrade ruby interpreter to 1.9.3-p392 or 2.0.0-p195 or latest
+  version available
+aux_links:
+- http://www.ruby-lang.org/en/news/2013/02/22/rexml-dos-2013-02-22/
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+safe_rubies:
+- :engine: ruby
+  :version: 1.9.3
+  :patchlevel: p392
+- :engine: ruby
+  :version: 2.0.0
+  :patchlevel: p195

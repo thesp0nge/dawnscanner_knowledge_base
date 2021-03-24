@@ -1,0 +1,79 @@
+--- !ruby/object:Dawn::Kb::ComboCheck
+applies: &1
+- rails
+- sinatra
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2014-2525
+cvss: ''
+cwe: ''
+cve:
+osvdb:
+owasp: A9
+release_date: 2014-03-28
+kind: :combo_check
+message: ''
+remediation: Please upgrade your system libyaml or upgrade psych gem to version 2.0.5
+  or higher that is linked with a safe libyaml version.
+aux_links: &2
+- https://www.ruby-lang.org/en/news/2014/03/29/heap-overflow-in-yaml-uri-escape-parsing-cve-2014-2525
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :high
+priority: :none
+check_family: :bulletin
+vuln_if_all_fails: true
+checks: &3
+- !ruby/object:Dawn::Kb::DependencyCheck
+  applies: []
+  ruby_version:
+  ruby_vulnerable_versions: []
+  title:
+  name: CVE-2014-2525-b
+  cvss:
+  cwe:
+  cve:
+  osvdb:
+  owasp:
+  release_date:
+  kind: :dependency_check
+  message:
+  remediation:
+  aux_links:
+  target_version:
+  fixes_version:
+  evidences: []
+  mitigated: false
+  status: false
+  debug: false
+  severity: :none
+  priority: :none
+  check_family: :bulletin
+  save_minor:
+  save_major:
+  safe_dependencies:
+  - :name: psych
+    :version:
+    - 2.0.5
+vulnerable_checks: []
+options:
+  :name: CVE-2014-2525
+  :cvss: ''
+  :release_date: 2014-03-28
+  :cwe: ''
+  :owasp: A9
+  :applies: *1
+  :kind: :combo_check
+  :message: ''
+  :mitigation: Please upgrade your system libyaml or upgrade psych gem to version
+    2.0.5 or higher that is linked with a safe libyaml version.
+  :aux_links: *2
+  :severity: :high
+  :prority: :high
+  :checks: *3

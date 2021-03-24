@@ -1,0 +1,37 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+- padrino
+- sinatra
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2013-1911
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cwe: '20'
+cve:
+osvdb:
+owasp: A9
+release_date: 2013-04-03
+kind: :dependency_check
+message: lib/ldoce/word.rb in the ldoce 0.0.2 gem for Ruby allows remote attackers
+  to execute arbitrary commands via shell metacharacters in (1) an mp3 URL or (2)
+  file name.
+remediation: Please upgrade ldoce version to the latest version available.
+aux_links:
+- http://archives.neohapsis.com/archives/bugtraq/2013-04/0010.html
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor:
+save_major:
+safe_dependencies:
+- :name: ldoce
+  :version:
+  - 0.0.3

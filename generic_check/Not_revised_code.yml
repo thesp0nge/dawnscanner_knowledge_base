@@ -1,0 +1,40 @@
+--- !ruby/object:Dawn::Kb::PatternMatchCheck
+applies:
+- sinatra
+- rails
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: Not revised code
+cvss: ''
+cwe: ''
+cve:
+osvdb:
+owasp: ''
+release_date:
+kind: :pattern_match_check
+message: |-
+  Analyzing comments, it seems your code is waiting from some review from you. Please consider take action before putting it in production.
+  This check will analyze the source code looking for the following patterns: XXX, TO_CHECK, CHECKME, CHECK and FIXME
+remediation: Please review the file fixing the issue.
+aux_links:
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :generic_check
+negative_search: false
+avoid_comments: false
+attack_pattern_is_regex: false
+glob: "**"
+attack_pattern:
+- XXX
+- TO_CHECK
+- CHECKME
+- CHECK
+- FIXME

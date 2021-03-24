@@ -1,0 +1,41 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2013-1656
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cwe: '20'
+cve:
+osvdb:
+owasp: A9
+release_date: 2013-03-08
+kind: :dependency_check
+message: Spree Commerce 1.0.x through 1.3.2 allow remote authenticated administrators
+  to instantiate arbitrary Ruby objects and execute arbitrary commands via the (1)
+  payment_method parameter to core/app/controllers/spree/admin/payment_methods_controller.rb;
+  and the (2) promotion_action parameter to promotion_actions_controller.rb, (3) promotion_rule
+  parameter to promotion_rules_controller.rb, and (4) calculator_type parameter to
+  promotions_controller.rb in promo/app/controllers/spree/admin/, related to unsafe
+  use of the constantize function.
+remediation: Please upgrade Spree commerce rubygem
+aux_links:
+- http://spreecommerce.com/blog/multiple-security-vulnerabilities-fixed
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor:
+save_major:
+safe_dependencies:
+- :name: spree
+  :version:
+  - 1.3.3

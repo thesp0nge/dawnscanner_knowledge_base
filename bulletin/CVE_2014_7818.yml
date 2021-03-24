@@ -1,0 +1,43 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2014-7818
+cvss: AV:N/AC:M/Au:N/C:P/I:N/A:N
+cwe: '22'
+cve:
+osvdb:
+owasp: A9
+release_date: 2014-11-08
+kind: :dependency_check
+message: Directory traversal vulnerability in actionpack/lib/action_dispatch/middleware/static.rb
+  in Action Pack in Ruby on Rails 3.x before 3.2.20, 4.0.x before 4.0.11, 4.1.x before
+  4.1.7, and 4.2.x before 4.2.0.beta3, when serve_static_assets is enabled, allows
+  remote attackers to determine the existence of files outside the application root
+  via a /..%2F sequence.
+remediation: Please upgrade rails gem to latest version or at least 3.2.20, 4.0.11,
+  4.1.7 or 4.2.0.beta3. If unsure upgrade to the latest available version.
+aux_links:
+- https://groups.google.com/forum/message/raw?msg=rubyonrails-security/dCp7duBiQgo/v_R_8PFs5IwJ
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor:
+save_major: true
+safe_dependencies:
+- :name: rails
+  :version:
+  - 3.2.20
+  - 4.0.11
+  - 4.1.7
+  - 4.2.0.beta3

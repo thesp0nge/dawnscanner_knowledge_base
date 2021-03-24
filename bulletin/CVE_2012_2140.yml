@@ -1,0 +1,36 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2012-2140
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cwe: '20'
+cve:
+osvdb:
+owasp: A9
+release_date: 2012-07-18
+kind: :dependency_check
+message: The Mail gem before 2.4.3 for Ruby allows remote attackers to execute arbitrary
+  commands via shell metacharacters in a (1) sendmail or (2) exim delivery.
+remediation: Please upgrade Mail gem version to version 2.4.3. As a general rule,
+  using the latest stable version is recommended.
+aux_links:
+- http://secunia.com/advisories/48970
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor:
+save_major:
+safe_dependencies:
+- :name: mail_gem
+  :version:
+  - 2.4.3
+  - 2.3.4

@@ -1,0 +1,44 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2015-7579
+cvss: ''
+cwe: ''
+cve: 2015-7579
+osvdb: ''
+owasp: A9
+release_date: 2016-01-26
+kind: :dependency_check
+message: There is a XSS vulnerability in Rails::Html::FullSanitizer used by Action
+  View's strip_tags. Due to the way that Rails::Html::FullSanitizer is implemented,
+  if an attacker passes an already escaped HTML entity to the input of Action View's
+  strip_tags these entities will be unescaped what may cause a XSS attack if used
+  in combination with raw or html_safe.
+remediation: Please upgrade rails-html-sanitizer to version 1.0.3 or later.
+aux_links:
+- http://securitytracker.com/id/1034816
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor:
+save_major:
+safe_dependencies:
+- :name: rails-html-sanitizer
+  :version:
+  - 1.0.3
+not_affected:
+  :name: rails-html-sanitizer
+  :version:
+  - 1.0.0
+  - 1.0.1

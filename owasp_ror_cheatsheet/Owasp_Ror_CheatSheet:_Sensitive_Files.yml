@@ -1,0 +1,39 @@
+--- !ruby/object:Dawn::Kb::PatternMatchCheck
+applies:
+- rails
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: 'Owasp Ror CheatSheet: Sensitive Files'
+cvss:
+cwe:
+cve:
+osvdb:
+owasp:
+release_date:
+kind: :pattern_match_check
+message: Many Ruby on Rails apps are open source and hosted on publicly available
+  source code repositories. Whether that is the case or the code is committed to a
+  corporate source control system, there are certain files that should be either excluded
+  or carefully managed.
+remediation: Put sensitive files in your repository gitignore file
+aux_links:
+- https://www.owasp.org/index.php/Ruby_on_Rails_Cheatsheet
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :info
+priority: :none
+check_family: :owasp_ror_cheatsheet
+negative_search: false
+avoid_comments: false
+attack_pattern_is_regex: false
+glob: "**/.gitignore"
+attack_pattern:
+- "/config/database.yml"
+- "/config/initializers/secret_token.rb"
+- "/db/seeds.rb"
+- "/db/*.sqlite3"

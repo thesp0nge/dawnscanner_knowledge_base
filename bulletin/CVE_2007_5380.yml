@@ -1,0 +1,36 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2007-5380
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cwe: ''
+cve:
+osvdb:
+owasp: A9
+release_date: 2007-10-19
+kind: :dependency_check
+message: Session fixation vulnerability in Rails before 1.2.4, as used for Ruby on
+  Rails, allows remote attackers to hijack web sessions via unspecified vectors related
+  to "URL-based sessions."
+remediation: Please upgrade rails version at least to 1.2.4 or higher. As a general
+  rule, using the latest stable rails version is recommended.
+aux_links:
+- http://weblog.rubyonrails.org/2007/10/5/rails-1-2-4-maintenance-release
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :high
+priority: :high
+check_family: :bulletin
+save_minor:
+save_major:
+safe_dependencies:
+- :name: rails
+  :version:
+  - 1.2.4

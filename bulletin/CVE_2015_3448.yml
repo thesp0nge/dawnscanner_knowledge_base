@@ -1,0 +1,37 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- sinatra
+- padrino
+- rails
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2015-3448
+cvss: AV:L/AC:L/Au:N/C:P/I:N/A:N
+cwe: '200'
+cve:
+osvdb: '117461'
+owasp: A9
+release_date: 2015-04-29
+kind: :dependency_check
+message: REST client for Ruby (aka rest-client) before 1.7.3 logs usernames and passwords,
+  which allows local users to obtain sensitive information by reading the log.
+remediation: Please upgrade rest-client gem to the latest version
+aux_links:
+- https://github.com/rest-client/rest-client/issues/349
+- http://www.osvdb.org/117461
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor:
+save_major:
+safe_dependencies:
+- :name: rest-client
+  :version:
+  - 1.7.3

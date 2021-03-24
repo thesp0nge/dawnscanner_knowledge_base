@@ -1,0 +1,36 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: OSVDB_118954
+cvss: ''
+cwe: ''
+cve: ''
+osvdb: '118954'
+owasp: A9
+release_date: 2015-02-28
+kind: :dependency_check
+message: Ruby on Rails contains a flaw that is triggered when handling a to_json call
+  to ActiveModel::Name, which can cause an infinite loop. This may allow a remote
+  attacker to cause a denial of service.
+remediation: Please upgrade to latest rails ruby gems
+aux_links:
+- https://github.com/rails/rails/pull/19055
+- https://github.com/rails/rails/issues/19050
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor: true
+save_major: true
+safe_dependencies:
+- :name: rails
+  :version:
+  - 4.2.1.rc3

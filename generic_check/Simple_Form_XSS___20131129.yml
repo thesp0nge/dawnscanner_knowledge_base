@@ -1,0 +1,41 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+- padrino
+- sinatra
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: Simple Form XSS - 20131129
+cvss: none
+cwe: ''
+cve:
+osvdb:
+owasp: A9
+release_date: 2013-11-29
+kind: :dependency_check
+message: There is a XSS vulnerability on Simple Form's label, hint and error options.
+  When Simple Form creates a label, hint or error message it marks the text as being
+  HTML safe, even though it may contain HTML tags. In applications where the text
+  of these helpers can be provided by the users, malicious values can be provided
+  and Simple Form will mark it as safe.
+remediation: Please upgrade Simple Form the 3.0.1 and 2.1.1 releases are available
+  at the normal locations.
+aux_links:
+- https://groups.google.com/forum/#!topic/ruby-security-ann/flHbLMb07tE
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :generic_check
+save_minor:
+save_major:
+safe_dependencies:
+- :name: simple_form
+  :version:
+  - 3.0.1
+  - 2.1.1
