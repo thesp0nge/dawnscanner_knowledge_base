@@ -67,6 +67,7 @@ for loop in range(0, results+21, 20):
         if i["configurations"]["nodes"][0]["operator"] == "OR":
             cpe_match_array = i["configurations"]["nodes"][0]["cpe_match"]
             out += "- :name: '%s'" % CPE(cpe_match_array[0]["cpe23Uri"]).get_product()[0]
+            out += "\n"
             out += "\t:version:\n"
             for cpe in cpe_match_array:
                 if cpe["vulnerable"]:
