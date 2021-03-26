@@ -69,6 +69,7 @@ for loop in range(0, results+21, 20):
                 if cpe["vulnerable"]:
                     cpe_uri = CPE(cpe["cpe23Uri"])
                     out += "\t\t- %s" % cpe_uri.get_version()[0]
+                    out += "\n"
                     if cpe_uri.get_version()[0] != "*":
                         needs_review = False
         if needs_review:
