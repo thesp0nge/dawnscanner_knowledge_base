@@ -1,0 +1,18 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-26247
+cvss: AV:N/AC:L/Au:S/C:P/I:N/A:N
+cve: CVE-2020-26247
+owasp: A9
+release_date: 30/12/2020
+
+kind: :unsafe_dependency_check
+message:|-
+	Nokogiri is a Rubygem providing HTML, XML, SAX, and Reader parsers with XPath and CSS selector support. In Nokogiri before version 1.11.0.rc4 there is an XXE vulnerability. XML Schemas parsed by Nokogiri::XML::Schema are trusted by default, allowing external resources to be accessed over the network, potentially enabling XXE or SSRF attacks. This behavior is counter to the security policy followed by Nokogiri maintainers, which is to treat all input as untrusted by default whenever possible. This is fixed in Nokogiri version 1.11.0.rc4.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'nokogiri'	:version:
+		- *		- 1.11.0		- 1.11.0		- 1.11.0

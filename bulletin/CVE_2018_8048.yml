@@ -1,0 +1,18 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-8048
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2018-8048
+owasp: A9
+release_date: 27/03/2018
+
+kind: :unsafe_dependency_check
+message:|-
+	In the Loofah gem through 2.2.0 for Ruby, non-whitelisted HTML attributes may occur in sanitized output by republishing a crafted HTML fragment.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'debian_linux'	:version:
+		- 9.0

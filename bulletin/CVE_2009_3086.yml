@@ -1,0 +1,18 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2009-3086
+cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
+cve: CVE-2009-3086
+owasp: A9
+release_date: 08/09/2009
+
+kind: :unsafe_dependency_check
+message:|-
+	A certain algorithm in Ruby on Rails 2.1.0 through 2.2.2, and 2.3.x before 2.3.4, leaks information about the complexity of message-digest signature verification in the cookie store, which might allow remote attackers to forge a digest via multiple attempts.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rails'	:version:
+		- 2.1.1		- 2.3.2		- 2.1.0		- 2.2.2		- 2.2.0		- 2.1.2		- 2.2.1		- 2.3.3

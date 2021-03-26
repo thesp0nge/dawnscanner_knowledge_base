@@ -1,0 +1,18 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-16229
+cvss: AV:N/AC:M/Au:N/C:N/I:N/A:P
+cve: CVE-2017-16229
+owasp: A9
+release_date: 26/02/2018
+
+kind: :unsafe_dependency_check
+message:|-
+	In the Ox gem 2.8.1 for Ruby, the process crashes with a stack-based buffer over-read in the read_from_str function in sax_buf.c when a crafted input is supplied to sax_parse.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ox'	:version:
+		- 2.8.1

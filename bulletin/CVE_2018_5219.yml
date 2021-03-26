@@ -1,0 +1,18 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-5219
+cvss: AV:L/AC:L/Au:N/C:P/I:P/A:C
+cve: CVE-2018-5219
+owasp: A9
+release_date: 04/01/2018
+
+kind: :unsafe_dependency_check
+message:|-
+	In K7 Antivirus 15.1.0306, the driver file (K7FWHlpr.sys) allows local users to cause a denial of service (BSOD) or possibly have unspecified other impact because of not validating input values from IOCtl 0x83002168.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'antivirus'	:version:
+		- 15.1.0306

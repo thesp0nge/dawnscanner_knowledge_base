@@ -1,0 +1,18 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2011-3624
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
+cve: CVE-2011-3624
+owasp: A9
+release_date: 26/11/2019
+
+kind: :unsafe_dependency_check
+message:|-
+	Various methods in WEBrick::HTTPRequest in Ruby 1.9.2 and 1.8.7 and earlier do not validate the X-Forwarded-For, X-Forwarded-Host and X-Forwarded-Server headers in requests, which might allow remote attackers to inject arbitrary text into log files or bypass intended address parsing via a crafted header.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ruby'	:version:
+		- 1.8.7		- 1.9.2

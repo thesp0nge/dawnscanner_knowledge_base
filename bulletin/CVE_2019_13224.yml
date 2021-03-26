@@ -1,0 +1,18 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2019-13224
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2019-13224
+owasp: A9
+release_date: 10/07/2019
+
+kind: :unsafe_dependency_check
+message:|-
+	A use-after-free in onig_new_deluxe() in regext.c in Oniguruma 6.9.2 allows attackers to potentially cause information disclosure, denial of service, or possibly code execution by providing a crafted regular expression. The attacker provides a pair of a regex pattern and a string, with a multi-byte encoding that gets handled by onig_new_deluxe(). Oniguruma issues often affect Ruby, as well as common optional libraries for PHP and Rust.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'oniguruma'	:version:
+		- 6.9.2
