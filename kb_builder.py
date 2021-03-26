@@ -76,11 +76,13 @@ for loop in range(0, results+21, 20):
         filename = filename + ".yml"
 
         full_filename = os.path.join("bulletin", filename)
-        print(full_filename)
 
         try:
-            f = open(full_filename, "w")
+            f = open(full_filename, "r")
+            print("skipping %s that already exists\n" % full_filename)
         except FileNotFoundError:
+            print("creating %s\n" % full_filename)
+            f = open(full_filename, "w")
             f.write(out)
         finally:
             f.close()
