@@ -1,0 +1,44 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title: Possible XSS Vulnerability in Action View
+name: CVE-2016-6316
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cwe: ''
+cve: 2016-6316
+osvdb: ''
+owasp: A9
+release_date: 2016-08-11
+kind: :dependency_check
+message: Text declared as "HTML safe" when passed as an attribute value to a tag helper
+  will not have quotes escaped which can lead to an XSS attack.
+remediation: Please upgrade actionview gem to version 3.2.22.3, 4.2.7.1, 5.0.0.1 or
+  install latest version.
+aux_links:
+- https://groups.google.com/forum/#!topic/rubyonrails-security/I-VWr034ouk
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor: true
+save_major: true
+safe_dependencies:
+- :name: actionview
+  :version:
+  - 3.2.22.3
+  - 4.2.7.1
+  - 5.0.0.1
+not_affected:
+  :name: actionview
+  :version:
+  - 1.x.x
+  - 2.x.x

@@ -1,0 +1,42 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2008-4094
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cwe: '89'
+cve:
+osvdb:
+owasp: A1
+release_date: 2008-09-30
+kind: :dependency_check
+message: Multiple SQL injection vulnerabilities in Ruby on Rails before 2.1.1 allow
+  remote attackers to execute arbitrary SQL commands via the (1) :limit and (2) :offset
+  parameters, related to ActiveRecord, ActiveSupport, ActiveResource, ActionPack,
+  and ActionMailer.
+remediation: Please upgrade rails version at least to 2.1.1 or higher. As a general
+  rule, using the latest stable rails version is recommended.
+aux_links:
+- http://weblog.rubyonrails.org/2006/8/10/rails-1-1-6-backports-and-full-disclosure
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor:
+save_major:
+safe_dependencies:
+- :name: rails
+  :version:
+  - 2.1.1
+  - 2.0.999
+  - 1.9.999
+  - 1.2.999
+  - 1.1.999
+  - 0.999.999

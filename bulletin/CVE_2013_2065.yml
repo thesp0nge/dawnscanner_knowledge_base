@@ -1,0 +1,39 @@
+--- !ruby/object:Dawn::Kb::RubyVersionCheck
+applies:
+- rails
+- sinatra
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2013-2065
+cvss: ''
+cwe: '264'
+cve:
+osvdb:
+owasp: A9
+release_date: 2013-05-14
+kind: :ruby_version_check
+message: Native functions exposed to Ruby with DL or Fiddle do not check the taint
+  values set on the objects passed in. This can result in tainted objects being accepted
+  as input when a SecurityError exception should be raised.
+remediation: Please upgrade ruby interpreter to 1.9.3-p436 or 2.0.0-p195 or latest
+  version available
+aux_links:
+- https://www.ruby-lang.org/en/news/2013/05/14/taint-bypass-dl-fiddle-cve-2013-2065/
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+safe_rubies:
+- :engine: ruby
+  :version: 1.9.3
+  :patchlevel: p426
+- :engine: ruby
+  :version: 2.0.0
+  :patchlevel: p195

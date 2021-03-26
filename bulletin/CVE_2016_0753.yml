@@ -1,0 +1,42 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2016-0753
+cvss: ''
+cwe: ''
+cve: 2016-0753
+osvdb: ''
+owasp: A9
+release_date: 2016-01-26
+kind: :dependency_check
+message: There is a possible input validation circumvention vulnerability in Active
+  Model. Code that uses Active Model based models (including Active Record models)
+  and does not validate user input before passing it to the model can be subject to
+  an attack where specially crafted input will cause the model to skip validations.
+remediation: Please upgrade activemodel gem to version 3.2.22.1, 4.1.14.1, 4.2.5.1,
+  5.0.0.beta1.1 or later.
+aux_links:
+- http://securitytracker.com/id/1034816
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor: true
+save_major: true
+safe_dependencies:
+- :name: activemodel
+  :version:
+  - 3.2.22.1
+  - 4.1.14.1
+  - 4.2.5.1
+  - 5.0.0.beta1.1

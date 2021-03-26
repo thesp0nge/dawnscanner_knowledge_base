@@ -1,0 +1,37 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+- padrino
+- sinatra
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2013-2617
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cwe: '94'
+cve:
+osvdb:
+owasp: A9
+release_date: 2013-03-20
+kind: :dependency_check
+message: lib/curl.rb in the Curl Gem for Ruby allows remote attackers to execute arbitrary
+  commands via shell metacharacters in a URL.
+remediation: Please consider not using curl rubygem. The project seems to be abandoned
+  and the vulnerability has not been fixed
+aux_links:
+- http://seclists.org/fulldisclosure/2013/Mar/124
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor:
+save_major:
+safe_dependencies:
+- :name: curl
+  :version:
+  - 99.99.99

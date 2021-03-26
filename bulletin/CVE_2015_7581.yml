@@ -1,0 +1,41 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2015-7581
+cvss: ''
+cwe: ''
+cve: 2015-7581
+osvdb: ''
+owasp: A9
+release_date: 2016-01-26
+kind: :dependency_check
+message: 'There is an object leak vulnerability for wildcard controllers in Action
+  Pack. Users that have a route that contains the string ":controller" are susceptible
+  to objects being leaked globally which can lead to unbounded memory growth. '
+remediation: Please upgrade actionpack gem to version 3.2.22.1, 4.1.14.1, 4.2.5.1,
+  5.0.0.beta1.1 or later.
+aux_links:
+- http://securitytracker.com/id/1034816
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor: true
+save_major: true
+safe_dependencies:
+- :name: actionpack
+  :version:
+  - 3.2.22.1
+  - 4.1.14.1
+  - 4.2.5.1
+  - 5.0.0.beta1.1

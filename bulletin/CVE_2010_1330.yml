@@ -1,0 +1,36 @@
+--- !ruby/object:Dawn::Kb::RubyVersionCheck
+applies:
+- rails
+- sinatra
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2010-1330
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cwe: '79'
+cve:
+osvdb:
+owasp: A3
+release_date: 2012-11-23
+kind: :ruby_version_check
+message: The regular expression engine in JRuby before 1.4.1, when $KCODE is set to
+  'u', does not properly handle characters immediately after a UTF-8 character, which
+  allows remote attackers to conduct cross-site scripting (XSS) attacks via a crafted
+  string.
+remediation: Upgrade your jruby interpreter
+aux_links:
+- http://www.jruby.org/2010/04/26/jruby-1-4-1-xss-vulnerability.html
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+safe_rubies:
+- :engine: jruby
+  :version: 1.4.2
+  :patchlevel: p0

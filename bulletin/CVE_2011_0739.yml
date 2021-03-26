@@ -1,0 +1,39 @@
+--- !ruby/object:Dawn::Kb::DependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2011-0739
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cwe: '20'
+cve:
+osvdb:
+owasp: A9
+release_date: 2011-02-02
+kind: :dependency_check
+message: The deliver function in the sendmail delivery agent (lib/mail/network/delivery_methods/sendmail.rb)
+  in Ruby Mail gem 2.2.14 and earlier allows remote attackers to execute arbitrary
+  commands via shell metacharacters in an e-mail address.
+remediation: Please upgrade mail to version 2.2.15. As a general rule, using the latest
+  stable version is recommended.
+aux_links:
+- http://groups.google.com/group/mail-ruby/browse_thread/thread/e93bbd05706478dd?pli=1
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+save_minor:
+save_major:
+safe_dependencies:
+- :name: mail
+  :version:
+  - 1.99.99
+  - 2.2.15

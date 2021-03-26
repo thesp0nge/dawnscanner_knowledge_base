@@ -1,0 +1,42 @@
+--- !ruby/object:Dawn::Kb::RubyVersionCheck
+applies:
+- rails
+- sinatra
+- padrino
+ruby_version:
+ruby_vulnerable_versions: []
+title:
+name: CVE-2014-3916
+cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
+cwe: '19'
+cve:
+osvdb:
+owasp: A9
+release_date: 2014-11-16
+kind: :ruby_version_check
+message: The str_buf_cat function in string.c in Ruby 1.9.3, 2.0.0, and 2.1 allows
+  context-dependent attackers to cause a denial of service (segmentation fault and
+  crash) via a long string.
+remediation: Please upgrade ruby interpreter to 2.2.x or later.
+aux_links:
+- https://bugs.ruby-lang.org/issues/9709
+- http://www.securityfocus.com/bid/67705
+target_version:
+fixes_version:
+evidences: []
+mitigated: false
+status: false
+debug: false
+severity: :none
+priority: :none
+check_family: :bulletin
+safe_rubies:
+- :engine: ruby
+  :version: 1.9.99
+  :patchlevel: p999
+- :engine: ruby
+  :version: 2.0.99
+  :patchlevel: p999
+- :engine: ruby
+  :version: 2.1.99
+  :patchlevel: p999
