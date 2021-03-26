@@ -101,5 +101,6 @@ def fetch(k):
 k=["ruby", "rubygems", "sinatra", "padrino", "rubyonrails"]
 
 for i in k:
+    print("fetching checks for keyword: %s" % i)
     fetch(i)
 
