@@ -14,7 +14,8 @@ message:|-
 	CloudForms Management Engine (cfme) is vulnerable to an improper security setting in the dRuby component of CloudForms. An attacker with access to an unprivileged local shell could use this flaw to execute commands as a high privileged user.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'cloudforms'	:version:
+- :name: 'cloudforms'
+	:version:
 		- 4.5
 		- 5.9
 		- 5.8

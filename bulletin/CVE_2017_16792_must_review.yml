@@ -14,5 +14,6 @@ message:|-
 	Stored cross-site scripting (XSS) vulnerability in "geminabox" (Gem in a Box) before 0.13.10 allows attackers to inject arbitrary web script via the "homepage" value of a ".gemspec" file, related to views/gem.erb and views/index.erb.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'geminabox'	:version:
+- :name: 'geminabox'
+	:version:
 		- *

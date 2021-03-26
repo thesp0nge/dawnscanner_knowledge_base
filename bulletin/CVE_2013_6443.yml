@@ -14,7 +14,8 @@ message:|-
 	CloudForms 3.0 Management Engine before 5.2.1.6 allows remote attackers to bypass the Ruby on Rails protect_from_forgery mechanism and conduct cross-site request forgery (CSRF) attacks via a destructive action in a request.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'cloudforms'	:version:
+- :name: 'cloudforms'
+	:version:
 		- 3.0
 		- 5.2
 		- *

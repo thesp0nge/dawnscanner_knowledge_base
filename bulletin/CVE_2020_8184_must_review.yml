@@ -14,6 +14,7 @@ message:|-
 	A reliance on cookies without validation/integrity check security vulnerability exists in rack < 2.2.3, rack < 2.1.4 that makes it is possible for an attacker to forge a secure or host-only cookie prefix.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'rack'	:version:
+- :name: 'rack'
+	:version:
 		- *
 		- *

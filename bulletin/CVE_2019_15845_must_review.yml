@@ -14,7 +14,8 @@ message:|-
 	Ruby through 2.4.7, 2.5.x through 2.5.6, and 2.6.x through 2.6.4 mishandles path checking within File.fnmatch functions.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'ruby'	:version:
+- :name: 'ruby'
+	:version:
 		- *
 		- *
 		- *

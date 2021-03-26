@@ -14,5 +14,6 @@ message:|-
 	The Ruby http gem before 0.7.3 does not verify hostnames in SSL connections, which might allow remote attackers to obtain sensitive information via a man-in-the-middle-attack.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'http.rb'	:version:
+- :name: 'http.rb'
+	:version:
 		- *

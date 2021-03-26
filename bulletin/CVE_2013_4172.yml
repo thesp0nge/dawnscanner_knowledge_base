@@ -14,5 +14,6 @@ message:|-
 	The Red Hat CloudForms Management Engine 5.1 allow remote administrators to execute arbitrary Ruby code via unspecified vectors.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'cloudforms_management_engine'	:version:
+- :name: 'cloudforms_management_engine'
+	:version:
 		- 5.1

@@ -14,5 +14,6 @@ message:|-
 	rubygem-hammer_cli_foreman: File /etc/hammer/cli.modules.d/foreman.yml world readable
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'hammer_cli'	:version:
+- :name: 'hammer_cli'
+	:version:
 		- -

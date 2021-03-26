@@ -14,5 +14,6 @@ message:|-
 	A TLS certificate validation flaw was found in Elastic APM agent for Ruby versions before 2.9.0. When specifying a trusted server CA certificate via the 'server_ca_cert' setting, the Ruby agent would not properly verify the certificate returned by the APM server. This could result in a man in the middle style attack against the Ruby agent.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'apm-agent-ruby'	:version:
+- :name: 'apm-agent-ruby'
+	:version:
 		- *

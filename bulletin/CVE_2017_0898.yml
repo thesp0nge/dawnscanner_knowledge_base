@@ -14,7 +14,8 @@ message:|-
 	Ruby before 2.4.2, 2.3.5, and 2.2.8 is vulnerable to a malicious format string which contains a precious specifier (*) with a huge minus value. Such situation can lead to a buffer overrun, resulting in a heap memory corruption or an information disclosure from the heap.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'ruby'	:version:
+- :name: 'ruby'
+	:version:
 		- 2.3.0
 		- 2.3.1
 		- 2.2.1

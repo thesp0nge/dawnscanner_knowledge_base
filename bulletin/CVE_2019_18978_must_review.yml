@@ -14,5 +14,6 @@ message:|-
 	An issue was discovered in the rack-cors (aka Rack CORS Middleware) gem before 1.0.4 for Ruby. It allows ../ directory traversal to access private resources because resource matching does not ensure that pathnames are in a canonical format.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'rack-cors'	:version:
+- :name: 'rack-cors'
+	:version:
 		- *

@@ -14,5 +14,6 @@ message:|-
 	test/tc_database.rb in the lean-ruport gem 0.3.8 for Ruby places the mysql user password on the mysqldump command line, which allows local users to obtain sensitive information by listing the process.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'lean-ruport'	:version:
+- :name: 'lean-ruport'
+	:version:
 		- 0.3.8

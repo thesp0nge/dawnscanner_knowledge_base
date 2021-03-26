@@ -14,5 +14,6 @@ message:|-
 	In the Loofah gem for Ruby, through v2.2.2, unsanitized JavaScript may occur in sanitized output when a crafted SVG element is republished.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'loofah'	:version:
+- :name: 'loofah'
+	:version:
 		- *

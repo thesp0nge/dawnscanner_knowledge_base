@@ -14,5 +14,6 @@ message:|-
 	The mail gem before 2.5.5 for Ruby (aka A Really Ruby Mail Library) is vulnerable to SMTP command injection via CRLF sequences in a RCPT TO or MAIL FROM command, as demonstrated by CRLF sequences immediately before and after a DATA substring.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'mail'	:version:
+- :name: 'mail'
+	:version:
 		- *

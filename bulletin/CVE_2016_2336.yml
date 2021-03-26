@@ -14,6 +14,7 @@ message:|-
 	Type confusion exists in two methods of Ruby's WIN32OLE class, ole_invoke and ole_query_interface. Attacker passing different type of object than this assumed by developers can cause arbitrary code execution.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'ruby'	:version:
+- :name: 'ruby'
+	:version:
 		- 2.3.0
 		- 2.2.2

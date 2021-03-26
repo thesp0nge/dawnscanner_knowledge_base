@@ -14,5 +14,6 @@ message:|-
 	The ruby_parser-legacy (aka legacy) gem 1.0.0 for Ruby allows local privilege escalation because of world-writable files. For example, if the brakeman gem (which has a legacy dependency) 4.5.0 through 4.7.0 is used, a local user can insert malicious code into the ruby_parser-legacy-1.0.0/lib/ruby_parser/legacy/ruby_parser.rb file.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'ruby_parser-legacy'	:version:
+- :name: 'ruby_parser-legacy'
+	:version:
 		- 1.0.0

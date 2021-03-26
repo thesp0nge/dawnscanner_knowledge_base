@@ -14,6 +14,7 @@ message:|-
 	The REXML parser in Ruby 1.9.x before 1.9.3-p550, 2.0.x before 2.0.0-p594, and 2.1.x before 2.1.4 allows remote attackers to cause a denial of service (memory consumption) via a crafted XML document, aka an XML Entity Expansion (XEE) attack.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'opensuse'	:version:
+- :name: 'opensuse'
+	:version:
 		- 13.1
 		- 12.3

@@ -14,5 +14,6 @@ message:|-
 	active-support ruby gem 5.2.0 could allow a remote attacker to execute arbitrary code on the system, caused by containing a malicious backdoor. An attacker could exploit this vulnerability to execute arbitrary code on the system.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'activesupport'	:version:
+- :name: 'activesupport'
+	:version:
 		- 5.2.0

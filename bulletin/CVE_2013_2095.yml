@@ -14,5 +14,6 @@ message:|-
 	rubygem-openshift-origin-controller: API can be used to create applications via cartridge_cache.rb URI.prase() to perform command injection
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'openshift-origin-controller'	:version:
+- :name: 'openshift-origin-controller'
+	:version:
 		- -

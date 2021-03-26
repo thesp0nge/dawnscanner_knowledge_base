@@ -14,5 +14,6 @@ message:|-
 	Use-after-free vulnerability in Google Chrome before 11.0.696.57 allows remote attackers to cause a denial of service or possibly have unspecified other impact via vectors related to the ruby element and Cascading Style Sheets (CSS) token sequences.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'chrome'	:version:
+- :name: 'chrome'
+	:version:
 		- *

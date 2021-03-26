@@ -14,7 +14,8 @@ message:|-
 	The lazy_initialize function in lib/resolv.rb in Ruby through 2.4.3 uses Kernel#open, which might allow Command Injection attacks, as demonstrated by a Resolv::Hosts::new argument beginning with a '|' character, a different vulnerability than CVE-2017-17405. NOTE: situations with untrusted input may be highly unlikely.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'ruby'	:version:
+- :name: 'ruby'
+	:version:
 		- 2.5.0
 		- *
 		- *

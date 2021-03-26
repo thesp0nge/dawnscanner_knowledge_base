@@ -14,6 +14,7 @@ message:|-
 	Stack-based buffer overflow in LexRuby.cxx (SciLexer.dll) in Scintilla 1.73, as used by notepad++ 4.1.1 and earlier, allows user-assisted remote attackers to execute arbitrary code via certain Ruby (.rb) files with long lines.  NOTE: this was originally reported as a vulnerability in notepad++.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'scintilla'	:version:
+- :name: 'scintilla'
+	:version:
 		- 1.73
 		- *

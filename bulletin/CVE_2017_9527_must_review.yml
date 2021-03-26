@@ -14,5 +14,6 @@ message:|-
 	The mark_context_stack function in gc.c in mruby through 1.2.0 allows attackers to cause a denial of service (heap-based use-after-free and application crash) or possibly have unspecified other impact via a crafted .rb file.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'mruby'	:version:
+- :name: 'mruby'
+	:version:
 		- *

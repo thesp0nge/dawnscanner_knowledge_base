@@ -14,5 +14,6 @@ message:|-
 	Net::SMTP in Ruby before 2.4.0 is vulnerable to SMTP command injection via CRLF sequences in a RCPT TO or MAIL FROM command, as demonstrated by CRLF sequences immediately before and after a DATA substring.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'ruby'	:version:
+- :name: 'ruby'
+	:version:
 		- *

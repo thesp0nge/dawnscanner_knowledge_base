@@ -14,5 +14,6 @@ message:|-
 	lib/ksymfony1.rb in the kcapifony gem 2.1.6 for Ruby places database user passwords on the (1) mysqldump, (2) pg_dump, (3) mysql, and (4) psql command lines, which allows local users to obtain sensitive information by listing the processes.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'kcapifony'	:version:
+- :name: 'kcapifony'
+	:version:
 		- 2.1.6

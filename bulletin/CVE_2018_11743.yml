@@ -14,5 +14,6 @@ message:|-
 	The init_copy function in kernel.c in mruby 1.4.1 makes initialize_copy calls for TT_ICLASS objects, which allows attackers to cause a denial of service (mrb_hash_keys uninitialized pointer and application crash) or possibly have unspecified other impact.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'mruby'	:version:
+- :name: 'mruby'
+	:version:
 		- 1.4.1

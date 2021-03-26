@@ -14,5 +14,6 @@ message:|-
 	The is a code injection vulnerability in versions of Rails prior to 5.0.1 that wouldallow an attacker who controlled the `locals` argument of a `render` call to perform a RCE.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'rails'	:version:
+- :name: 'rails'
+	:version:
 		- *

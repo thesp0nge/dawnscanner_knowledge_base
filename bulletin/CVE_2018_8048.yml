@@ -14,5 +14,6 @@ message:|-
 	In the Loofah gem through 2.2.0 for Ruby, non-whitelisted HTML attributes may occur in sanitized output by republishing a crafted HTML fragment.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'debian_linux'	:version:
+- :name: 'debian_linux'
+	:version:
 		- 9.0

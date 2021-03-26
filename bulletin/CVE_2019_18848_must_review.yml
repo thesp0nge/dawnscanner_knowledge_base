@@ -14,5 +14,6 @@ message:|-
 	The json-jwt gem before 1.11.0 for Ruby lacks an element count during the splitting of a JWE string.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'json-jwt'	:version:
+- :name: 'json-jwt'
+	:version:
 		- *

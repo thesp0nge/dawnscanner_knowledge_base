@@ -14,5 +14,6 @@ message:|-
 	The Chartkick gem through 3.1.0 for Ruby allows XSS.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'chartkick'	:version:
+- :name: 'chartkick'
+	:version:
 		- *

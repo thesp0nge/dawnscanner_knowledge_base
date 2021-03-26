@@ -14,5 +14,6 @@ message:|-
 	IBM Tivoli Endpoint Manager Mobile Device Management (MDM) before 9.0.60100 uses the same secret HMAC token across different customers' installations, which allows remote attackers to execute arbitrary code via crafted marshalled Ruby objects in cookies to (1) Enrollment and Apple iOS Management Extender, (2) Self-service portal, (3) Trusted Services provider, or (4) Admin Portal.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'tivoli_endpoint_manager_mobile_device_management'	:version:
+- :name: 'tivoli_endpoint_manager_mobile_device_management'
+	:version:
 		- *

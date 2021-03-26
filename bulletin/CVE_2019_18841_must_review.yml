@@ -14,5 +14,6 @@ message:|-
 	Chartkick.js 3.1.0 through 3.1.3, as used in the Chartkick gem before 3.3.0 for Ruby, allows prototype pollution.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'chartkick.js'	:version:
+- :name: 'chartkick.js'
+	:version:
 		- *

@@ -14,5 +14,6 @@ message:|-
 	Hash#slice in lib/i18n/core_ext/hash.rb in the i18n gem before 0.8.0 for Ruby allows remote attackers to cause a denial of service (application crash) via a call in a situation where :some_key is present in keep_keys but not present in the hash.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'i18n'	:version:
+- :name: 'i18n'
+	:version:
 		- *

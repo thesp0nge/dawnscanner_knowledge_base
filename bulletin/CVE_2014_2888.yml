@@ -14,7 +14,8 @@ message:|-
 	lib/sfpagent/bsig.rb in the sfpagent gem before 0.4.15 for Ruby allows remote attackers to execute arbitrary commands via shell metacharacters in the module name in a JSON request.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'sfpagent'	:version:
+- :name: 'sfpagent'
+	:version:
 		- 0.4.13
 		- 0.4.12
 		- 0.4.4

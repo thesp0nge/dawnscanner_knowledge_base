@@ -14,5 +14,6 @@ message:|-
 	The PgHero gem through 2.6.0 for Ruby allows CSRF.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'pghero'	:version:
+- :name: 'pghero'
+	:version:
 		- *

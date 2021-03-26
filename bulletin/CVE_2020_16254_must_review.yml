@@ -14,5 +14,6 @@ message:|-
 	The Chartkick gem through 3.3.2 for Ruby allows Cascading Style Sheets (CSS) Injection (without attribute).
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'chartkick'	:version:
+- :name: 'chartkick'
+	:version:
 		- *

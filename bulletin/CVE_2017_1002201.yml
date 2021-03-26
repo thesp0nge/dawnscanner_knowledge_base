@@ -14,6 +14,7 @@ message:|-
 	In haml versions prior to version 5.0.0.beta.2, when using user input to perform tasks on the server, characters like < > " ' must be escaped properly. In this case, the ' character was missed. An attacker can manipulate the input to introduce additional attributes, potentially executing code.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'haml'	:version:
+- :name: 'haml'
+	:version:
 		- *
 		- 5.0.0

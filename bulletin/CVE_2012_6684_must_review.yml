@@ -14,5 +14,6 @@ message:|-
 	Cross-site scripting (XSS) vulnerability in the RedCloth library 4.2.9 for Ruby and earlier allows remote attackers to inject arbitrary web script or HTML via a javascript: URI.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'redcloth_library'	:version:
+- :name: 'redcloth_library'
+	:version:
 		- *

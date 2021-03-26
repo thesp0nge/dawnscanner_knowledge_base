@@ -14,5 +14,6 @@ message:|-
 	The numtok function in lib/raven/okjson.rb in the raven-ruby gem before 0.12.2 for Ruby allows remote attackers to cause a denial of service via a large exponent value in a scientific number.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'raven-ruby'	:version:
+- :name: 'raven-ruby'
+	:version:
 		- *

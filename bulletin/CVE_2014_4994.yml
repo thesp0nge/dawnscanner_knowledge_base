@@ -14,5 +14,6 @@ message:|-
 	lib/gyazo/client.rb in the gyazo gem 1.0.0 for Ruby allows local users to write to arbitrary files via a symlink attack on a temporary file, related to time-based filenames.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'gyazo'	:version:
+- :name: 'gyazo'
+	:version:
 		- 1.0.0

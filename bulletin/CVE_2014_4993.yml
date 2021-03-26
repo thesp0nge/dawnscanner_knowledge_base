@@ -14,6 +14,7 @@ message:|-
 	(1) lib/backup/cli/utility.rb in the backup-agoddard gem 3.0.28 and (2) lib/backup/cli/utility.rb in the backup_checksum gem 3.0.23 for Ruby place credentials on the openssl command line, which allows local users to obtain sensitive information by listing the process.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'backup_checksum'	:version:
+- :name: 'backup_checksum'
+	:version:
 		- 3.0.23
 		- 3.0.28

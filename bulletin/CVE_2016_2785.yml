@@ -14,7 +14,8 @@ message:|-
 	Puppet Server before 2.3.2 and Ruby puppetmaster in Puppet 4.x before 4.4.2 and in Puppet Agent before 1.4.2 might allow remote attackers to bypass intended auth.conf access restrictions by leveraging incorrect URL decoding.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'puppet'	:version:
+- :name: 'puppet'
+	:version:
 		- 4.3.1
 		- 4.3.0
 		- 4.2.3

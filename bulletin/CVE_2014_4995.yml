@@ -14,5 +14,6 @@ message:|-
 	Race condition in lib/vlad/dba/mysql.rb in the VladTheEnterprising gem 0.2 for Ruby allows local users to obtain sensitive information by reading the MySQL root password from a temporary file before it is removed.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'vladtheenterprising'	:version:
+- :name: 'vladtheenterprising'
+	:version:
 		- 0.2.0

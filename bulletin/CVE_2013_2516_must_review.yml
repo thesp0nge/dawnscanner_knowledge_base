@@ -14,5 +14,6 @@ message:|-
 	Vulnerability in FileUtils v0.7, Ruby Gem Fileutils <= v0.7 Command Injection vulnerability in user supplied url variable that is passed to the shell.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'fileutils'	:version:
+- :name: 'fileutils'
+	:version:
 		- *

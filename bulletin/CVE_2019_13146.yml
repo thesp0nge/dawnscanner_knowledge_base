@@ -14,5 +14,6 @@ message:|-
 	The field_test gem 0.3.0 for Ruby has unvalidated input. A method call that is expected to return a value from a certain set of inputs can be made to return any input, which can be dangerous depending on how applications use it. If an application treats arbitrary variants as trusted, this can lead to a variety of potential vulnerabilities like SQL injection or cross-site scripting (XSS).
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'field_test'	:version:
+- :name: 'field_test'
+	:version:
 		- 0.3.0

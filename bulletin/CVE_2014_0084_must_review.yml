@@ -14,5 +14,6 @@ message:|-
 	Ruby gem openshift-origin-node before 2014-02-14 does not contain a cronjob timeout which could result in a denial of service in cron.daily and cron.weekly.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'openshift_origin'	:version:
+- :name: 'openshift_origin'
+	:version:
 		- *

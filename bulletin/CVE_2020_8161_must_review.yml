@@ -14,5 +14,6 @@ message:|-
 	A directory traversal vulnerability exists in rack < 2.2.0 that allows an attacker perform directory traversal vulnerability in the Rack::Directory app that is bundled with Rack which could result in information disclosure.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'rack'	:version:
+- :name: 'rack'
+	:version:
 		- *

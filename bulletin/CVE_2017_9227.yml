@@ -14,5 +14,6 @@ message:|-
 	An issue was discovered in Oniguruma 6.2.0, as used in Oniguruma-mod in Ruby through 2.4.1 and mbstring in PHP through 7.1.5. A stack out-of-bounds read occurs in mbc_enc_len() during regular expression searching. Invalid handling of reg->dmin in forward_search_range() could result in an invalid pointer dereference, as an out-of-bounds read from a stack buffer.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'oniguruma'	:version:
+- :name: 'oniguruma'
+	:version:
 		- 6.2.0

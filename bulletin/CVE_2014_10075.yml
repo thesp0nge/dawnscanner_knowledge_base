@@ -14,5 +14,6 @@ message:|-
 	The karo gem 2.3.8 for Ruby allows Remote command injection via the host field.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'karo'	:version:
+- :name: 'karo'
+	:version:
 		- 2.3.8

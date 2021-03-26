@@ -14,5 +14,6 @@ message:|-
 	lib/brbackup.rb in the brbackup gem 0.1.1 for Ruby places the database password on the mysql command line, which allows local users to obtain sensitive information by listing the process.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'brbackup'	:version:
+- :name: 'brbackup'
+	:version:
 		- 0.1.1

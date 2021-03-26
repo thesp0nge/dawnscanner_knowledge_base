@@ -14,5 +14,6 @@ message:|-
 	Use-after-free vulnerability in Google Chrome before 14.0.835.163 allows remote attackers to cause a denial of service or possibly have unspecified other impact via vectors related to "ruby / table style handing."
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'chrome'	:version:
+- :name: 'chrome'
+	:version:
 		- *

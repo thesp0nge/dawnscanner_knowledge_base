@@ -14,5 +14,6 @@ message:|-
 	The CHECK macro in mrbgems/mruby-sprintf/src/sprintf.c in mruby 1.4.1 contains a signed integer overflow, possibly leading to out-of-bounds memory access because the mrb_str_resize function in string.c does not check for a negative length.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'mruby'	:version:
+- :name: 'mruby'
+	:version:
 		- 1.4.1

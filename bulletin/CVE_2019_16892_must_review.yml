@@ -14,5 +14,6 @@ message:|-
 	In Rubyzip before 1.3.0, a crafted ZIP file can bypass application checks on ZIP entry sizes because data about the uncompressed size can be spoofed. This allows attackers to cause a denial of service (disk consumption).
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'rubyzip'	:version:
+- :name: 'rubyzip'
+	:version:
 		- *

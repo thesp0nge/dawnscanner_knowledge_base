@@ -14,5 +14,6 @@ message:|-
 	The open-uri-cached rubygem allows local users to execute arbitrary Ruby code by creating a directory under /tmp containing "openuri-" followed by a crafted UID, and putting Ruby code in said directory once a meta file is created.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'open-uri-cached'	:version:
+- :name: 'open-uri-cached'
+	:version:
 		- 0.0.5

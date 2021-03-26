@@ -14,5 +14,6 @@ message:|-
 	The espeak-ruby gem before 1.0.3 for Ruby allows remote attackers to execute arbitrary commands via shell metacharacters in a string to the speak, save, bytes or bytes_wav method in lib/espeak/speech.rb.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'espeak-ruby'	:version:
+- :name: 'espeak-ruby'
+	:version:
 		- *

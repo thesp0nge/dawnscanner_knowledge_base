@@ -14,5 +14,6 @@ message:|-
 	The rack-mini-profiler gem before 0.10.1 for Ruby allows remote attackers to obtain sensitive information about allocated strings and objects by leveraging incorrect ordering of security checks.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'rack-mini-profiler'	:version:
+- :name: 'rack-mini-profiler'
+	:version:
 		- *

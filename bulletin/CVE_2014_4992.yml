@@ -14,5 +14,6 @@ message:|-
 	lib/cap-strap/helpers.rb in the cap-strap gem 0.1.5 for Ruby places credentials on the useradd command line, which allows local users to obtain sensitive information by listing the process.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'cap-strap'	:version:
+- :name: 'cap-strap'
+	:version:
 		- 0.1.5

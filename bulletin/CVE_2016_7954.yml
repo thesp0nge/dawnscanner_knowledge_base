@@ -14,7 +14,8 @@ message:|-
 	Bundler 1.x might allow remote attackers to inject arbitrary Ruby code into an application by leveraging a gem name collision on a secondary source.  NOTE: this might overlap CVE-2013-0334.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'bundler'	:version:
+- :name: 'bundler'
+	:version:
 		- 1.13.6
 		- 1.13.0
 		- 1.13.0

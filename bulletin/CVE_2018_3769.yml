@@ -14,5 +14,6 @@ message:|-
 	ruby-grape ruby gem suffers from a cross-site scripting (XSS) vulnerability via "format" parameter.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'grape'	:version:
+- :name: 'grape'
+	:version:
 		- -

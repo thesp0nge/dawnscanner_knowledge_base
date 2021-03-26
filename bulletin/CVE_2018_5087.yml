@@ -14,5 +14,6 @@ message:|-
 	In K7 AntiVirus 15.1.0306, the driver file (K7FWHlpr.sys) allows local users to cause a denial of service (BSOD) or possibly have unspecified other impact because of not validating input values from IOCtl 0x83002100.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'antivirus'	:version:
+- :name: 'antivirus'
+	:version:
 		- 15.1.0306

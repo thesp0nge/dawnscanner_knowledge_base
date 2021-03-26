@@ -14,6 +14,7 @@ message:|-
 	Directory traversal vulnerability in the minitar before 0.6 and archive-tar-minitar 0.5.2 gems for Ruby allows remote attackers to write to arbitrary files via a .. (dot dot) in a TAR archive entry.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'archive-tar-minitar'	:version:
+- :name: 'archive-tar-minitar'
+	:version:
 		- *
 		- *

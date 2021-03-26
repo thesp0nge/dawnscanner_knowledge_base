@@ -14,6 +14,7 @@ message:|-
 	An issue was discovered in ClusterLabs Hawk 2.x through 2.3.0-x. There is a Ruby shell code injection issue via the hawk_remember_me_id parameter in the login_from_cookie cookie. The user logout routine could be used by unauthenticated remote attackers to execute code as hauser.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'hawk'	:version:
+- :name: 'hawk'
+	:version:
 		- 2.2.0-12
 		- 2.3.0-12

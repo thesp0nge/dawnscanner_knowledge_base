@@ -14,5 +14,6 @@ message:|-
 	RubyGems version 2.6.12 and earlier is vulnerable to maliciously crafted gem specifications to cause a denial of service attack against RubyGems clients who have issued a `query` command.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'rubygems'	:version:
+- :name: 'rubygems'
+	:version:
 		- *

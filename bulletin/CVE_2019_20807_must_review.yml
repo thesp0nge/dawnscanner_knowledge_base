@@ -14,5 +14,6 @@ message:|-
 	In Vim before 8.1.0881, users can circumvent the rvim restricted mode and execute arbitrary OS commands via scripting interfaces (e.g., Python, Ruby, or Lua).
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'vim'	:version:
+- :name: 'vim'
+	:version:
 		- *

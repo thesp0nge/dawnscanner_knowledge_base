@@ -14,5 +14,6 @@ message:|-
 	The Piano Teacher (aka com.rubycell.pianisthd) application 20140730 for Android does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'piano_teacher'	:version:
+- :name: 'piano_teacher'
+	:version:
 		- 20140730

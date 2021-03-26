@@ -14,5 +14,6 @@ message:|-
 	File injection vulnerability in Ruby gem Features 0.3.0 allows remote attackers to inject malicious html in the /tmp directory.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'feature'	:version:
+- :name: 'feature'
+	:version:
 		- 0.3.0

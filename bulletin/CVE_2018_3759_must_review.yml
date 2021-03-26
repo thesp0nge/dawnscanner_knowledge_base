@@ -14,5 +14,6 @@ message:|-
 	private_address_check ruby gem before 0.5.0 is vulnerable to a time-of-check time-of-use (TOCTOU) race condition due to the address the socket uses not being checked. DNS entries with a TTL of 0 can trigger this case where the initial resolution is a public address but the subsequent resolution is a private address.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'private_address_check'	:version:
+- :name: 'private_address_check'
+	:version:
 		- *

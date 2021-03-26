@@ -14,5 +14,6 @@ message:|-
 	The papercrop gem before 0.3.0 for Ruby on Rails does not properly handle crop input.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'papercrop'	:version:
+- :name: 'papercrop'
+	:version:
 		- *

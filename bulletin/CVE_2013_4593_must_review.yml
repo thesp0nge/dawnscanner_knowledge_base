@@ -14,5 +14,6 @@ message:|-
 	RubyGem omniauth-facebook has an access token security vulnerability
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'omniauth-facebook'	:version:
+- :name: 'omniauth-facebook'
+	:version:
 		- *

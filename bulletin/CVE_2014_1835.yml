@@ -14,5 +14,6 @@ message:|-
 	The perform_request function in /lib/echor/backplane.rb in echor 0.1.6 Ruby Gem allows local users to steal the login credentials by watching the process table.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'echor'	:version:
+- :name: 'echor'
+	:version:
 		- 0.1.6

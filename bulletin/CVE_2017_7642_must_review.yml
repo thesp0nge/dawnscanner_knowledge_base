@@ -14,5 +14,6 @@ message:|-
 	The sudo helper in the HashiCorp Vagrant VMware Fusion plugin (aka vagrant-vmware-fusion) before 4.0.21 allows local users to gain root privileges by leveraging failure to verify the path to the encoded ruby script or scrub the PATH variable.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'vagrant_vmware_fusion'	:version:
+- :name: 'vagrant_vmware_fusion'
+	:version:
 		- *

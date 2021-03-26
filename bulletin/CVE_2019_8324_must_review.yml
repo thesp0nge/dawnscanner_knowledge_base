@@ -14,5 +14,6 @@ message:|-
 	An issue was discovered in RubyGems 2.6 and later through 3.0.2. A crafted gem with a multi-line name is not handled correctly. Therefore, an attacker could inject arbitrary code to the stub line of gemspec, which is eval-ed by code in ensure_loadable_spec during the preinstall check.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'rubygems'	:version:
+- :name: 'rubygems'
+	:version:
 		- *

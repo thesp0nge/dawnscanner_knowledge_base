@@ -14,7 +14,8 @@ message:|-
 	The Net::LDAP (aka net-ldap) gem before 0.16.0 for Ruby has Missing SSL Certificate Validation.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'net-ldap'	:version:
+- :name: 'net-ldap'
+	:version:
 		- 0.11
 		- 0.10.0
 		- 0.3.1

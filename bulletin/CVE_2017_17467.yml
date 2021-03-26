@@ -14,5 +14,6 @@ message:|-
 	TG Soft Vir.IT eXplorer Lite 8.5.42 allows local users to cause a denial of service (BSOD) or possibly have unspecified other impact via a \\.\Viragtlt DeviceIoControl request of 0x82730074.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'vir.it_explorer'	:version:
+- :name: 'vir.it_explorer'
+	:version:
 		- 8.5.42

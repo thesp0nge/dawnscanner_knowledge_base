@@ -14,5 +14,6 @@ message:|-
 	Ruby Version Manager (RVM) before 1.2.1 writes file contents to a terminal without sanitizing non-printable characters, which might allow remote attackers to execute arbitrary commands via a crafted file, related to an "escape sequence injection vulnerability." NOTE: some of these details are obtained from third party information.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'ruby_version_manager'	:version:
+- :name: 'ruby_version_manager'
+	:version:
 		- *

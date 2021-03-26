@@ -14,5 +14,6 @@ message:|-
 	The strong_password gem 0.0.7 for Ruby, as distributed on RubyGems.org, included a code-execution backdoor inserted by a third party. The current version, without this backdoor, is 0.0.6.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'strong_password'	:version:
+- :name: 'strong_password'
+	:version:
 		- 0.0.7

@@ -14,5 +14,6 @@ message:|-
 	An issue was discovered in Userscape HelpSpot before 4.7.2. A reflected cross-site scripting vulnerability exists in the "return" parameter of the "index.php?pg=moderated" endpoint. It executes when the return link is clicked.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'helpspot'	:version:
+- :name: 'helpspot'
+	:version:
 		- *

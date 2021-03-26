@@ -14,5 +14,6 @@ message:|-
 	The aescrypt gem 1.0.0 for Ruby does not randomize the CBC IV for use with the AESCrypt.encrypt and AESCrypt.decrypt functions, which allows attackers to defeat cryptographic protection mechanisms via a chosen plaintext attack.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'aescrypt'	:version:
+- :name: 'aescrypt'
+	:version:
 		- *

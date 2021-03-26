@@ -14,5 +14,6 @@ message:|-
 	rubygem-safemode, as used in Foreman, versions 1.3.2 and earlier are vulnerable to bypassing safe mode limitations via special Ruby syntax. This can lead to deletion of objects for which the user does not have delete permissions or possibly to privilege escalation.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'safemode'	:version:
+- :name: 'safemode'
+	:version:
 		- *

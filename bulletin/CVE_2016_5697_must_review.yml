@@ -14,5 +14,6 @@ message:|-
 	Ruby-saml before 1.3.0 allows attackers to perform XML signature wrapping attacks via unspecified vectors.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'ruby-saml'	:version:
+- :name: 'ruby-saml'
+	:version:
 		- *

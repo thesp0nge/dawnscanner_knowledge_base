@@ -14,6 +14,7 @@ message:|-
 	mruby through 2.1.2-rc has a heap-based buffer overflow in the mrb_yield_with_class function in vm.c because of incorrect VM stack handling. It can be triggered via the stack_copy function.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'mruby'	:version:
+- :name: 'mruby'
+	:version:
 		- *
 		- 2.1.2

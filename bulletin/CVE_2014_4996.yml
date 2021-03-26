@@ -14,5 +14,6 @@ message:|-
 	lib/vlad/dba/mysql.rb in the VladTheEnterprising gem 0.2 for Ruby allows local users to write to arbitrary files via a symlink attack on /tmp/my.cnf.#{target_host}.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'vladtheenterprising'	:version:
+- :name: 'vladtheenterprising'
+	:version:
 		- 0.2.0

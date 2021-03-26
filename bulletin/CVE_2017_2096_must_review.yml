@@ -14,5 +14,6 @@ message:|-
 	smalruby-editor v0.4.0 and earlier allows remote attackers to execute arbitrary OS commands via unspecified vectors.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'smalruby-editor'	:version:
+- :name: 'smalruby-editor'
+	:version:
 		- *

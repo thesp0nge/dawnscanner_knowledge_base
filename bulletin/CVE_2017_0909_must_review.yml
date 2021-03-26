@@ -14,5 +14,6 @@ message:|-
 	The private_address_check ruby gem before 0.4.1 is vulnerable to a bypass due to an incomplete blacklist of common private/local network addresses used to prevent server-side request forgery.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'private_address_check'	:version:
+- :name: 'private_address_check'
+	:version:
 		- *

@@ -14,5 +14,6 @@ message:|-
 	The Ruby net-ldap gem before 0.11 uses a weak salt when generating SSHA passwords.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'net-ldap'	:version:
+- :name: 'net-ldap'
+	:version:
 		- *

@@ -14,5 +14,6 @@ message:|-
 	The Field Test gem 0.2.0 through 0.3.2 for Ruby allows CSRF.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'field_test'	:version:
+- :name: 'field_test'
+	:version:
 		- *
