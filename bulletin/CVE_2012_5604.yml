@@ -1,0 +1,18 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2012-5604
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2012-5604
+owasp: A9
+release_date: 01/03/2013
+
+kind: :unsafe_dependency_check
+message:|-
+	The ldap_fluff gem for Ruby, as used in Red Hat CloudForms 1.1, when using Active Directory for authentication, allows remote attackers to bypass authentication via unspecified vectors.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'cloudforms'	:version:
+		- 1.1

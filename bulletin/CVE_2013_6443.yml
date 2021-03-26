@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2013-6443
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cve: CVE-2013-6443
+owasp: A9
+release_date: 23/01/2014
+
+kind: :unsafe_dependency_check
+message:|-
+	CloudForms 3.0 Management Engine before 5.2.1.6 allows remote attackers to bypass the Ruby on Rails protect_from_forgery mechanism and conduct cross-site request forgery (CSRF) attacks via a destructive action in a request.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'cloudforms'	:version:
+		- 3.0
+		- 5.2
+		- *

@@ -1,0 +1,22 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-17742
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
+cve: CVE-2017-17742
+owasp: A9
+release_date: 03/04/2018
+
+kind: :unsafe_dependency_check
+message:|-
+	Ruby before 2.2.10, 2.3.x before 2.3.7, 2.4.x before 2.4.4, 2.5.x before 2.5.1, and 2.6.0-preview1 allows an HTTP Response Splitting attack. An attacker can inject a crafted key and value into an HTTP response for the HTTP server of WEBrick.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ruby'	:version:
+		- *
+		- *
+		- *
+		- *
+		- 2.6.0

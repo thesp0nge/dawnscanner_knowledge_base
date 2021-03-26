@@ -1,0 +1,16 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-11694
+cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
+cve: CVE-2020-11694
+owasp: A9
+release_date: 10/04/2020
+
+kind: :unsafe_dependency_check
+message:|-
+	In JetBrains PyCharm 2019.2.5 and 2019.3 on Windows, Apple Notarization Service credentials were included. This is fixed in 2019.2.6 and 2019.3.3.
+check_family: :bulletin
+vulnerable_version_array:

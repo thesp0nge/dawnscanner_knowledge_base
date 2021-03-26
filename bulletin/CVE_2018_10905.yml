@@ -1,0 +1,21 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-10905
+cvss: AV:L/AC:L/Au:N/C:C/I:C/A:C
+cve: CVE-2018-10905
+owasp: A9
+release_date: 24/07/2018
+
+kind: :unsafe_dependency_check
+message:|-
+	CloudForms Management Engine (cfme) is vulnerable to an improper security setting in the dRuby component of CloudForms. An attacker with access to an unprivileged local shell could use this flaw to execute commands as a high privileged user.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'cloudforms'	:version:
+		- 4.5
+		- 5.9
+		- 5.8
+		- 4.6

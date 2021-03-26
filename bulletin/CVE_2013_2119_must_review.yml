@@ -1,0 +1,16 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2013-2119
+cvss: AV:L/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2013-2119
+owasp: A9
+release_date: 03/01/2014
+
+kind: :unsafe_dependency_check
+message:|-
+	Phusion Passenger gem before 3.0.21 and 4.0.x before 4.0.5 for Ruby allows local users to cause a denial of service (prevent application start) or gain privileges by pre-creating a temporary "config" file in a directory with a predictable name in /tmp/ before it is used by the gem.
+check_family: :bulletin
+vulnerable_version_array:

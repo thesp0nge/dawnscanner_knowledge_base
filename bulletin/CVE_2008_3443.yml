@@ -1,0 +1,68 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2008-3443
+cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
+cve: CVE-2008-3443
+owasp: A9
+release_date: 14/08/2008
+
+kind: :unsafe_dependency_check
+message:|-
+	The regular expression engine (regex.c) in Ruby 1.8.5 and earlier, 1.8.6 through 1.8.6-p286, 1.8.7 through 1.8.7-p71, and 1.9 through r18423 allows remote attackers to cause a denial of service (infinite loop and crash) via multiple long requests to a Ruby socket, related to memory allocation failure, and as demonstrated against Webrick.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ruby'	:version:
+		- 1.8.1
+		- 1.8.2
+		- 1.8.2
+		- 1.8.4
+		- 1.8.4
+		- 1.8.5
+		- 1.8.5
+		- 1.8.5
+		- 1.8.5
+		- 1.8.2
+		- 1.8.2
+		- 1.8.4
+		- 1.8.4
+		- 1.8.5
+		- 1.8.5
+		- 1.8.6
+		- 1.8.6
+		- 1.8.6
+		- 1.8.6
+		- 1.8.7
+		- 1.8.7
+		- 1.8.0
+		- 1.8.1
+		- 1.8.3
+		- 1.8.3
+		- 1.8.5
+		- 1.8.5
+		- 1.8.5
+		- 1.8.5
+		- 1.8.5
+		- 1.8.6
+		- 1.8.6
+		- 1.8.7
+		- 1.8.7
+		- 1.8.6
+		- 1.8.6
+		- 1.8.7
+		- 1.8.7
+		- 1.6.8
+		- 1.8.3
+		- 1.8.3
+		- 1.8.5
+		- 1.8.5
+		- 1.8.5
+		- 1.8.5
+		- 1.8.6
+		- 1.8.6
+		- 1.8.7
+		- 1.8.7
+		- 1.9.0
+		- 1.9.0
