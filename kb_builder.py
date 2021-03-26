@@ -30,6 +30,9 @@ if r.status_code != 200:
 code=json.loads(r.text)
 results=int(code["totalResults"])
 
+skip=0
+create=0
+
 base_url="https://services.nvd.nist.gov/rest/json/cves/1.0?keyword=ruby&startIndex="
 for loop in range(0, results+21, 20):
     url=base_url + str(loop)
@@ -80,13 +83,16 @@ for loop in range(0, results+21, 20):
 
         try:
             f = open(full_filename, "r")
-            print("skipping %s that already exists\n" % full_filename)
+            print("skipping %s that already exists" % full_filename)
+            skip+=1
         except FileNotFoundError:
-            print("creating %s\n" % full_filename)
+            print("creating %s" % full_filename)
+            create+=1
             f = open(full_filename, "w")
             f.write(out)
         finally:
             f.close()
 
 
+print("%d checks created (%d skipped)" % (create, skip))
 
