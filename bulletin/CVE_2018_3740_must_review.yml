@@ -10,10 +10,9 @@ owasp: A9
 release_date: 30/03/2018
 
 kind: :unsafe_dependency_check
-message:|-
-	A specially crafted HTML fragment can cause Sanitize gem for Ruby to allow non-whitelisted attributes to be used on a whitelisted HTML element.
+message: |-
+ A specially crafted HTML fragment can cause Sanitize gem for Ruby to allow non-whitelisted attributes to be used on a whitelisted HTML element.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'sanitize'
-	:version:
-		- *
+  :version:

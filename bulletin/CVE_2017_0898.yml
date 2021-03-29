@@ -10,24 +10,24 @@ owasp: A9
 release_date: 15/09/2017
 
 kind: :unsafe_dependency_check
-message:|-
-	Ruby before 2.4.2, 2.3.5, and 2.2.8 is vulnerable to a malicious format string which contains a precious specifier (*) with a huge minus value. Such situation can lead to a buffer overrun, resulting in a heap memory corruption or an information disclosure from the heap.
+message: |-
+ Ruby before 2.4.2, 2.3.5, and 2.2.8 is vulnerable to a malicious format string which contains a precious specifier (*) with a huge minus value. Such situation can lead to a buffer overrun, resulting in a heap memory corruption or an information disclosure from the heap.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'ruby'
-	:version:
-		- 2.3.0
-		- 2.3.1
-		- 2.2.1
-		- 2.2.2
-		- 2.3.2
-		- 2.3.3
-		- 2.2.3
-		- 2.2.4
-		- 2.3.4
-		- 2.4.1
-		- 2.2.5
-		- 2.2.6
-		- 2.4.0
-		- 2.2.0
-		- 2.2.7
+  :version:
+  - 2.3.0
+  - 2.3.1
+  - 2.2.1
+  - 2.2.2
+  - 2.3.2
+  - 2.3.3
+  - 2.2.3
+  - 2.2.4
+  - 2.3.4
+  - 2.4.1
+  - 2.2.5
+  - 2.2.6
+  - 2.4.0
+  - 2.2.0
+  - 2.2.7

@@ -10,10 +10,10 @@ owasp: A9
 release_date: 10/07/2019
 
 kind: :unsafe_dependency_check
-message:|-
-	A NULL Pointer Dereference in match_at() in regexec.c in Oniguruma 6.9.2 allows attackers to potentially cause denial of service by providing a crafted regular expression. Oniguruma issues often affect Ruby, as well as common optional libraries for PHP and Rust.
+message: |-
+ A NULL Pointer Dereference in match_at() in regexec.c in Oniguruma 6.9.2 allows attackers to potentially cause denial of service by providing a crafted regular expression. Oniguruma issues often affect Ruby, as well as common optional libraries for PHP and Rust.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'oniguruma'
-	:version:
-		- 6.9.2
+  :version:
+  - 6.9.2

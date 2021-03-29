@@ -1,41 +1,39 @@
---- !ruby/object:Dawn::Kb::RubyVersionCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2008-3790
+title: CVE-2008-3790
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
-cwe: '20'
-cve:
-osvdb:
+cve: CVE-2008-3790
 owasp: A9
-release_date: 2008-08-27
-kind: :ruby_version_check
-message: The REXML module in Ruby 1.8.6 through 1.8.6-p287, 1.8.7 through 1.8.7-p72,
-  and 1.9 allows context-dependent attackers to cause a denial of service (CPU consumption)
-  via an XML document with recursively nested entities, aka an "XML entity explosion."
-remediation: Upgrade your ruby interpreter
-aux_links:
-- http://www.ruby-lang.org/en/news/2008/08/23/dos-vulnerability-in-rexml/
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 27/08/2008
+
+kind: :unsafe_dependency_check
+message: |-
+ The REXML module in Ruby 1.8.6 through 1.8.6-p287, 1.8.7 through 1.8.7-p72, and 1.9 allows context-dependent attackers to cause a denial of service (CPU consumption) via an XML document with recursively nested entities, aka an "XML entity explosion."
 check_family: :bulletin
-safe_rubies:
-- :engine: ruby
-  :version: 1.8.7
-  :patchlevel: p73
-- :engine: ruby
-  :version: 1.8.7
-  :patchlevel: p73
-- :engine: ruby
-  :version: 1.9.0
-  :patchlevel: p1
+vulnerable_version_array:
+- :name: 'ruby'
+  :version:
+  - 1.8.6
+  - 1.8.6
+  - 1.8.6
+  - 1.8.7
+  - 1.8.7
+  - 1.8.6
+  - 1.8.6
+  - 1.8.7
+  - 1.8.7
+  - 1.9
+  - 1.8.6
+  - 1.8.6
+  - 1.8.7
+  - 1.8.7
+  - 1.8.6
+  - 1.8.6
+  - 1.8.6
+  - 1.8.6
+  - 1.8.7
+  - 1.8.7
+  - 1.8.7

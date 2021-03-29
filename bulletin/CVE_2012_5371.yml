@@ -1,42 +1,26 @@
---- !ruby/object:Dawn::Kb::RubyVersionCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2012-5371
+title: CVE-2012-5371
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
-cwe: '310'
-cve:
-osvdb:
+cve: CVE-2012-5371
 owasp: A9
-release_date: 2012-11-28
-kind: :ruby_version_check
-message: Ruby (aka CRuby) 1.9 before 1.9.3-p327 and 2.0 before r37575 computes hash
-  values without properly restricting the ability to trigger hash collisions predictably,
-  which allows context-dependent attackers to cause a denial of service (CPU consumption)
-  via crafted input to an application that maintains a hash table, as demonstrated
-  by a universal multicollision attack against a variant of the MurmurHash2 algorithm,
-  a different vulnerability than CVE-2011-4815.
-remediation: Please upgrade ruby interpreter to 1.9.3-p327 or 2.0.0-p195 or latest
-  version available
-aux_links:
-- http://www.ruby-lang.org/en/news/2012/11/09/ruby19-hashdos-cve-2012-5371/
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 28/11/2012
+
+kind: :unsafe_dependency_check
+message: |-
+ Ruby (aka CRuby) 1.9 before 1.9.3-p327 and 2.0 before r37575 computes hash values without properly restricting the ability to trigger hash collisions predictably, which allows context-dependent attackers to cause a denial of service (CPU consumption) via crafted input to an application that maintains a hash table, as demonstrated by a universal multicollision attack against a variant of the MurmurHash2 algorithm, a different vulnerability than CVE-2011-4815.
 check_family: :bulletin
-safe_rubies:
-- :engine: ruby
-  :version: 1.9.3
-  :patchlevel: p327
-- :engine: ruby
-  :version: 2.0.0
-  :patchlevel: p195
+vulnerable_version_array:
+- :name: 'ruby'
+  :version:
+  - 1.9.3
+  - 2.0
+  - 1.9.3
+  - 1.9.3
+  - 1.9.2
+  - 1.9.3
+  - 1.9
+  - 1.9.1

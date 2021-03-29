@@ -10,10 +10,10 @@ owasp: A9
 release_date: 10/01/2018
 
 kind: :unsafe_dependency_check
-message:|-
-	lib/gyazo/client.rb in the gyazo gem 1.0.0 for Ruby allows local users to write to arbitrary files via a symlink attack on a temporary file, related to time-based filenames.
+message: |-
+ lib/gyazo/client.rb in the gyazo gem 1.0.0 for Ruby allows local users to write to arbitrary files via a symlink attack on a temporary file, related to time-based filenames.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'gyazo'
-	:version:
-		- 1.0.0
+  :version:
+  - 1.0.0

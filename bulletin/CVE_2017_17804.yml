@@ -10,10 +10,10 @@ owasp: A9
 release_date: 20/12/2017
 
 kind: :unsafe_dependency_check
-message:|-
-	In IKARUS anti.virus 2.16.20, the driver file (ntguard.SYS) allows local users to cause a denial of service (BSOD) or possibly have unspecified other impact because of not validating input values from IOCtl 0x83000084.
+message: |-
+ In IKARUS anti.virus 2.16.20, the driver file (ntguard.SYS) allows local users to cause a denial of service (BSOD) or possibly have unspecified other impact because of not validating input values from IOCtl 0x83000084.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'anti.virus'
-	:version:
-		- 2.16.20
+  :version:
+  - 2.16.20

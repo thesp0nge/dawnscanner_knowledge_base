@@ -1,41 +1,21 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2014-7829
+- sinatra
+- padrino
+title: CVE-2014-7829
 cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
-cwe: '22'
-cve:
-osvdb:
+cve: CVE-2014-7829
 owasp: A9
-release_date: 2014-11-18
-kind: :dependency_check
-message: Directory traversal vulnerability in actionpack/lib/action_dispatch/middleware/static.rb
-  in Action Pack in Ruby on Rails 3.x before 3.2.21, 4.0.x before 4.0.12, 4.1.x before
-  4.1.8, and 4.2.x before 4.2.0.beta4, when serve_static_assets is enabled, allows
-  remote attackers to determine the existence of files outside the application root
-  via vectors involving a  (backslash) character, a similar issue to CVE-2014-7818.
-remediation: Please upgrade rails gem to latest version or at least 3.2.21, 4.0.12,
-  4.1.8 or 4.2.0.beta4.
-aux_links:
-- https://groups.google.com/forum/message/raw?msg=rubyonrails-security/rMTQy4oRCGk/loS_CRS8mNEJ
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 18/11/2014
+
+kind: :unsafe_dependency_check
+message: |-
+ Directory traversal vulnerability in actionpack/lib/action_dispatch/middleware/static.rb in Action Pack in Ruby on Rails 3.x before 3.2.21, 4.0.x before 4.0.12, 4.1.x before 4.1.8, and 4.2.x before 4.2.0.beta4, when serve_static_assets is enabled, allows remote attackers to determine the existence of files outside the application root via vectors involving a \ (backslash) character, a similar issue to CVE-2014-7818.
 check_family: :bulletin
-save_minor: false
-save_major: true
-safe_dependencies:
-- :name: rails
+vulnerable_version_array:
+- :name: 'opensuse'
   :version:
-  - 3.2.21
-  - 4.0.12
-  - 4.1.8
-  - 4.2.0.beta4
+  - 12.3
+  - 13.1
+  - 13.2

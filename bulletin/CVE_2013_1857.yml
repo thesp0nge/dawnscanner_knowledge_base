@@ -1,41 +1,19 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2013-1857
+- sinatra
+- padrino
+title: CVE-2013-1857
 cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
-cwe: '79'
-cve:
-osvdb:
-owasp: A3
-release_date: 2013-03-19
-kind: :dependency_check
-message: 'The sanitize helper in lib/action_controller/vendor/html-scanner/html/sanitizer.rb
-  in the Action Pack component in Ruby on Rails before 2.3.18, 3.0.x and 3.1.x before
-  3.1.12, and 3.2.x before 3.2.13 does not properly handle encoded : (colon) characters
-  in URLs, which makes it easier for remote attackers to conduct cross-site scripting
-  (XSS) attacks via a crafted scheme name, as demonstrated by including a &#x3a; sequence.'
-remediation: Please upgrade rails version at least to 2.3.18, 3.0.8, 3.1.10 and 3.2.11.
-  As a general rule, using the latest stable rails version is recommended.
-aux_links:
-- https://groups.google.com/d/msg/rubyonrails-security/zAAU7vGTPvI/1vZDWXqBuXgJ
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+cve: CVE-2013-1857
+owasp: A9
+release_date: 19/03/2013
+
+kind: :unsafe_dependency_check
+message: |-
+ The sanitize helper in lib/action_controller/vendor/html-scanner/html/sanitizer.rb in the Action Pack component in Ruby on Rails before 2.3.18, 3.0.x and 3.1.x before 3.1.12, and 3.2.x before 3.2.13 does not properly handle encoded : (colon) characters in URLs, which makes it easier for remote attackers to conduct cross-site scripting (XSS) attacks via a crafted scheme name, as demonstrated by including a &#x3a; sequence.
 check_family: :bulletin
-save_minor:
-save_major:
-safe_dependencies:
-- :name: rails
+vulnerable_version_array:
+- :name: 'enterprise_linux'
   :version:
-  - 2.3.18
-  - 3.0.8
-  - 3.2.13
-  - 3.1.12
+  - 6.0

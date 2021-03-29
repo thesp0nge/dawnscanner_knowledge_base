@@ -10,10 +10,9 @@ owasp: A9
 release_date: 11/02/2020
 
 kind: :unsafe_dependency_check
-message:|-
-	Ruby PDFKit gem prior to 0.5.3 has a Code Execution Vulnerability
+message: |-
+ Ruby PDFKit gem prior to 0.5.3 has a Code Execution Vulnerability
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'pdfkit'
-	:version:
-		- *
+  :version:

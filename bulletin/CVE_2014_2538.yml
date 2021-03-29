@@ -1,39 +1,25 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2014-2538
+- sinatra
+- padrino
+title: CVE-2014-2538
 cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
-cwe: '79'
-cve:
-osvdb:
-owasp: A3
-release_date: 2014-03-25
-kind: :dependency_check
-message: rack-ssl Gem for Ruby contains a flaw that allows a reflected cross-site
-  scripting (XSS) attack. This flaw exists because the program does not validate input
-  passed via error messages before returning it to users. This may allow a context-dependent
-  attacker to create a specially crafted request that would execute arbitrary script
-  code in a user's browser session within the trust relationship between their browser
-  and the server.
-remediation: A new version for rack-ssl version it has been released. Pleas upgrade
-  at least to version 1.3.4 or higher.
-aux_links:
-- http://seclists.org/oss-sec/2014/q1/594
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+cve: CVE-2014-2538
+owasp: A9
+release_date: 25/03/2014
+
+kind: :unsafe_dependency_check
+message: |-
+ Cross-site scripting (XSS) vulnerability in lib/rack/ssl.rb in the rack-ssl gem before 1.4.0 for Ruby allows remote attackers to inject arbitrary web script or HTML via a URI, which might not be properly handled by third-party adapters such as JRuby-Rack.
 check_family: :bulletin
-save_minor:
-save_major:
-safe_dependencies:
-- :name: rack-ssl
+vulnerable_version_array:
+- :name: 'rack-ssl'
   :version:
-  - 1.3.4
+  - 1.3.1
+  - 1.2.0
+  - 1.0.0
+  - 1.1.0
+  - 1.3.0
+  - 1.3.2
+  - 1.3.3

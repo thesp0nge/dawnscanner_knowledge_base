@@ -1,36 +1,20 @@
---- !ruby/object:Dawn::Kb::RubyVersionCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2011-3009
+title: CVE-2011-3009
 cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
-cwe: '310'
-cve:
-osvdb:
+cve: CVE-2011-3009
 owasp: A9
-release_date: 2011-08-11
-kind: :ruby_version_check
-message: Ruby before 1.8.6-p114 does not reset the random seed upon forking, which
-  makes it easier for context-dependent attackers to predict the values of random
-  numbers by leveraging knowledge of the number sequence obtained in a different child
-  process, a related issue to CVE-2003-0900.
-remediation: Upgrade your ruby interpreter
-aux_links:
-- http://www.openwall.com/lists/oss-security/2011/07/20/1
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 05/08/2011
+
+kind: :unsafe_dependency_check
+message: |-
+ Ruby before 1.8.6-p114 does not reset the random seed upon forking, which makes it easier for context-dependent attackers to predict the values of random numbers by leveraging knowledge of the number sequence obtained in a different child process, a related issue to CVE-2003-0900.
 check_family: :bulletin
-safe_rubies:
-- :engine: ruby
-  :version: 1.8.6
-  :patchlevel: p112
+vulnerable_version_array:
+- :name: 'ruby'
+  :version:
+  - 1.8.6
+  - 1.8.6

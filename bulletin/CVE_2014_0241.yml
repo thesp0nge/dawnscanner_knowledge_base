@@ -10,10 +10,10 @@ owasp: A9
 release_date: 13/12/2019
 
 kind: :unsafe_dependency_check
-message:|-
-	rubygem-hammer_cli_foreman: File /etc/hammer/cli.modules.d/foreman.yml world readable
+message: |-
+ rubygem-hammer_cli_foreman: File /etc/hammer/cli.modules.d/foreman.yml world readable
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'hammer_cli'
-	:version:
-		- -
+  :version:
+  - -

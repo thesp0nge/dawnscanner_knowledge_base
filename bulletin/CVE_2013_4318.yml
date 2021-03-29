@@ -10,10 +10,10 @@ owasp: A9
 release_date: 26/12/2019
 
 kind: :unsafe_dependency_check
-message:|-
-	File injection vulnerability in Ruby gem Features 0.3.0 allows remote attackers to inject malicious html in the /tmp directory.
+message: |-
+ File injection vulnerability in Ruby gem Features 0.3.0 allows remote attackers to inject malicious html in the /tmp directory.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'feature'
-	:version:
-		- 0.3.0
+  :version:
+  - 0.3.0

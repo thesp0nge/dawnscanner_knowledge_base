@@ -10,10 +10,10 @@ owasp: A9
 release_date: 11/01/2020
 
 kind: :unsafe_dependency_check
-message:|-
-	In mruby 2.1.0, there is a stack-based buffer overflow in mrb_str_len_to_dbl in string.c.
+message: |-
+ In mruby 2.1.0, there is a stack-based buffer overflow in mrb_str_len_to_dbl in string.c.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'mruby'
-	:version:
-		- 2.1.0
+  :version:
+  - 2.1.0

@@ -1,38 +1,28 @@
---- !ruby/object:Dawn::Kb::RubyVersionCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2006-1931
+title: CVE-2006-1931
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
-cwe: ''
-cve:
-osvdb:
+cve: CVE-2006-1931
 owasp: A9
-release_date: 2005-06-20
-kind: :ruby_version_check
-message: The HTTP/XMLRPC server in Ruby before 1.8.2 uses blocking sockets, which
-  allows attackers to cause a denial of service (blocked connections) via a large
-  amount of data.
-remediation: Upgrade your ruby interpreter
-aux_links:
-- http://www.securityfocus.com/bid/17645
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 20/04/2006
+
+kind: :unsafe_dependency_check
+message: |-
+ The HTTP/XMLRPC server in Ruby before 1.8.2 uses blocking sockets, which allows attackers to cause a denial of service (blocked connections) via a large amount of data.
 check_family: :bulletin
-safe_rubies:
-- :engine: ruby
-  :version: 1.8.3
-  :patchlevel: p0
-- :engine: ruby
-  :version: 1.6.8
-  :patchlevel: p0
+vulnerable_version_array:
+- :name: 'ruby'
+  :version:
+  - 1.6.1
+  - 1.6.2
+  - 1.6.3
+  - 1.6.4
+  - 1.6.5
+  - 1.6.6
+  - 1.6.7
+  - 1.6
+  - 1.8
+  - 1.8.1

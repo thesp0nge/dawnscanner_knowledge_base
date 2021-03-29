@@ -10,10 +10,9 @@ owasp: A9
 release_date: 03/05/2011
 
 kind: :unsafe_dependency_check
-message:|-
-	Use-after-free vulnerability in Google Chrome before 11.0.696.57 allows remote attackers to cause a denial of service or possibly have unspecified other impact via vectors related to the ruby element and Cascading Style Sheets (CSS) token sequences.
+message: |-
+ Use-after-free vulnerability in Google Chrome before 11.0.696.57 allows remote attackers to cause a denial of service or possibly have unspecified other impact via vectors related to the ruby element and Cascading Style Sheets (CSS) token sequences.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'chrome'
-	:version:
-		- *
+  :version:

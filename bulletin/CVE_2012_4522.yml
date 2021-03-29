@@ -1,39 +1,20 @@
---- !ruby/object:Dawn::Kb::RubyVersionCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2012-4522
+title: CVE-2012-4522
 cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
-cwe: '264'
-cve:
-osvdb:
+cve: CVE-2012-4522
 owasp: A9
-release_date: 2012-11-24
-kind: :ruby_version_check
-message: The rb_get_path_check function in file.c in Ruby 1.9.3 before patchlevel
-  286 and Ruby 2.0.0 before r37163 allows context-dependent attackers to create files
-  in unexpected locations or with unexpected names via a NUL byte in a file path.
-remediation: Upgrade ruby interpreter to latest 1.9.3 patchset or even better use
-  ruby 2.x
-aux_links:
-- http://www.ruby-lang.org/en/news/2012/10/12/poisoned-NUL-byte-vulnerability/
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 24/11/2012
+
+kind: :unsafe_dependency_check
+message: |-
+ The rb_get_path_check function in file.c in Ruby 1.9.3 before patchlevel 286 and Ruby 2.0.0 before r37163 allows context-dependent attackers to create files in unexpected locations or with unexpected names via a NUL byte in a file path.
 check_family: :bulletin
-safe_rubies:
-- :engine: ruby
-  :version: 1.9.3
-  :patchlevel: p286
-- :engine: ruby
-  :version: 2.0.0
-  :patchlevel: p0
+vulnerable_version_array:
+- :name: 'ruby'
+  :version:
+  - 2.0.0
+  - 1.9.3

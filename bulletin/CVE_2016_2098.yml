@@ -1,45 +1,19 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title: Possible remote code execution vulnerability in Action Pack
-name: CVE-2016-2098
-cvss: ''
-cwe: ''
-cve: 2016-2098
-osvdb: ''
+title: CVE-2016-2098
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2016-2098
 owasp: A9
-release_date: 2016-02-29
-kind: :dependency_check
+release_date: 07/04/2016
+
+kind: :unsafe_dependency_check
 message: |-
-  There is a possible remote code execution vulnerability in Action Pack. Applications that pass unverified user input to the render method in a
-  controller or a view may be vulnerable to a code injection.
-remediation: Please upgrade actionpack gem to version 3.2.22.2, 4.1.14.2, 4.2.5.2,
-  5.0.0 or later.
-aux_links:
-- https://groups.google.com/forum/message/raw?msg=rubyonrails-security/ly-IH-fxr_Q/WLoOhcMZIAAJ
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+ Action Pack in Ruby on Rails before 3.2.22.2, 4.x before 4.1.14.2, and 4.2.x before 4.2.5.2 allows remote attackers to execute arbitrary Ruby code by leveraging an application's unrestricted use of the render method.
 check_family: :bulletin
-save_minor:
-save_major:
-safe_dependencies:
-- :name: actionpack
+vulnerable_version_array:
+- :name: 'debian_linux'
   :version:
-  - 3.2.22.2
-  - 4.0.9999
-  - 4.1.14.2
-  - 4.2.5.2
-not_affected:
-  :name: actionpack
-  :version:
-  - 5.0.x
+  - 8.0

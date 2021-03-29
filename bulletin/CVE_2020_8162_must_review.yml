@@ -10,11 +10,9 @@ owasp: A9
 release_date: 19/06/2020
 
 kind: :unsafe_dependency_check
-message:|-
-	A client side enforcement of server side security vulnerability exists in rails < 5.2.4.2 and rails < 6.0.3.1 ActiveStorage's S3 adapter that allows the Content-Length of a direct file upload to be modified by an end user bypassing upload limits.
+message: |-
+ A client side enforcement of server side security vulnerability exists in rails < 5.2.4.2 and rails < 6.0.3.1 ActiveStorage's S3 adapter that allows the Content-Length of a direct file upload to be modified by an end user bypassing upload limits.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'rails'
-	:version:
-		- *
-		- *
+  :version:

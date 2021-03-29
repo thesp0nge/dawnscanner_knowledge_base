@@ -10,10 +10,9 @@ owasp: A9
 release_date: 12/05/2020
 
 kind: :unsafe_dependency_check
-message:|-
-	There is a possible information disclosure issue in Active Resource <v5.1.1 that could allow an attacker to create specially crafted requests to access data in an unexpected way and possibly leak information.
+message: |-
+ There is a possible information disclosure issue in Active Resource <v5.1.1 that could allow an attacker to create specially crafted requests to access data in an unexpected way and possibly leak information.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'active_resource'
-	:version:
-		- *
+  :version:

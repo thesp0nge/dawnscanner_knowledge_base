@@ -1,42 +1,49 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
+- rails
 - sinatra
 - padrino
-- rails
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2015-3226
+title: CVE-2015-3226
 cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
-cwe: '79'
-cve:
-osvdb:
-owasp: A3
-release_date: 2015-07-26
-kind: :dependency_check
-message: Cross-site scripting (XSS) vulnerability in json/encoding.rb in Active Support
-  in Ruby on Rails 3.x and 4.1.x before 4.1.11 and 4.2.x before 4.2.2 allows remote
-  attackers to inject arbitrary web script or HTML via a crafted Hash that is mishandled
-  during JSON encoding.
-remediation: Please upgrade activesupport gem to latest version or at least 4.1.12
-  or 4.2.3. This is automatically done by upgrading your Rails environment if you
-  are using it.
-aux_links:
-- https://groups.google.com/forum/message/raw?msg=rubyonrails-security/7VlB_pck3hU/3QZrGIaQW6cJ
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+cve: CVE-2015-3226
+owasp: A9
+release_date: 26/07/2015
+
+kind: :unsafe_dependency_check
+message: |-
+ Cross-site scripting (XSS) vulnerability in json/encoding.rb in Active Support in Ruby on Rails 3.x and 4.1.x before 4.1.11 and 4.2.x before 4.2.2 allows remote attackers to inject arbitrary web script or HTML via a crafted Hash that is mishandled during JSON encoding.
 check_family: :bulletin
-save_minor: true
-save_major:
-safe_dependencies:
-- :name: activesupport
+vulnerable_version_array:
+- :name: 'rails'
   :version:
-  - 4.1.12
-  - 4.2.3
-  - 3.99.99
+  - 4.1.7
+  - 4.1.6
+  - 3.2.17
+  - 3.2.16
+  - 4.2.1
+  - 4.1.3
+  - 4.1.2
+  - 3.2.12
+  - 3.2.11
+  - 3.2.8
+  - 3.2.7
+  - 3.2.0
+  - 3.1.0
+  - 3.2.4
+  - 3.2.3
+  - 4.1.5
+  - 4.1.4
+  - 3.2.15
+  - 3.2.14
+  - 3.2.13
+  - 3.2.6
+  - 3.2.5
+  - 3.0.0
+  - 4.2.0
+  - 4.1.8
+  - 4.1.1
+  - 4.1.0
+  - 3.2.10
+  - 3.2.9
+  - 3.2.2
+  - 3.2.1

@@ -10,10 +10,9 @@ owasp: A9
 release_date: 21/01/2020
 
 kind: :unsafe_dependency_check
-message:|-
-	The papercrop gem before 0.3.0 for Ruby on Rails does not properly handle crop input.
+message: |-
+ The papercrop gem before 0.3.0 for Ruby on Rails does not properly handle crop input.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'papercrop'
-	:version:
-		- *
+  :version:

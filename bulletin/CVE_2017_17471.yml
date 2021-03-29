@@ -10,10 +10,10 @@ owasp: A9
 release_date: 08/12/2017
 
 kind: :unsafe_dependency_check
-message:|-
-	TG Soft Vir.IT eXplorer Lite 8.5.42 allows local users to cause a denial of service (BSOD) or possibly have unspecified other impact via a \\.\Viragtlt DeviceIoControl request of 0x82732140.
+message: |-
+ TG Soft Vir.IT eXplorer Lite 8.5.42 allows local users to cause a denial of service (BSOD) or possibly have unspecified other impact via a \\.\Viragtlt DeviceIoControl request of 0x82732140.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'vir.it_explorer'
-	:version:
-		- 8.5.42
+  :version:
+  - 8.5.42

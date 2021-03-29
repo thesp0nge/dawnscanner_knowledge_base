@@ -10,10 +10,9 @@ owasp: A9
 release_date: 09/04/2013
 
 kind: :unsafe_dependency_check
-message:|-
-	Cross-site request forgery (CSRF) vulnerability in the omniauth-oauth2 gem 1.1.1 and earlier for Ruby allows remote attackers to hijack the authentication of users for requests that modify session state.
+message: |-
+ Cross-site request forgery (CSRF) vulnerability in the omniauth-oauth2 gem 1.1.1 and earlier for Ruby allows remote attackers to hijack the authentication of users for requests that modify session state.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'omniauth-oauth2'
-	:version:
-		- *
+  :version:

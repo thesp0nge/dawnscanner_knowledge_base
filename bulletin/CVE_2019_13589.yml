@@ -10,10 +10,10 @@ owasp: A9
 release_date: 14/07/2019
 
 kind: :unsafe_dependency_check
-message:|-
-	The paranoid2 gem 1.1.6 for Ruby, as distributed on RubyGems.org, included a code-execution backdoor inserted by a third party. The current version, without this backdoor, is 1.1.5.
+message: |-
+ The paranoid2 gem 1.1.6 for Ruby, as distributed on RubyGems.org, included a code-execution backdoor inserted by a third party. The current version, without this backdoor, is 1.1.5.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'paranoid2'
-	:version:
-		- 1.1.6
+  :version:
+  - 1.1.6

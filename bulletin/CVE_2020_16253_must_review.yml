@@ -10,10 +10,9 @@ owasp: A9
 release_date: 05/08/2020
 
 kind: :unsafe_dependency_check
-message:|-
-	The PgHero gem through 2.6.0 for Ruby allows CSRF.
+message: |-
+ The PgHero gem through 2.6.0 for Ruby allows CSRF.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'pghero'
-	:version:
-		- *
+  :version:

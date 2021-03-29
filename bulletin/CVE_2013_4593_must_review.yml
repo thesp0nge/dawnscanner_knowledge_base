@@ -10,10 +10,9 @@ owasp: A9
 release_date: 11/12/2019
 
 kind: :unsafe_dependency_check
-message:|-
-	RubyGem omniauth-facebook has an access token security vulnerability
+message: |-
+ RubyGem omniauth-facebook has an access token security vulnerability
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'omniauth-facebook'
-	:version:
-		- *
+  :version:

@@ -1,35 +1,21 @@
---- !ruby/object:Dawn::Kb::RubyVersionCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2006-3694
+title: CVE-2006-3694
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:N
-cwe: ''
-cve:
-osvdb:
+cve: CVE-2006-3694
 owasp: A9
-release_date: 2006-07-21
-kind: :ruby_version_check
-message: Multiple unspecified vulnerabilities in Ruby before 1.8.5 allow remote attackers
-  to bypass "safe level" checks via unspecified vectors involving (1) the alias function
-  and (2) "directory operations".
-remediation: Upgrade your ruby interpreter
-aux_links:
-- http://www.securityfocus.com/bid/18944
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :medium
-priority: :medium
+release_date: 21/07/2006
+
+kind: :unsafe_dependency_check
+message: |-
+ Multiple unspecified vulnerabilities in Ruby before 1.8.5 allow remote attackers to bypass "safe level" checks via unspecified vectors involving (1) the alias function and (2) "directory operations".
 check_family: :bulletin
-safe_rubies:
-- :engine: ruby
-  :version: 1.8.5
-  :patchlevel: p0
+vulnerable_version_array:
+- :name: 'ruby'
+  :version:
+  - 1.8.2
+  - 1.8.3
+  - 1.8.4

@@ -1,42 +1,23 @@
---- !ruby/object:Dawn::Kb::RubyVersionCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2011-1005
+title: CVE-2011-1005
 cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
-cwe: '264'
-cve:
-osvdb:
+cve: CVE-2011-1005
 owasp: A9
-release_date: 2011-03-02
-kind: :ruby_version_check
-message: The safe-level feature in Ruby 1.8.6 through 1.8.6-420, 1.8.7 through 1.8.7-330,
-  and 1.8.8dev allows context-dependent attackers to modify strings via the Exception#to_s
-  method, as demonstrated by changing an intended pathname.
-remediation: Please upgrade ruby interpreter up to 1.8.6-p420, up to 1.8.7-p330 or
-  latest version available
-aux_links:
-- http://www.ruby-lang.org/en/news/2011/02/18/exception-methods-can-bypass-safe/
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 02/03/2011
+
+kind: :unsafe_dependency_check
+message: |-
+ The safe-level feature in Ruby 1.8.6 through 1.8.6-420, 1.8.7 through 1.8.7-330, and 1.8.8dev allows context-dependent attackers to modify strings via the Exception#to_s method, as demonstrated by changing an intended pathname.
 check_family: :bulletin
-safe_rubies:
-- :engine: ruby
-  :version: 1.8.6
-  :patchlevel: p421
-- :engine: ruby
-  :version: 1.8.7
-  :patchlevel: p331
-- :engine: ruby
-  :version: 1.8.8
-  :patchlevel: p0
+vulnerable_version_array:
+- :name: 'ruby'
+  :version:
+  - 1.8.7-330
+  - 1.8.8
+  - 1.8.6-420
+  - 1.8.7
+  - 1.8.6

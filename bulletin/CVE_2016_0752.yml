@@ -1,41 +1,69 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2016-0752
-cvss: ''
-cwe: ''
-cve: 2016-0752
-osvdb: ''
+title: CVE-2016-0752
+cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
+cve: CVE-2016-0752
 owasp: A9
-release_date: 2016-01-26
-kind: :dependency_check
-message: There is a possible directory traversal and information leak vulnerability
-  in Action View. Applications that pass unverified user input to the render method
-  in a controller may be vulnerable to an information leak vulnerability.
-remediation: Please upgrade actionview gem to version 3.2.22.1, 4.1.14.1, 4.2.5.1,
-  5.0.0.beta1.1 or later.
-aux_links:
-- http://securitytracker.com/id/1034816
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 16/02/2016
+
+kind: :unsafe_dependency_check
+message: |-
+ Directory traversal vulnerability in Action View in Ruby on Rails before 3.2.22.1, 4.0.x and 4.1.x before 4.1.14.1, 4.2.x before 4.2.5.1, and 5.x before 5.0.0.beta1.1 allows remote attackers to read arbitrary files by leveraging an application's unrestricted use of the render method and providing a .. (dot dot) in a pathname.
 check_family: :bulletin
-save_minor: true
-save_major: true
-safe_dependencies:
-- :name: actionview
+vulnerable_version_array:
+- :name: 'rails'
   :version:
-  - 3.2.22.1
-  - 4.1.14.1
-  - 4.2.5.1
-  - 5.0.0.beta1.1
+  - 4.2.3
+  - 4.2.3
+  - 4.1.10
+  - 4.1.9
+  - 4.1.3
+  - 4.1.2
+  - 4.0.8
+  - 4.0.7
+  - 4.0.3
+  - 4.0.2
+  - 4.0.0
+  - 4.0.0
+  - 4.2.5
+  - 4.2.5
+  - 4.2.0
+  - 4.1.14
+  - 4.1.8
+  - 4.1.7
+  - 4.1.1
+  - 4.1.0
+  - 4.0.6
+  - 4.0.6
+  - 4.0.1
+  - 4.0.1
+  - 4.0.1
+  - 5.0.0
+  - 4.2.5
+  - 4.2.2
+  - 4.2.1
+  - 4.1.11
+  - 4.1.2
+  - 4.1.2
+  - 4.1.2
+  - 4.0.6
+  - 4.0.6
+  - 4.0.10
+  - 4.0.1
+  - 4.0.0
+  - 4.2.4
+  - 4.2.4
+  - 4.1.13
+  - 4.1.12
+  - 4.1.6
+  - 4.1.5
+  - 4.1.4
+  - 4.1.0
+  - 4.0.9
+  - 4.0.5
+  - 4.0.4
+  - 4.0.1
+  - 4.0.0

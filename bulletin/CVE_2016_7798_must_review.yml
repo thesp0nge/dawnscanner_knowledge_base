@@ -10,10 +10,9 @@ owasp: A9
 release_date: 30/01/2017
 
 kind: :unsafe_dependency_check
-message:|-
-	The openssl gem for Ruby uses the same initialization vector (IV) in GCM Mode (aes-*-gcm) when the IV is set before the key, which makes it easier for context-dependent attackers to bypass the encryption protection mechanism.
+message: |-
+ The openssl gem for Ruby uses the same initialization vector (IV) in GCM Mode (aes-*-gcm) when the IV is set before the key, which makes it easier for context-dependent attackers to bypass the encryption protection mechanism.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'openssl'
-	:version:
-		- *
+  :version:

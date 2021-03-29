@@ -10,12 +10,11 @@ owasp: A9
 release_date: 27/03/2019
 
 kind: :unsafe_dependency_check
-message:|-
-	A remote code execution vulnerability in development mode Rails <5.2.2.1, <6.0.0.beta3 can allow an attacker to guess the automatically generated development mode secret token. This secret token can be used in combination with other Rails internals to escalate to a remote code execution exploit.
+message: |-
+ A remote code execution vulnerability in development mode Rails <5.2.2.1, <6.0.0.beta3 can allow an attacker to guess the automatically generated development mode secret token. This secret token can be used in combination with other Rails internals to escalate to a remote code execution exploit.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'rails'
-	:version:
-		- 6.0.0
-		- *
-		- 6.0.0
+  :version:
+  - 6.0.0
+  - 6.0.0

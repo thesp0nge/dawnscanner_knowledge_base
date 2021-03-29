@@ -10,10 +10,9 @@ owasp: A9
 release_date: 22/01/2020
 
 kind: :unsafe_dependency_check
-message:|-
-	BibTeX-ruby before 5.1.0 allows shell command injection due to unsanitized user input being passed directly to the built-in Ruby Kernel.open method through BibTeX.open.
+message: |-
+ BibTeX-ruby before 5.1.0 allows shell command injection due to unsanitized user input being passed directly to the built-in Ruby Kernel.open method through BibTeX.open.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'bibtex-ruby'
-	:version:
-		- *
+  :version:

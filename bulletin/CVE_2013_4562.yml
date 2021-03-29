@@ -1,39 +1,19 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2013-4562
-cvss: not assigned
-cwe: ''
-cve:
-osvdb:
+title: CVE-2013-4562
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cve: CVE-2013-4562
 owasp: A9
-release_date: 2013-11-14
-kind: :dependency_check
-message: Because of the way that omniauth-facebook supports setting a per-request
-  state parameter by storing it in the session, it is possible to circumvent the automatic
-  CSRF protection. Therefore the CSRF added in 1.4.1 should be considered broken.
-  If you are currently providing a custom state, you will need to store and retrieve
-  this yourself (for example, by using the session store) to use 1.5.0.
-remediation: You must upgrade at least to 1.5.0 or later
-aux_links:
-- https://groups.google.com/forum/#!msg/ruby-security-ann/-tJHNlTiPh4/9SJxdEWLIawJ
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 13/05/2014
+
+kind: :unsafe_dependency_check
+message: |-
+ The omniauth-facebook gem 1.4.1 before 1.5.0 does not properly store the session parameter, which allows remote attackers to conduct cross-site request forgery (CSRF) attacks via the state parameter.
 check_family: :bulletin
-save_minor:
-save_major:
-safe_dependencies:
-- :name: omniauth-facebook
+vulnerable_version_array:
+- :name: 'omniauth-facebook'
   :version:
-  - 1.5.0
+  - 1.4.1

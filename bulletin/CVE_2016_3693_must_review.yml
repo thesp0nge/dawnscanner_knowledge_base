@@ -10,10 +10,9 @@ owasp: A9
 release_date: 20/05/2016
 
 kind: :unsafe_dependency_check
-message:|-
-	The Safemode gem before 1.2.4 for Ruby, when initialized with a delegate object that is a Rails controller, allows context-dependent attackers to obtain sensitive information via the inspect method.
+message: |-
+ The Safemode gem before 1.2.4 for Ruby, when initialized with a delegate object that is a Rails controller, allows context-dependent attackers to obtain sensitive information via the inspect method.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'safemode'
-	:version:
-		- *
+  :version:

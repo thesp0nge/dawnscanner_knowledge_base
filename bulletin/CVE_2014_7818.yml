@@ -1,43 +1,152 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2014-7818
+title: CVE-2014-7818
 cvss: AV:N/AC:M/Au:N/C:P/I:N/A:N
-cwe: '22'
-cve:
-osvdb:
+cve: CVE-2014-7818
 owasp: A9
-release_date: 2014-11-08
-kind: :dependency_check
-message: Directory traversal vulnerability in actionpack/lib/action_dispatch/middleware/static.rb
-  in Action Pack in Ruby on Rails 3.x before 3.2.20, 4.0.x before 4.0.11, 4.1.x before
-  4.1.7, and 4.2.x before 4.2.0.beta3, when serve_static_assets is enabled, allows
-  remote attackers to determine the existence of files outside the application root
-  via a /..%2F sequence.
-remediation: Please upgrade rails gem to latest version or at least 3.2.20, 4.0.11,
-  4.1.7 or 4.2.0.beta3. If unsure upgrade to the latest available version.
-aux_links:
-- https://groups.google.com/forum/message/raw?msg=rubyonrails-security/dCp7duBiQgo/v_R_8PFs5IwJ
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 08/11/2014
+
+kind: :unsafe_dependency_check
+message: |-
+ Directory traversal vulnerability in actionpack/lib/action_dispatch/middleware/static.rb in Action Pack in Ruby on Rails 3.x before 3.2.20, 4.0.x before 4.0.11, 4.1.x before 4.1.7, and 4.2.x before 4.2.0.beta3, when serve_static_assets is enabled, allows remote attackers to determine the existence of files outside the application root via a /..%2F sequence.
 check_family: :bulletin
-save_minor:
-save_major: true
-safe_dependencies:
-- :name: rails
+vulnerable_version_array:
+- :name: 'rails'
   :version:
-  - 3.2.20
-  - 4.0.11
-  - 4.1.7
-  - 4.2.0.beta3
+  - 3.0.0
+  - 3.0.0
+  - 3.0.10
+  - 3.0.10
+  - 3.0.16
+  - 3.0.17
+  - 3.0.4
+  - 3.0.7
+  - 3.0.7
+  - 3.0.9
+  - 3.0.9
+  - 3.1.0
+  - 3.1.0
+  - 3.1.1
+  - 3.1.1
+  - 3.1.4
+  - 3.1.5
+  - 3.1.5
+  - 3.2.0
+  - 3.0.0
+  - 3.0.0
+  - 3.0.0
+  - 3.0.1
+  - 3.0.1
+  - 3.0.13
+  - 3.0.14
+  - 3.0.3
+  - 3.0.4
+  - 3.0.6
+  - 3.0.7
+  - 3.0.8
+  - 3.0.9
+  - 3.1.0
+  - 3.1.0
+  - 3.1.1
+  - 3.1.1
+  - 3.2.1
+  - 3.2.16
+  - 3.2.17
+  - 3.2.4
+  - 3.2.4
+  - 4.0.0
+  - 4.0.0
+  - 4.0.2
+  - 4.0.3
+  - 4.0.8
+  - 4.0.9
+  - 4.1.2
+  - 4.1.2
+  - 4.2.0
+  - 3.1.3
+  - 3.1.4
+  - 3.2.0
+  - 3.2.0
+  - 3.2.13
+  - 3.2.15
+  - 3.2.3
+  - 3.2.3
+  - 3.2.3
+  - 4.0.0
+  - 4.0.0
+  - 4.0.1
+  - 4.0.10
+  - 4.0.6
+  - 4.0.7
+  - 4.1.2
+  - 4.1.2
+  - 4.1.6
+  - 4.2.0
+  - 3.0.11
+  - 3.0.12
+  - 3.0.18
+  - 3.0.19
+  - 3.0.2
+  - 3.0.5
+  - 3.0.5
+  - 3.0.8
+  - 3.0.8
+  - 3.0.9
+  - 3.0.9
+  - 3.0.9
+  - 3.1.0
+  - 3.1.0
+  - 3.1.10
+  - 3.1.2
+  - 3.1.6
+  - 3.1.7
+  - 3.2.10
+  - 3.2.11
+  - 3.2.18
+  - 3.2.19
+  - 3.2.5
+  - 3.2.6
+  - 4.0.1
+  - 4.0.1
+  - 4.0.4
+  - 4.0.5
+  - 4.0.10
+  - 4.1.0
+  - 4.1.3
+  - 4.1.4
+  - 3.0.0
+  - 3.0.0
+  - 3.0.12
+  - 3.0.13
+  - 3.0.2
+  - 3.0.20
+  - 3.0.6
+  - 3.0.6
+  - 3.0.8
+  - 3.0.8
+  - 3.1.0
+  - 3.1.0
+  - 3.1.0
+  - 3.1.0
+  - 3.1.2
+  - 3.1.2
+  - 3.1.8
+  - 3.1.9
+  - 3.2.12
+  - 3.2.13
+  - 3.2.2
+  - 3.2.2
+  - 3.2.7
+  - 3.2.8
+  - 4.0.1
+  - 4.0.1
+  - 4.0.6
+  - 4.0.6
+  - 4.0.6
+  - 4.1.0
+  - 4.1.1
+  - 4.1.5
+  - 4.1.6

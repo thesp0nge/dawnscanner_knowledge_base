@@ -10,10 +10,9 @@ owasp: A9
 release_date: 08/02/2007
 
 kind: :unsafe_dependency_check
-message:|-
-	The ruby handlers in the Magnatune component in Amarok do not properly quote text in certain contexts, probably including construction of an unzip command line, which allows attackers to execute arbitrary commands via shell metacharacters.
+message: |-
+ The ruby handlers in the Magnatune component in Amarok do not properly quote text in certain contexts, probably including construction of an unzip command line, which allows attackers to execute arbitrary commands via shell metacharacters.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'amarok'
-	:version:
-		- *
+  :version:

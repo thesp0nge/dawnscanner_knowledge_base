@@ -1,37 +1,20 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
-- padrino
 - sinatra
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2013-1812
+- padrino
+title: CVE-2013-1812
 cvss: AV:N/AC:M/Au:N/C:N/I:N/A:P
-cwe: '399'
-cve:
-osvdb:
+cve: CVE-2013-1812
 owasp: A9
-release_date: 2013-12-12
-kind: :dependency_check
-message: The ruby-openid gem before 2.2.2 for Ruby allows remote OpenID providers
-  to cause a denial of service (CPU consumption) via (1) a large XRDS document or
-  (2) an XML Entity Expansion (XEE) attack.
-remediation: Please upgrade ruby-openid rubygem
-aux_links:
-- http://www.openwall.com/lists/oss-security/2013/03/03/8
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 12/12/2013
+
+kind: :unsafe_dependency_check
+message: |-
+ The ruby-openid gem before 2.2.2 for Ruby allows remote OpenID providers to cause a denial of service (CPU consumption) via (1) a large XRDS document or (2) an XML Entity Expansion (XEE) attack.
 check_family: :bulletin
-save_minor:
-save_major:
-safe_dependencies:
-- :name: ruby-openid
+vulnerable_version_array:
+- :name: 'fedora'
   :version:
-  - 2.2.2
+  - 18
+  - 17

@@ -1,36 +1,20 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2006-2582
+title: CVE-2006-2582
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
-cwe: ''
-cve:
-osvdb:
+cve: CVE-2006-2582
 owasp: A9
-release_date: 2006-05-25
-kind: :dependency_check
-message: The editing form in RWiki 2.1.0pre1 through 2.1.0 allows remote attackers
-  to execute arbitrary Ruby code via unknown attack vectors.
-remediation: Please upgrade rwiki to version 2.1.0 or above
-aux_links:
-- http://secunia.com/advisories/20264
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 25/05/2006
+
+kind: :unsafe_dependency_check
+message: |-
+ The editing form in RWiki 2.1.0pre1 through 2.1.0 allows remote attackers to execute arbitrary Ruby code via unknown attack vectors.
 check_family: :bulletin
-save_minor:
-save_major:
-safe_dependencies:
-- :name: rwiki
+vulnerable_version_array:
+- :name: 'rwiki'
   :version:
-  - 2.1.0
+  - 2.1.0pre1
+  - 2.1.0pre2

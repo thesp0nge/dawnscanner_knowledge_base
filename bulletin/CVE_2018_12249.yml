@@ -10,10 +10,10 @@ owasp: A9
 release_date: 12/06/2018
 
 kind: :unsafe_dependency_check
-message:|-
-	An issue was discovered in mruby 1.4.1. There is a NULL pointer dereference in mrb_class_real because "class BasicObject" is not properly supported in class.c.
+message: |-
+ An issue was discovered in mruby 1.4.1. There is a NULL pointer dereference in mrb_class_real because "class BasicObject" is not properly supported in class.c.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'mruby'
-	:version:
-		- 1.4.1
+  :version:
+  - 1.4.1

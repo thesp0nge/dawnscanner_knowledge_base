@@ -10,10 +10,9 @@ owasp: A9
 release_date: 02/07/2020
 
 kind: :unsafe_dependency_check
-message:|-
-	A denial of service vulnerability exists in Rails <6.0.3.2 that allowed an untrusted user to run any pending migrations on a Rails app running in production.
+message: |-
+ A denial of service vulnerability exists in Rails <6.0.3.2 that allowed an untrusted user to run any pending migrations on a Rails app running in production.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'rails'
-	:version:
-		- *
+  :version:

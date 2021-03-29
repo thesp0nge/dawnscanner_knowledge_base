@@ -10,14 +10,11 @@ owasp: A9
 release_date: 16/11/2018
 
 kind: :unsafe_dependency_check
-message:|-
-	An issue was discovered in Ruby before 2.3.8, 2.4.x before 2.4.5, 2.5.x before 2.5.2, and 2.6.x before 2.6.0-preview3. It does not taint strings that result from unpacking tainted strings with some formats.
+message: |-
+ An issue was discovered in Ruby before 2.3.8, 2.4.x before 2.4.5, 2.5.x before 2.5.2, and 2.6.x before 2.6.0-preview3. It does not taint strings that result from unpacking tainted strings with some formats.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'ruby'
-	:version:
-		- *
-		- *
-		- 2.6.0
-		- 2.6.0
-		- *
+  :version:
+  - 2.6.0
+  - 2.6.0

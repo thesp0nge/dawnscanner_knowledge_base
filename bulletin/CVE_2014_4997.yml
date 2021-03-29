@@ -10,10 +10,10 @@ owasp: A9
 release_date: 10/01/2018
 
 kind: :unsafe_dependency_check
-message:|-
-	lib/commands/setup.rb in the point-cli gem 0.0.1 for Ruby places credentials on the curl command line, which allows local users to obtain sensitive information by listing the process.
+message: |-
+ lib/commands/setup.rb in the point-cli gem 0.0.1 for Ruby places credentials on the curl command line, which allows local users to obtain sensitive information by listing the process.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'point-cli'
-	:version:
-		- 0.0.1
+  :version:
+  - 0.0.1

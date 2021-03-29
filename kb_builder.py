@@ -58,8 +58,8 @@ def fetch(k):
             out += "release_date: %s\n" % datetime.datetime.strftime(dateutil.parser.parse(i["publishedDate"]).date(), "%d/%m/%Y")
             out += "\n"
             out += "kind: :unsafe_dependency_check\n"
-            out += "message:|-\n"
-            out += "\t%s" % i["cve"]["description"]["description_data"][0]["value"]
+            out += "message: |-\n"
+            out += " %s" % i["cve"]["description"]["description_data"][0]["value"]
             out += "\n"
             out += "check_family: :bulletin\n"
             out += "vulnerable_version_array:\n"
@@ -69,13 +69,13 @@ def fetch(k):
                 cpe_match_array = i["configurations"]["nodes"][0]["cpe_match"]
                 out += "- :name: '%s'" % CPE(cpe_match_array[0]["cpe23Uri"]).get_product()[0]
                 out += "\n"
-                out += "\t:version:\n"
+                out += "  :version:\n"
                 for cpe in cpe_match_array:
                     if cpe["vulnerable"]:
                         cpe_uri = CPE(cpe["cpe23Uri"])
-                        out += "\t\t- %s" % cpe_uri.get_version()[0]
-                        out += "\n"
                         if cpe_uri.get_version()[0] != "*":
+                            out += "  - %s" % cpe_uri.get_version()[0]
+                            out += "\n"
                             needs_review = False
             if needs_review:
                 filename += "_must_review"

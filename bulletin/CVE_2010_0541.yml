@@ -10,19 +10,19 @@ owasp: A9
 release_date: 17/06/2010
 
 kind: :unsafe_dependency_check
-message:|-
-	Cross-site scripting (XSS) vulnerability in the WEBrick HTTP server in Ruby in Apple Mac OS X 10.5.8, and 10.6 before 10.6.4, allows remote attackers to inject arbitrary web script or HTML via a crafted URI that triggers a UTF-7 error page.
+message: |-
+ Cross-site scripting (XSS) vulnerability in the WEBrick HTTP server in Ruby in Apple Mac OS X 10.5.8, and 10.6 before 10.6.4, allows remote attackers to inject arbitrary web script or HTML via a crafted URI that triggers a UTF-7 error page.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'mac_os_x'
-	:version:
-		- 10.6.2
-		- 10.6.0
-		- 10.6.0
-		- 10.6.1
-		- 10.6.3
-		- 10.6.3
-		- 10.5.8
-		- 10.5.8
-		- 10.6.1
-		- 10.6.2
+  :version:
+  - 10.6.2
+  - 10.6.0
+  - 10.6.0
+  - 10.6.1
+  - 10.6.3
+  - 10.6.3
+  - 10.5.8
+  - 10.5.8
+  - 10.6.1
+  - 10.6.2

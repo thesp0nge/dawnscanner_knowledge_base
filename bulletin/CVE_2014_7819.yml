@@ -1,59 +1,21 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2014-7819
-cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N)
-cwe: '22'
-cve:
-osvdb:
+title: CVE-2014-7819
+cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
+cve: CVE-2014-7819
 owasp: A9
-release_date: 2014-11-08
-kind: :dependency_check
-message: Multiple directory traversal vulnerabilities in server.rb in Sprockets before
-  2.0.5, 2.1.x before 2.1.4, 2.2.x before 2.2.3, 2.3.x before 2.3.3, 2.4.x before
-  2.4.6, 2.5.x before 2.5.1, 2.6.x and 2.7.x before 2.7.1, 2.8.x before 2.8.3, 2.9.x
-  before 2.9.4, 2.10.x before 2.10.2, 2.11.x before 2.11.3, 2.12.x before 2.12.3,
-  and 3.x before 3.0.0.beta.3, as distributed with Ruby on Rails 3.x and 4.x, allow
-  remote attackers to determine the existence of files outside the application root
-  via a ../ (dot dot slash) sequence with (1) double slashes or (2) URL encoding.
-remediation: Please upgrade rails gem to latest version or at least 3.2.18 or 4.1.8.
-  If you're using sprockets standalone, please upgrade it to the latest version.
-aux_links:
-- https://groups.google.com/forum/message/raw?msg=rubyonrails-security/wQBeGXqGs3E/JqUMB6fhh3gJ
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 08/11/2014
+
+kind: :unsafe_dependency_check
+message: |-
+ Multiple directory traversal vulnerabilities in server.rb in Sprockets before 2.0.5, 2.1.x before 2.1.4, 2.2.x before 2.2.3, 2.3.x before 2.3.3, 2.4.x before 2.4.6, 2.5.x before 2.5.1, 2.6.x and 2.7.x before 2.7.1, 2.8.x before 2.8.3, 2.9.x before 2.9.4, 2.10.x before 2.10.2, 2.11.x before 2.11.3, 2.12.x before 2.12.3, and 3.x before 3.0.0.beta.3, as distributed with Ruby on Rails 3.x and 4.x, allow remote attackers to determine the existence of files outside the application root via a ../ (dot dot slash) sequence with (1) double slashes or (2) URL encoding.
 check_family: :bulletin
-save_minor: true
-save_major: true
-safe_dependencies:
-- :name: rails
+vulnerable_version_array:
+- :name: 'sprockets'
   :version:
-  - 3.2.18
-  - 4.1.8
-- :name: sprockets
-  :version:
-  - 2.0.6
-  - 2.1.4
-  - 2.2.3
-  - 2.3.3
-  - 2.4.6
-  - 2.5.1
-  - 2.6.1
-  - 2.7.1
-  - 2.8.3
-  - 2.9.4
-  - 2.10.2
-  - 2.11.3
-  - 2.12.3
-  - 3.0.0.beta3
+  - 3.0.0
+  - 3.0.0
+  - 2.6.0

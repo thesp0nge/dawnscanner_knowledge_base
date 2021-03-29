@@ -10,7 +10,7 @@ owasp: A9
 release_date: 29/08/2013
 
 kind: :unsafe_dependency_check
-message:|-
-	lib/sounder/sound.rb in the sounder gem 1.0.1 for Ruby allows remote attackers to execute arbitrary commands via shell metacharacters in a filename.
+message: |-
+ lib/sounder/sound.rb in the sounder gem 1.0.1 for Ruby allows remote attackers to execute arbitrary commands via shell metacharacters in a filename.
 check_family: :bulletin
 vulnerable_version_array:

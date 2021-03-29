@@ -1,41 +1,29 @@
---- !ruby/object:Dawn::Kb::RubyVersionCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2012-4464
+title: CVE-2012-4464
 cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
-cwe: '264'
-cve:
-osvdb:
+cve: CVE-2012-4464
 owasp: A9
-release_date: 2013-04-25
-kind: :ruby_version_check
-message: 'Ruby 1.9.3 before patchlevel 286 and 2.0 before revision r37068 allows context-dependent
-  attackers to bypass safe-level restrictions and modify untainted strings via the
-  (1) exc_to_s or (2) name_err_to_s API function, which marks the string as tainted,
-  a different vulnerability than CVE-2012-4466. NOTE: this issue might exist because
-  of a CVE-2011-1005 regression.'
-remediation: Please upgrade ruby interpreter to 1.9.3-p286 or 2.0.0-p195 or latest
-  version available
-aux_links:
-- http://www.ruby-lang.org/en/news/2012/10/12/cve-2012-4464-cve-2012-4466/
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 25/04/2013
+
+kind: :unsafe_dependency_check
+message: |-
+ Ruby 1.9.3 before patchlevel 286 and 2.0 before revision r37068 allows context-dependent attackers to bypass safe-level restrictions and modify untainted strings via the (1) exc_to_s or (2) name_err_to_s API function, which marks the string as tainted, a different vulnerability than CVE-2012-4466.  NOTE: this issue might exist because of a CVE-2011-1005 regression.
 check_family: :bulletin
-safe_rubies:
-- :engine: ruby
-  :version: 1.9.3
-  :patchlevel: p286
-- :engine: ruby
-  :version: 2.0.0
-  :patchlevel: p195
+vulnerable_version_array:
+- :name: 'ruby'
+  :version:
+  - 2.0.0
+  - 2.0.0
+  - 2.0
+  - 1.9.3
+  - 2.0.0
+  - 1.9.3
+  - 2.0.0
+  - 1.9.3
+  - 1.9.3
+  - 2.0.0
+  - 2.0.0

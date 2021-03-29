@@ -10,10 +10,9 @@ owasp: A9
 release_date: 29/04/2015
 
 kind: :unsafe_dependency_check
-message:|-
-	REST client for Ruby (aka rest-client) before 1.7.3 logs usernames and passwords, which allows local users to obtain sensitive information by reading the log.
+message: |-
+ REST client for Ruby (aka rest-client) before 1.7.3 logs usernames and passwords, which allows local users to obtain sensitive information by reading the log.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'rest-client'
-	:version:
-		- *
+  :version:

@@ -10,10 +10,9 @@ owasp: A9
 release_date: 19/06/2020
 
 kind: :unsafe_dependency_check
-message:|-
-	A CSRF vulnerability exists in rails <= 6.0.3 rails-ujs module that could allow attackers to send CSRF tokens to wrong domains.
+message: |-
+ A CSRF vulnerability exists in rails <= 6.0.3 rails-ujs module that could allow attackers to send CSRF tokens to wrong domains.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'rails'
-	:version:
-		- *
+  :version:

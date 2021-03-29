@@ -10,10 +10,10 @@ owasp: A9
 release_date: 04/11/2009
 
 kind: :unsafe_dependency_check
-message:|-
-	Buffer overflow in Softonic International SciTE 1.72 allows user-assisted remote attackers to cause a denial of service (application crash) via a Ruby (.rb) file containing a long string, which triggers the crash when a scroll bar is used.
+message: |-
+ Buffer overflow in Softonic International SciTE 1.72 allows user-assisted remote attackers to cause a denial of service (application crash) via a Ruby (.rb) file containing a long string, which triggers the crash when a scroll bar is used.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'scite'
-	:version:
-		- 1.72
+  :version:
+  - 1.72

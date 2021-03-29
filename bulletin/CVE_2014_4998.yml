@@ -10,10 +10,10 @@ owasp: A9
 release_date: 10/01/2018
 
 kind: :unsafe_dependency_check
-message:|-
-	test/tc_database.rb in the lean-ruport gem 0.3.8 for Ruby places the mysql user password on the mysqldump command line, which allows local users to obtain sensitive information by listing the process.
+message: |-
+ test/tc_database.rb in the lean-ruport gem 0.3.8 for Ruby places the mysql user password on the mysqldump command line, which allows local users to obtain sensitive information by listing the process.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'lean-ruport'
-	:version:
-		- 0.3.8
+  :version:
+  - 0.3.8

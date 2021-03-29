@@ -1,36 +1,28 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2013-2090
-cvss: ''
-cwe: ''
-cve:
-osvdb:
+title: CVE-2013-2090
+cvss: AV:N/AC:M/Au:N/C:C/I:C/A:C
+cve: CVE-2013-2090
 owasp: A9
-release_date: 2013-05-14
-kind: :dependency_check
-message: Ruby Gem Creme Fraiche version 0.6 suffers from a remote command injection
-  vulnerability due to unsanitized input.
-remediation: Please upgrade cremefraiche gem version to the latest available.
-aux_links:
-- http://packetstormsecurity.com/files/cve/CVE-2013-2090
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 27/05/2014
+
+kind: :unsafe_dependency_check
+message: |-
+ The set_meta_data function in lib/cremefraiche.rb in the Creme Fraiche gem before 0.6.1 for Ruby allows remote attackers to execute arbitrary commands via shell metacharacters in the file name of an email attachment.  NOTE: some of these details are obtained from third party information.
 check_family: :bulletin
-save_minor:
-save_major:
-safe_dependencies:
-- :name: cremefraiche
+vulnerable_version_array:
+- :name: 'creme_fraiche'
   :version:
-  - 0.6.2
+  - 0.5.2
+  - 0.5.1
+  - 0.4.5
+  - 0.4.5.5
+  - 0.4.5.4
+  - 0.5
+  - 0.4.5.6
+  - 0.5.3
+  - 0.4.5.2
+  - 0.4.5.1

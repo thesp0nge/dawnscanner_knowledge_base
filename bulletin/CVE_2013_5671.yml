@@ -1,37 +1,19 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2013-5671
-cvss: ''
-cwe: ''
-cve:
-osvdb:
+title: CVE-2013-5671
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2013-5671
 owasp: A9
-release_date: 2013-09-03
-kind: :dependency_check
-message: fog-dragonfly Gem for Ruby contains a flaw that is due to the program failing
-  to properly sanitize input passed via the imagemagickutils.rb script. This may allow
-  a remote attacker to execute arbitrary commands.
-remediation: Please upgrade fog-dragonfly version up to version 0.8.2.
-aux_links:
-- http://seclists.org/fulldisclosure/2013/Sep/18
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 12/05/2014
+
+kind: :unsafe_dependency_check
+message: |-
+ lib/dragonfly/imagemagickutils.rb in the fog-dragonfly gem 0.8.2 for Ruby allows remote attackers to execute arbitrary commands via unspecified vectors.
 check_family: :bulletin
-save_minor:
-save_major:
-safe_dependencies:
-- :name: fog-dragonfly
+vulnerable_version_array:
+- :name: 'fog-dragonfly'
   :version:
-  - 0.8.3
+  - 0.8.2

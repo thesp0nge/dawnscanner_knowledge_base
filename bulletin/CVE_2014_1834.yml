@@ -10,10 +10,10 @@ owasp: A9
 release_date: 02/02/2018
 
 kind: :unsafe_dependency_check
-message:|-
-	The perform_request function in /lib/echor/backplane.rb in echor 0.1.6 Ruby Gem allows local users to inject arbitrary code by adding a semi-colon in their username or password.
+message: |-
+ The perform_request function in /lib/echor/backplane.rb in echor 0.1.6 Ruby Gem allows local users to inject arbitrary code by adding a semi-colon in their username or password.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'echor'
-	:version:
-		- 0.1.6
+  :version:
+  - 0.1.6

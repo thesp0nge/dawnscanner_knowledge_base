@@ -1,39 +1,29 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2014-0080
+- sinatra
+- padrino
+title: CVE-2014-0080
 cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
-cwe: '89'
-cve:
-osvdb:
-owasp: A1
-release_date: 2014-02-20
-kind: :dependency_check
-message: SQL injection vulnerability in activerecord/lib/active_record/connection_adapters/postgresql/cast.rb
-  in Active Record in Ruby on Rails 4.0.x before 4.0.3, and 4.1.0.beta1, when PostgreSQL
-  is used, allows remote attackers to execute "add data" SQL commands via vectors
-  involving  (backslash) characters that are not properly handled in operations on
-  array columns.
-remediation: Please upgrade rails version at least to 4.0.3 or 4.1.0.beta2. As a general
-  rule, using the latest stable rails version is recommended.
-aux_links:
-- https://groups.google.com/forum/message/raw?msg=rubyonrails-security/Wu96YkTUR6s/pPLBMZrlwvYJ
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+cve: CVE-2014-0080
+owasp: A9
+release_date: 20/02/2014
+
+kind: :unsafe_dependency_check
+message: |-
+ SQL injection vulnerability in activerecord/lib/active_record/connection_adapters/postgresql/cast.rb in Active Record in Ruby on Rails 4.0.x before 4.0.3, and 4.1.0.beta1, when PostgreSQL is used, allows remote attackers to execute "add data" SQL commands via vectors involving \ (backslash) characters that are not properly handled in operations on array columns.
 check_family: :bulletin
-save_minor:
-save_major: true
-safe_dependencies:
-- :name: rails
+vulnerable_version_array:
+- :name: 'rails'
   :version:
-  - 4.0.3
-  - 4.1.0.beta2
+  - 4.0.2
+  - 4.0.1
+  - 4.0.1
+  - 4.1.0
+  - 4.0.0
+  - 4.0.0
+  - 4.0.0
+  - 4.0.1
+  - 4.0.1
+  - 4.0.1
+  - 4.0.0

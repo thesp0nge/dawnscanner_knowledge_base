@@ -1,39 +1,21 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2006-6852
+title: CVE-2006-6852
 cvss: AV:N/AC:M/Au:S/C:P/I:P/A:P
-cwe: ''
-cve:
-osvdb:
+cve: CVE-2006-6852
 owasp: A9
-release_date: 2006-12-31
-kind: :dependency_check
-message: 'Eval injection vulnerability in tDiary 2.0.3 and 2.1.4.20061127 allows remote
-  authenticated users to execute arbitrary Ruby code via unspecified vectors, possibly
-  related to incorrect input validation by (1) conf.rhtml and (2) i.conf.rhtml. NOTE:
-  some of these details are obtained from third party information.'
-remediation: Please upgrade tdiary version to the latest version.
-aux_links:
-- http://www.tdiary.org/20061210.html
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 31/12/2006
+
+kind: :unsafe_dependency_check
+message: |-
+ Eval injection vulnerability in tDiary 2.0.3 and 2.1.4.200 61127 allows remote authenticated users to execute arbitrary Ruby code via unspecified vectors, possibly related to incorrect input validation by (1) conf.rhtml and (2) i.conf.rhtml.  NOTE: some of these details are obtained from third party information.
 check_family: :bulletin
-save_minor:
-save_major:
-safe_dependencies:
-- :name: tdiary
+vulnerable_version_array:
+- :name: 'tdiary'
   :version:
-  - 2.0.4
-  - 2.1.5
+  - 2.0.1
+  - 2.0.2
+  - 2.0.3

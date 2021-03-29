@@ -10,10 +10,9 @@ owasp: A9
 release_date: 09/10/2019
 
 kind: :unsafe_dependency_check
-message:|-
-	The netaddr gem before 2.0.4 for Ruby has misconfigured file permissions, such that a gem install may result in 0777 permissions in the target filesystem.
+message: |-
+ The netaddr gem before 2.0.4 for Ruby has misconfigured file permissions, such that a gem install may result in 0777 permissions in the target filesystem.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'netaddr'
-	:version:
-		- *
+  :version:

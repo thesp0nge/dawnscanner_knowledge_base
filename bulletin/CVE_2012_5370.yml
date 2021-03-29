@@ -1,38 +1,19 @@
---- !ruby/object:Dawn::Kb::RubyVersionCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2012-5370
+title: CVE-2012-5370
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
-cwe: '310'
-cve:
-osvdb:
+cve: CVE-2012-5370
 owasp: A9
-release_date: 2012-11-28
-kind: :ruby_version_check
-message: JRuby computes hash values without properly restricting the ability to trigger
-  hash collisions predictably, which allows context-dependent attackers to cause a
-  denial of service (CPU consumption) via crafted input to an application that maintains
-  a hash table, as demonstrated by a universal multicollision attack against the MurmurHash2
-  algorithm, a different vulnerability than CVE-2011-4838.
-remediation: At the moment we're writing this (May 2013) there is no mitigation against
-  this vulnerability. You must consider changing your hashing algorithm
-aux_links:
-- https://bugzilla.redhat.com/show_bug.cgi?id=880671
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 28/11/2012
+
+kind: :unsafe_dependency_check
+message: |-
+ JRuby computes hash values without properly restricting the ability to trigger hash collisions predictably, which allows context-dependent attackers to cause a denial of service (CPU consumption) via crafted input to an application that maintains a hash table, as demonstrated by a universal multicollision attack against the MurmurHash2 algorithm, a different vulnerability than CVE-2011-4838.
 check_family: :bulletin
-safe_rubies:
-- :engine: jruby
-  :version: 999.999.999
-  :patchlevel: p999
+vulnerable_version_array:
+- :name: 'jruby'
+  :version:
+  - -

@@ -1,38 +1,52 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2011-2929
+- sinatra
+- padrino
+title: CVE-2011-2929
 cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
-cwe: '20'
-cve:
-osvdb:
+cve: CVE-2011-2929
 owasp: A9
-release_date: 2011-08-29
-kind: :dependency_check
-message: The template selection functionality in actionpack/lib/action_view/template/resolver.rb
-  in Ruby on Rails 3.0.x before 3.0.10 and 3.1.x before 3.1.0.rc6 does not properly
-  handle glob characters, which allows remote attackers to render arbitrary views
-  via a crafted URL, related to a "filter skipping vulnerability."
-remediation: Please upgrade rails version at least to 3.1.0 or 3.0.10. As a general
-  rule, using the latest stable rails version is recommended.
-aux_links:
-- https://github.com/rails/rails/commit/5f94b93279f6d0682fafb237c301302c107a9552
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 29/08/2011
+
+kind: :unsafe_dependency_check
+message: |-
+ The template selection functionality in actionpack/lib/action_view/template/resolver.rb in Ruby on Rails 3.0.x before 3.0.10 and 3.1.x before 3.1.0.rc6 does not properly handle glob characters, which allows remote attackers to render arbitrary views via a crafted URL, related to a "filter skipping vulnerability."
 check_family: :bulletin
-save_minor:
-save_major:
-safe_dependencies:
-- :name: rails
+vulnerable_version_array:
+- :name: 'rails'
   :version:
-  - 3.1.0
+  - 3.0.8
+  - 3.0.8
+  - 3.0.4
+  - 3.0.2
+  - 3.0.9
+  - 3.0.1
+  - 3.0.0
+  - 3.0.6
+  - 3.0.7
+  - 3.0.4
+  - 3.0.7
+  - 3.0.9
+  - 3.0.9
   - 3.0.10
+  - 3.0.0
+  - 3.0.8
+  - 3.0.5
+  - 3.0.8
+  - 3.0.5
+  - 3.0.9
+  - 3.0.2
+  - 3.0.9
+  - 3.0.0
+  - 3.0.0
+  - 3.0.0
+  - 3.0.6
+  - 3.0.6
+  - 3.0.7
+  - 3.0.8
+  - 3.0.1
+  - 3.0.3
+  - 3.0.9
+  - 3.0.0
+  - 3.0.0

@@ -10,10 +10,10 @@ owasp: A9
 release_date: 11/01/2020
 
 kind: :unsafe_dependency_check
-message:|-
-	In mruby 2.1.0, there is a use-after-free in hash_slice in mrbgems/mruby-hash-ext/src/hash-ext.c.
+message: |-
+ In mruby 2.1.0, there is a use-after-free in hash_slice in mrbgems/mruby-hash-ext/src/hash-ext.c.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'mruby'
-	:version:
-		- 2.1.0
+  :version:
+  - 2.1.0

@@ -10,23 +10,22 @@ owasp: A9
 release_date: 31/08/2017
 
 kind: :unsafe_dependency_check
-message:|-
-	Ruby through 2.2.7, 2.3.x through 2.3.4, and 2.4.x through 2.4.1 can expose arbitrary memory during a JSON.generate call. The issues lies in using strdup in ext/json/ext/generator/generator.c, which will stop after encountering a '\0' byte, returning a pointer to a string of length zero, which is not the length stored in space_len.
+message: |-
+ Ruby through 2.2.7, 2.3.x through 2.3.4, and 2.4.x through 2.4.1 can expose arbitrary memory during a JSON.generate call. The issues lies in using strdup in ext/json/ext/generator/generator.c, which will stop after encountering a '\0' byte, returning a pointer to a string of length zero, which is not the length stored in space_len.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'ruby'
-	:version:
-		- 2.4.1
-		- 2.4.0
-		- 2.4.0
-		- 2.3.1
-		- 2.3.0
-		- *
-		- 2.4.0
-		- 2.3.4
-		- 2.3.3
-		- 2.3.2
-		- 2.4.0
-		- 2.4.0
-		- 2.3.0
-		- 2.3.0
+  :version:
+  - 2.4.1
+  - 2.4.0
+  - 2.4.0
+  - 2.3.1
+  - 2.3.0
+  - 2.4.0
+  - 2.3.4
+  - 2.3.3
+  - 2.3.2
+  - 2.4.0
+  - 2.4.0
+  - 2.3.0
+  - 2.3.0

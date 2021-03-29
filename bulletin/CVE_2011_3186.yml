@@ -1,36 +1,25 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2011-3186
+- sinatra
+- padrino
+title: CVE-2011-3186
 cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
-cwe: '94'
-cve:
-osvdb:
+cve: CVE-2011-3186
 owasp: A9
-release_date: 2011-08-29
-kind: :dependency_check
-message: CRLF injection vulnerability in actionpack/lib/action_controller/response.rb
-  in Ruby on Rails 2.3.x before 2.3.13 allows remote attackers to inject arbitrary
-  HTTP headers and conduct HTTP response splitting attacks via the Content-Type header.
-remediation: Please upgrade rails version at least to 2.3.13. As a general rule, using
-  the latest stable rails version is recommended.
-aux_links:
-- https://github.com/rails/rails/commit/11dafeaa7533be26441a63618be93a03869c83a9
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 29/08/2011
+
+kind: :unsafe_dependency_check
+message: |-
+ CRLF injection vulnerability in actionpack/lib/action_controller/response.rb in Ruby on Rails 2.3.x before 2.3.13 allows remote attackers to inject arbitrary HTTP headers and conduct HTTP response splitting attacks via the Content-Type header.
 check_family: :bulletin
-save_minor:
-save_major:
-safe_dependencies:
-- :name: rails
+vulnerable_version_array:
+- :name: 'rails'
   :version:
-  - 2.3.13
+  - 2.3.12
+  - 2.3.3
+  - 2.3.9
+  - 2.3.4
+  - 2.3.11
+  - 2.3.10
+  - 2.3.2

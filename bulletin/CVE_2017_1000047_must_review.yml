@@ -10,10 +10,9 @@ owasp: A9
 release_date: 17/07/2017
 
 kind: :unsafe_dependency_check
-message:|-
-	rbenv (all current versions) is vulnerable to Directory Traversal in the specification of Ruby version resulting in arbitrary code execution
+message: |-
+ rbenv (all current versions) is vulnerable to Directory Traversal in the specification of Ruby version resulting in arbitrary code execution
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'rbenv'
-	:version:
-		- *
+  :version:

@@ -10,10 +10,10 @@ owasp: A9
 release_date: 10/01/2018
 
 kind: :unsafe_dependency_check
-message:|-
-	lib/vlad/dba/mysql.rb in the VladTheEnterprising gem 0.2 for Ruby allows local users to write to arbitrary files via a symlink attack on /tmp/my.cnf.#{target_host}.
+message: |-
+ lib/vlad/dba/mysql.rb in the VladTheEnterprising gem 0.2 for Ruby allows local users to write to arbitrary files via a symlink attack on /tmp/my.cnf.#{target_host}.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'vladtheenterprising'
-	:version:
-		- 0.2.0
+  :version:
+  - 0.2.0

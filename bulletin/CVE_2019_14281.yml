@@ -10,10 +10,10 @@ owasp: A9
 release_date: 26/07/2019
 
 kind: :unsafe_dependency_check
-message:|-
-	The datagrid gem 1.0.6 for Ruby, as distributed on RubyGems.org, included a code-execution backdoor inserted by a third party.
+message: |-
+ The datagrid gem 1.0.6 for Ruby, as distributed on RubyGems.org, included a code-execution backdoor inserted by a third party.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'datagrid'
-	:version:
-		- 1.0.6
+  :version:
+  - 1.0.6

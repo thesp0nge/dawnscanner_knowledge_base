@@ -1,41 +1,40 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
+- rails
 - sinatra
 - padrino
-- rails
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2014-0036
+title: CVE-2014-0036
 cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
-cwe: '20'
-cve:
-osvdb:
+cve: CVE-2014-0036
 owasp: A9
-release_date: 2014-03-05
-kind: :dependency_check
-message: rbovirt Gem for Ruby contains a flaw related to certificate validation. The
-  issue is due to the program failing to validate SSL certificates. This may allow
-  an attacker with access to network traffic (e.g. MiTM, DNS cache poisoning) to spoof
-  the SSL server via an arbitrary certificate that appears valid. Such an attack would
-  allow for the interception of sensitive traffic, and potentially allow for the injection
-  of content into the SSL stream.
-remediation: Please upgrade rbovirt version at least to 0.0.24. As a general rule,
-  using the latest version is recommended.
-aux_links:
-- http://www.securityfocus.com/bid/66006
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 17/04/2014
+
+kind: :unsafe_dependency_check
+message: |-
+ The rbovirt gem before 0.0.24 for Ruby uses the rest-client gem with SSL verification disabled, which allows remote attackers to conduct man-in-the-middle attacks via unspecified vectors.
 check_family: :bulletin
-save_minor:
-save_major:
-safe_dependencies:
-- :name: rbovirt
+vulnerable_version_array:
+- :name: 'rbovirt'
   :version:
-  - 0.0.24
+  - 0.0.16
+  - 0.0.15
+  - 0.0.14
+  - 0.0.13
+  - 0.0.22
+  - 0.0.21
+  - 0.0.8
+  - 0.0.7
+  - 0.0.6
+  - 0.0.5
+  - 0.0.19
+  - 0.0.17
+  - 0.0.12
+  - 0.0.10
+  - 0.0.3
+  - 0.0.1
+  - 0.0.20
+  - 0.0.18
+  - 0.0.11
+  - 0.0.9
+  - 0.0.4
+  - 0.0.2

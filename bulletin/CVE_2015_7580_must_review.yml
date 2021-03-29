@@ -10,7 +10,7 @@ owasp: A9
 release_date: 16/02/2016
 
 kind: :unsafe_dependency_check
-message:|-
-	Cross-site scripting (XSS) vulnerability in lib/rails/html/scrubbers.rb in the rails-html-sanitizer gem before 1.0.3 for Ruby on Rails 4.2.x and 5.x allows remote attackers to inject arbitrary web script or HTML via a crafted CDATA node.
+message: |-
+ Cross-site scripting (XSS) vulnerability in lib/rails/html/scrubbers.rb in the rails-html-sanitizer gem before 1.0.3 for Ruby on Rails 4.2.x and 5.x allows remote attackers to inject arbitrary web script or HTML via a crafted CDATA node.
 check_family: :bulletin
 vulnerable_version_array:

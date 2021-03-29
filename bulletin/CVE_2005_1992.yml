@@ -1,35 +1,19 @@
---- !ruby/object:Dawn::Kb::RubyVersionCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2005-1992
+title: CVE-2005-1992
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
-cwe: ''
 cve: CVE-2005-1992
-osvdb:
 owasp: A9
-release_date: 2005-06-20
-kind: :ruby_version_check
-message: The XMLRPC server in utils.rb for the ruby library (libruby) 1.8 sets an
-  invalid default value that prevents "security protection" using handlers, which
-  allows remote attackers to execute arbitrary commands.
-remediation: Upgrade your ruby interpreter
-aux_links:
-- http://www2.ruby-lang.org/en/20050701.html
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :high
-priority: :high
+release_date: 20/06/2005
+
+kind: :unsafe_dependency_check
+message: |-
+ The XMLRPC server in utils.rb for the ruby library (libruby) 1.8 sets an invalid default value that prevents "security protection" using handlers, which allows remote attackers to execute arbitrary commands.
 check_family: :bulletin
-safe_rubies:
-- :engine: ruby
-  :version: 1.8.999
-  :patchlevel: p0
+vulnerable_version_array:
+- :name: 'ruby'
+  :version:
+  - 1.8

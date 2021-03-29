@@ -10,7 +10,7 @@ owasp: A9
 release_date: 30/09/2013
 
 kind: :unsafe_dependency_check
-message:|-
-	ext/common/ServerInstanceDir.h in Phusion Passenger gem before 4.0.6 for Ruby allows local users to gain privileges or possibly change the ownership of arbitrary directories via a symlink attack on a directory with a predictable name in /tmp/.
+message: |-
+ ext/common/ServerInstanceDir.h in Phusion Passenger gem before 4.0.6 for Ruby allows local users to gain privileges or possibly change the ownership of arbitrary directories via a symlink attack on a directory with a predictable name in /tmp/.
 check_family: :bulletin
 vulnerable_version_array:

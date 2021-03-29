@@ -1,41 +1,19 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2007-0469
+title: CVE-2007-0469
 cvss: AV:N/AC:M/Au:N/C:C/I:C/A:C
-cwe: ''
-cve:
-osvdb:
+cve: CVE-2007-0469
 owasp: A9
-release_date: 2007-01-24
-kind: :dependency_check
-message: The extract_files function in installer.rb in RubyGems before 0.9.1 does
-  not check whether files exist before overwriting them, which allows user-assisted
-  remote attackers to overwrite arbitrary files, cause a denial of service, or execute
-  arbitrary code via crafted GEM packages.
-remediation: This vulnerability should never occur due to the rubygem evolution. However
-  if it has been found, please upgrade your whole development environment ot something
-  newer
-aux_links:
-- http://www.securityfocus.com/archive/1/archive/1/458128/100/0/threaded
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :high
-priority: :high
+release_date: 24/01/2007
+
+kind: :unsafe_dependency_check
+message: |-
+ The extract_files function in installer.rb in RubyGems before 0.9.1 does not check whether files exist before overwriting them, which allows user-assisted remote attackers to overwrite arbitrary files, cause a denial of service, or execute arbitrary code via crafted GEM packages.
 check_family: :bulletin
-save_minor:
-save_major:
-safe_dependencies:
-- :name: rubygems
+vulnerable_version_array:
+- :name: 'rubygems'
   :version:
-  - 0.9.1
-  - 0.8.12
+  - 0.8.11

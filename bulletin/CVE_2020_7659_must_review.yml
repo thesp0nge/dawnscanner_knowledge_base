@@ -10,10 +10,9 @@ owasp: A9
 release_date: 01/06/2020
 
 kind: :unsafe_dependency_check
-message:|-
-	reel through 0.6.1 allows Request Smuggling attacks due to incorrect Content-Length and Transfer encoding header parsing. It is possible to conduct HTTP request smuggling attacks by sending the Content-Length header twice. Furthermore, invalid Transfer Encoding headers were found to be parsed as valid which could be leveraged for TE:CL smuggling attacks. Note: This project is deprecated, and is not maintained any more.
+message: |-
+ reel through 0.6.1 allows Request Smuggling attacks due to incorrect Content-Length and Transfer encoding header parsing. It is possible to conduct HTTP request smuggling attacks by sending the Content-Length header twice. Furthermore, invalid Transfer Encoding headers were found to be parsed as valid which could be leveraged for TE:CL smuggling attacks. Note: This project is deprecated, and is not maintained any more.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'reel'
-	:version:
-		- *
+  :version:

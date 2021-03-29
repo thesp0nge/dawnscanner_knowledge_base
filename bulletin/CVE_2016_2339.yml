@@ -10,11 +10,11 @@ owasp: A9
 release_date: 06/01/2017
 
 kind: :unsafe_dependency_check
-message:|-
-	An exploitable heap overflow vulnerability exists in the Fiddle::Function.new "initialize" function functionality of Ruby. In Fiddle::Function.new "initialize" heap buffer "arg_types" allocation is made based on args array length. Specially constructed object passed as element of args array can increase this array size after mentioned allocation and cause heap overflow.
+message: |-
+ An exploitable heap overflow vulnerability exists in the Fiddle::Function.new "initialize" function functionality of Ruby. In Fiddle::Function.new "initialize" heap buffer "arg_types" allocation is made based on args array length. Specially constructed object passed as element of args array can increase this array size after mentioned allocation and cause heap overflow.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'ruby'
-	:version:
-		- 2.3.0
-		- 2.2.2
+  :version:
+  - 2.3.0
+  - 2.2.2

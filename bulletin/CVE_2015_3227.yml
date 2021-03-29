@@ -1,41 +1,20 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
+- rails
 - sinatra
 - padrino
-- rails
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2015-3227
+title: CVE-2015-3227
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
-cwe: ''
-cve:
-osvdb:
+cve: CVE-2015-3227
 owasp: A9
-release_date: 2015-07-26
-kind: :dependency_check
-message: The (1) jdom.rb and (2) rexml.rb components in Active Support in Ruby on
-  Rails before 4.1.11 and 4.2.x before 4.2.2, when JDOM or REXML is enabled, allow
-  remote attackers to cause a denial of service (SystemStackError) via a large XML
-  document depth.
-remediation: Please upgrade activesupport gem to latest version or at least 4.1.12
-  or 4.2.3. This is automatically done by upgrading your Rails environment if you
-  are using it.
-aux_links:
-- https://groups.google.com/forum/message/raw?msg=rubyonrails-security/bahr2JLnxvk/x4EocXnHPp8J
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 26/07/2015
+
+kind: :unsafe_dependency_check
+message: |-
+ The (1) jdom.rb and (2) rexml.rb components in Active Support in Ruby on Rails before 4.1.11 and 4.2.x before 4.2.2, when JDOM or REXML is enabled, allow remote attackers to cause a denial of service (SystemStackError) via a large XML document depth.
 check_family: :bulletin
-save_minor: true
-save_major: true
-safe_dependencies:
-- :name: activesupport
+vulnerable_version_array:
+- :name: 'opensuse'
   :version:
-  - 4.1.12
-  - 4.2.3
+  - 13.2
+  - 13.1

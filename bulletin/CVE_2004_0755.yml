@@ -1,38 +1,20 @@
---- !ruby/object:Dawn::Kb::RubyVersionCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2004-0755
+title: CVE-2004-0755
 cvss: AV:L/AC:L/Au:N/C:P/I:N/A:N
-cwe: ''
-cve: 2004-0755
-osvdb:
+cve: CVE-2004-0755
 owasp: A9
-release_date: 2004-10-20
-kind: :ruby_version_check
-message: The FileStore capability in CGI::Session for Ruby before 1.8.1, and possibly
-  PStore, creates files with insecure permissions, which can allow local users to
-  steal session information and hijack sessions.
-remediation: Upgrade your ruby interpreter
-aux_links:
-- http://xforce.iss.net/xforce/xfdb/16996
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :medium
-priority: :medium
+release_date: 20/10/2004
+
+kind: :unsafe_dependency_check
+message: |-
+ The FileStore capability in CGI::Session for Ruby before 1.8.1, and possibly PStore, creates files with insecure permissions, which can allow local users to steal session information and hijack sessions.
 check_family: :bulletin
-safe_rubies:
-- :engine: ruby
-  :version: 1.8.999
-  :patchlevel: p0
-- :engine: ruby
-  :version: 1.6.999
-  :patchlevel: p0
+vulnerable_version_array:
+- :name: 'ruby'
+  :version:
+  - 1.6
+  - 1.8

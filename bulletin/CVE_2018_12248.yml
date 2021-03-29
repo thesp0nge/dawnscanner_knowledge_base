@@ -10,10 +10,10 @@ owasp: A9
 release_date: 12/06/2018
 
 kind: :unsafe_dependency_check
-message:|-
-	An issue was discovered in mruby 1.4.1. There is a heap-based buffer over-read associated with OP_ENTER because mrbgems/mruby-fiber/src/fiber.c does not extend the stack in cases of many arguments to fiber.
+message: |-
+ An issue was discovered in mruby 1.4.1. There is a heap-based buffer over-read associated with OP_ENTER because mrbgems/mruby-fiber/src/fiber.c does not extend the stack in cases of many arguments to fiber.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'mruby'
-	:version:
-		- 1.4.1
+  :version:
+  - 1.4.1

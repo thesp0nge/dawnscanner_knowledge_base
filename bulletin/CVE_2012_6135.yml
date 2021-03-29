@@ -10,11 +10,11 @@ owasp: A9
 release_date: 19/11/2019
 
 kind: :unsafe_dependency_check
-message:|-
-	RubyGems passenger 4.0.0 betas 1 and 2 allows remote attackers to delete arbitrary files during the startup process.
+message: |-
+ RubyGems passenger 4.0.0 betas 1 and 2 allows remote attackers to delete arbitrary files during the startup process.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'passenger'
-	:version:
-		- 4.0.0
-		- 4.0.0
+  :version:
+  - 4.0.0
+  - 4.0.0

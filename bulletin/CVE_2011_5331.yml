@@ -10,10 +10,10 @@ owasp: A9
 release_date: 18/11/2019
 
 kind: :unsafe_dependency_check
-message:|-
-	Distributed Ruby (aka DRuby) 1.8 mishandles instance_eval.
+message: |-
+ Distributed Ruby (aka DRuby) 1.8 mishandles instance_eval.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'distributed_ruby'
-	:version:
-		- 1.8
+  :version:
+  - 1.8

@@ -1,36 +1,23 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2013-6416
+- sinatra
+- padrino
+title: CVE-2013-6416
 cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
-cwe: '79'
-cve:
-osvdb:
+cve: CVE-2013-6416
 owasp: A9
-release_date: 2013-12-07
-kind: :dependency_check
-message: Cross-site scripting (XSS) vulnerability in the simple_format helper in actionpack/lib/action_view/helpers/text_helper.rb
-  in Ruby on Rails 4.x before 4.0.2 allows remote attackers to inject arbitrary web
-  script or HTML via a crafted HTML attribute.
-remediation: Please upgrade rails to version 4.0.2. As a general rule, using the latest
-  stable version is recommended. Versions 3.x are not affected
-aux_links:
-- https://groups.google.com/forum/message/raw?msg=ruby-security-ann/5ZI1-H5OoIM/ZNq4FoR2GnIJ
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 07/12/2013
+
+kind: :unsafe_dependency_check
+message: |-
+ Cross-site scripting (XSS) vulnerability in the simple_format helper in actionpack/lib/action_view/helpers/text_helper.rb in Ruby on Rails 4.x before 4.0.2 allows remote attackers to inject arbitrary web script or HTML via a crafted HTML attribute.
 check_family: :bulletin
-save_minor:
-save_major: true
-safe_dependencies:
-- :name: rails
+vulnerable_version_array:
+- :name: 'rails'
   :version:
-  - 4.0.2
+  - 4.0.0
+  - 4.0.0
+  - 4.0.0
+  - 4.0.0
+  - 4.0.1

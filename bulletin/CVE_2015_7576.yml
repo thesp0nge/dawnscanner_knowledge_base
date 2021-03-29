@@ -1,42 +1,103 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
 - rails
 - sinatra
 - padrino
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2015-7576
-cvss: ''
-cwe: ''
-cve: 2015-7576
-osvdb: ''
+title: CVE-2015-7576
+cvss: AV:N/AC:M/Au:N/C:P/I:N/A:N
+cve: CVE-2015-7576
 owasp: A9
-release_date: 2016-01-26
-kind: :dependency_check
-message: There is a timing attack vulnerability in the basic authentication support
-  in Action Controller. Due to the way that Action Controller compares user names
-  and passwords in basic authentication authorization code, it is possible for an
-  attacker to analyze the time taken by a response and intuit the password.
-remediation: Please upgrade actionpack gem to version 3.2.22.1, 4.1.14.1, 4.2.5.1,
-  5.0.0.beta1.1 or later.
-aux_links:
-- http://securitytracker.com/id/1034816
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 16/02/2016
+
+kind: :unsafe_dependency_check
+message: |-
+ The http_basic_authenticate_with method in actionpack/lib/action_controller/metal/http_authentication.rb in the Basic Authentication implementation in Action Controller in Ruby on Rails before 3.2.22.1, 4.0.x and 4.1.x before 4.1.14.1, 4.2.x before 4.2.5.1, and 5.x before 5.0.0.beta1.1 does not use a constant-time algorithm for verifying credentials, which makes it easier for remote attackers to bypass authentication by measuring timing differences.
 check_family: :bulletin
-save_minor: true
-save_major: true
-safe_dependencies:
-- :name: actionpack
+vulnerable_version_array:
+- :name: 'rails'
   :version:
-  - 3.2.22.1
-  - 4.1.14.1
-  - 4.2.5.1
-  - 5.0.0.beta1.1
+  - 4.2.4
+  - 4.2.3
+  - 4.2.1
+  - 4.2.0
+  - 4.2.0
+  - 4.1.14
+  - 4.1.10
+  - 4.1.10
+  - 4.1.7.1
+  - 4.1.7
+  - 4.1.2
+  - 4.1.2
+  - 4.1.0
+  - 4.0.13
+  - 4.0.10
+  - 4.0.9
+  - 4.0.5
+  - 4.0.4
+  - 4.0.4
+  - 4.0.1
+  - 4.0.0
+  - 4.2.5
+  - 4.2.4
+  - 4.2.1
+  - 4.2.1
+  - 4.2.0
+  - 4.2.0
+  - 4.1.12
+  - 4.1.11
+  - 4.1.9
+  - 4.1.8
+  - 4.1.4
+  - 4.1.3
+  - 4.1.0
+  - 4.1.0
+  - 4.0.10
+  - 4.0.10
+  - 4.0.6
+  - 4.0.6
+  - 4.0.1
+  - 4.0.1
+  - 4.2.3
+  - 4.2.2
+  - 4.2.0
+  - 4.2.0
+  - 4.1.14
+  - 4.1.14
+  - 4.1.13
+  - 4.1.10
+  - 4.1.10
+  - 4.1.6
+  - 4.1.6
+  - 4.1.2
+  - 4.1.2
+  - 4.1.1
+  - 4.0.13
+  - 4.0.12
+  - 4.0.8
+  - 4.0.7
+  - 4.0.3
+  - 4.0.2
+  - 4.0.0
+  - 4.0.0
+  - 5.0.0
+  - 4.2.5
+  - 4.2.5
+  - 4.2.1
+  - 4.2.1
+  - 4.2.0
+  - 4.2.0
+  - 4.1.13
+  - 4.1.12
+  - 4.1.10
+  - 4.1.9
+  - 4.1.6
+  - 4.1.5
+  - 4.1.0
+  - 4.1.0
+  - 4.0.11.1
+  - 4.0.11
+  - 4.0.6
+  - 4.0.6
+  - 4.0.1
+  - 4.0.1
+  - 4.0.0

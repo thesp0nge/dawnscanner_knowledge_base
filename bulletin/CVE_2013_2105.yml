@@ -1,37 +1,19 @@
---- !ruby/object:Dawn::Kb::DependencyCheck
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
 applies:
+- rails
 - sinatra
 - padrino
-- rails
-ruby_version:
-ruby_vulnerable_versions: []
-title:
-name: CVE-2013-2105
-cvss: AV:L/AC:M/AU:N/C:N/I:P/A:P
-cwe: '59'
-cve:
-osvdb:
+title: CVE-2013-2105
+cvss: AV:L/AC:M/Au:N/C:N/I:P/A:P
+cve: CVE-2013-2105
 owasp: A9
-release_date: 2014-04-22
-kind: :dependency_check
-message: The Show In Browser (show_in_browser) gem 0.0.3 for Ruby allows local users
-  to inject arbitrary web script or HTML via a symlink attack on /tmp/browser.html.
-remediation: Please upgrade show_in_browser version at least to 0.0.4. As a general
-  rule, using the latest stable version is recommended.
-aux_links:
-- http://xforce.iss.net/xforce/xfdb/84378
-target_version:
-fixes_version:
-evidences: []
-mitigated: false
-status: false
-debug: false
-severity: :none
-priority: :none
+release_date: 22/04/2014
+
+kind: :unsafe_dependency_check
+message: |-
+ The Show In Browser (show_in_browser) gem 0.0.3 for Ruby allows local users to inject arbitrary web script or HTML via a symlink attack on /tmp/browser.html.
 check_family: :bulletin
-save_minor:
-save_major:
-safe_dependencies:
-- :name: show_in_browser
+vulnerable_version_array:
+- :name: 'show_in_browser'
   :version:
-  - 0.0.4
+  - 0.0.3

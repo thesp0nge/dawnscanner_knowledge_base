@@ -10,7 +10,7 @@ owasp: A9
 release_date: 18/02/2010
 
 kind: :unsafe_dependency_check
-message:|-
-	WebKit before r53525, as used in Google Chrome before 4.0.249.89, allows remote attackers to execute arbitrary code in the Chrome sandbox via a malformed RUBY element, as demonstrated by a <ruby>><table><rt> sequence.
+message: |-
+ WebKit before r53525, as used in Google Chrome before 4.0.249.89, allows remote attackers to execute arbitrary code in the Chrome sandbox via a malformed RUBY element, as demonstrated by a <ruby>><table><rt> sequence.
 check_family: :bulletin
 vulnerable_version_array:

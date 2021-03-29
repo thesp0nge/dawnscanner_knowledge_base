@@ -10,10 +10,9 @@ owasp: A9
 release_date: 10/01/2018
 
 kind: :unsafe_dependency_check
-message:|-
-	The lynx gem before 1.0.0 for Ruby places the configured password on command lines, which allows local users to obtain sensitive information by listing processes.
+message: |-
+ The lynx gem before 1.0.0 for Ruby places the configured password on command lines, which allows local users to obtain sensitive information by listing processes.
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'lynx'
-	:version:
-		- *
+  :version:

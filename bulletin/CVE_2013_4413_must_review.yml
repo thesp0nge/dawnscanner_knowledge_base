@@ -10,7 +10,7 @@ owasp: A9
 release_date: 11/03/2014
 
 kind: :unsafe_dependency_check
-message:|-
-	Directory traversal vulnerability in controller/concerns/render_redirect.rb in the Wicked gem before 1.0.1 for Ruby allows remote attackers to read arbitrary files via a %2E%2E%2F (encoded dot dot slash) in the step.
+message: |-
+ Directory traversal vulnerability in controller/concerns/render_redirect.rb in the Wicked gem before 1.0.1 for Ruby allows remote attackers to read arbitrary files via a %2E%2E%2F (encoded dot dot slash) in the step.
 check_family: :bulletin
 vulnerable_version_array:
