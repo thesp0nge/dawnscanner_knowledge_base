@@ -6,6 +6,7 @@ applies:
 title: CVE-2010-3933
 cvss: AV:N/AC:L/Au:N/C:N/I:P/A:P
 cve: CVE-2010-3933
+name: CVE-2010-3933
 owasp: A9
 release_date: 28/10/2010
 

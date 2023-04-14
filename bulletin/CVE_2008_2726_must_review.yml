@@ -6,6 +6,7 @@ applies:
 title: CVE-2008-2726
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:C
 cve: CVE-2008-2726
+name: CVE-2008-2726
 owasp: A9
 release_date: 24/06/2008
 

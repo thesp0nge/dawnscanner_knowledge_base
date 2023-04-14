@@ -6,6 +6,7 @@ applies:
 title: CVE-2010-3119
 cvss: AV:N/AC:L/Au:N/C:C/I:C/A:C
 cve: CVE-2010-3119
+name: CVE-2010-3119
 owasp: A9
 release_date: 24/08/2010
 

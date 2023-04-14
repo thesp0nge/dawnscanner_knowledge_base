@@ -6,6 +6,7 @@ applies:
 title: CVE-2015-7551
 cvss: AV:L/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2015-7551
+name: CVE-2015-7551
 owasp: A9
 release_date: 24/03/2016
 

@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-4172
 cvss: AV:N/AC:M/Au:S/C:C/I:C/A:C
 cve: CVE-2013-4172
+name: CVE-2013-4172
 owasp: A9
 release_date: 23/08/2013
 

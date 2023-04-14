@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-26222
 cvss: AV:N/AC:L/Au:S/C:P/I:P/A:P
 cve: CVE-2020-26222
+name: CVE-2020-26222
 owasp: A9
 release_date: 13/11/2020
 

@@ -6,6 +6,7 @@ applies:
 title: CVE-2018-1000074
 cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
 cve: CVE-2018-1000074
+name: CVE-2018-1000074
 owasp: A9
 release_date: 13/03/2018
 

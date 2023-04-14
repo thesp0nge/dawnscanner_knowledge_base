@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-8165
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2020-8165
+name: CVE-2020-8165
 owasp: A9
 release_date: 19/06/2020
 

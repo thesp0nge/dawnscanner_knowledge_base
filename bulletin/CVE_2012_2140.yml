@@ -6,6 +6,7 @@ applies:
 title: CVE-2012-2140
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2012-2140
+name: CVE-2012-2140
 owasp: A9
 release_date: 18/07/2012
 
@@ -16,5 +17,5 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'mail_gem'
   :version:
-  - 2.3.3
   - 2.3.2
+  - 2.3.3

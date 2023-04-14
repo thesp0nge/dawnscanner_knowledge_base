@@ -6,6 +6,7 @@ applies:
 title: CVE-2018-10191
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2018-10191
+name: CVE-2018-10191
 owasp: A9
 release_date: 17/04/2018
 

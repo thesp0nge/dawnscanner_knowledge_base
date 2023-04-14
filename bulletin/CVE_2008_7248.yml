@@ -6,6 +6,7 @@ applies:
 title: CVE-2008-7248
 cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
 cve: CVE-2008-7248
+name: CVE-2008-7248
 owasp: A9
 release_date: 16/12/2009
 
@@ -16,8 +17,8 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'rails'
   :version:
+  - 2.1.0
   - 2.1.1
   - 2.1.2
   - 2.2.0
   - 2.2.1
-  - 2.1.0

@@ -6,6 +6,7 @@ applies:
 title: CVE-2018-1000073
 cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
 cve: CVE-2018-1000073
+name: CVE-2018-1000073
 owasp: A9
 release_date: 13/03/2018
 

@@ -6,6 +6,7 @@ applies:
 title: CVE-2019-11879
 cvss: AV:L/AC:L/Au:N/C:P/I:N/A:N
 cve: CVE-2019-11879
+name: CVE-2019-11879
 owasp: A9
 release_date: 10/05/2019
 

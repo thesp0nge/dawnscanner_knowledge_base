@@ -6,6 +6,7 @@ applies:
 title: CVE-2007-5379
 cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
 cve: CVE-2007-5379
+name: CVE-2007-5379
 owasp: A9
 release_date: 19/10/2007
 

@@ -6,6 +6,7 @@ applies:
 title: CVE-2012-6135
 cvss: AV:N/AC:L/Au:N/C:N/I:P/A:P
 cve: CVE-2012-6135
+name: CVE-2012-6135
 owasp: A9
 release_date: 19/11/2019
 

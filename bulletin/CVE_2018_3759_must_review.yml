@@ -6,6 +6,7 @@ applies:
 title: CVE-2018-3759
 cvss: AV:N/AC:M/Au:N/C:P/I:N/A:N
 cve: CVE-2018-3759
+name: CVE-2018-3759
 owasp: A9
 release_date: 13/06/2018
 

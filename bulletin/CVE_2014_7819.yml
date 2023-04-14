@@ -6,6 +6,7 @@ applies:
 title: CVE-2014-7819
 cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
 cve: CVE-2014-7819
+name: CVE-2014-7819
 owasp: A9
 release_date: 08/11/2014
 
@@ -16,6 +17,6 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'sprockets'
   :version:
-  - 3.0.0
-  - 3.0.0
   - 2.6.0
+  - 3.0.0
+  - 3.0.0

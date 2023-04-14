@@ -6,6 +6,7 @@ applies:
 title: CVE-2015-2784
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2015-2784
+name: CVE-2015-2784
 owasp: A9
 release_date: 21/01/2020
 

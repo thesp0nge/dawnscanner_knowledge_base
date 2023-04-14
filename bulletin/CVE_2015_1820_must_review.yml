@@ -6,6 +6,7 @@ applies:
 title: CVE-2015-1820
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2015-1820
+name: CVE-2015-1820
 owasp: A9
 release_date: 09/08/2017
 

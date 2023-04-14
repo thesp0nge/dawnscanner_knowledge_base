@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-1800
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2013-1800
+name: CVE-2013-1800
 owasp: A9
 release_date: 09/04/2013
 
@@ -16,6 +17,6 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'crack'
   :version:
-  - 0.3.0
-  - 0.2.0
   - 0.1.8
+  - 0.2.0
+  - 0.3.0

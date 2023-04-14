@@ -6,6 +6,7 @@ applies:
 title: CVE-2019-10780
 cvss: AV:N/AC:L/Au:N/C:C/I:C/A:C
 cve: CVE-2019-10780
+name: CVE-2019-10780
 owasp: A9
 release_date: 22/01/2020
 

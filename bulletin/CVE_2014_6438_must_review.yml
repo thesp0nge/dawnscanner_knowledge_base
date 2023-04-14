@@ -6,6 +6,7 @@ applies:
 title: CVE-2014-6438
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2014-6438
+name: CVE-2014-6438
 owasp: A9
 release_date: 06/09/2017
 

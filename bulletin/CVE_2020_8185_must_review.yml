@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-8185
 cvss: AV:N/AC:L/Au:S/C:N/I:N/A:P
 cve: CVE-2020-8185
+name: CVE-2020-8185
 owasp: A9
 release_date: 02/07/2020
 

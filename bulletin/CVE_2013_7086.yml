@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-7086
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2013-7086
+name: CVE-2013-7086
 owasp: A9
 release_date: 19/12/2013
 
@@ -16,6 +17,6 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'webbynode'
   :version:
-  - 1.0.5.2
-  - 1.0.5.1
   - 1.0.5
+  - 1.0.5.1
+  - 1.0.5.2

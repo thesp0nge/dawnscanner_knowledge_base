@@ -6,6 +6,7 @@ applies:
 title: CVE-2015-7541
 cvss: AV:N/AC:L/Au:N/C:C/I:C/A:C
 cve: CVE-2015-7541
+name: CVE-2015-7541
 owasp: A9
 release_date: 08/01/2016
 

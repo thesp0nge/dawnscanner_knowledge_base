@@ -6,6 +6,7 @@ applies:
 title: CVE-2012-4464
 cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
 cve: CVE-2012-4464
+name: CVE-2012-4464
 owasp: A9
 release_date: 25/04/2013
 
@@ -16,14 +17,14 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'ruby'
   :version:
-  - 2.0.0
-  - 2.0.0
+  - 1.9.3
+  - 1.9.3
+  - 1.9.3
+  - 1.9.3
   - 2.0
-  - 1.9.3
   - 2.0.0
-  - 1.9.3
   - 2.0.0
-  - 1.9.3
-  - 1.9.3
+  - 2.0.0
+  - 2.0.0
   - 2.0.0
   - 2.0.0

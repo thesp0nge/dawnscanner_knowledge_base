@@ -6,6 +6,7 @@ applies:
 title: CVE-2017-17467
 cvss: AV:L/AC:L/Au:N/C:P/I:P/A:C
 cve: CVE-2017-17467
+name: CVE-2017-17467
 owasp: A9
 release_date: 08/12/2017
 

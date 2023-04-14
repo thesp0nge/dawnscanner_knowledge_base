@@ -6,6 +6,7 @@ applies:
 title: CVE-2021-21289
 cvss: AV:N/AC:H/Au:N/C:C/I:C/A:C
 cve: CVE-2021-21289
+name: CVE-2021-21289
 owasp: A9
 release_date: 02/02/2021
 

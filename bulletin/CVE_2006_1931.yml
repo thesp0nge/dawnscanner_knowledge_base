@@ -6,6 +6,7 @@ applies:
 title: CVE-2006-1931
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2006-1931
+name: CVE-2006-1931
 owasp: A9
 release_date: 20/04/2006
 
@@ -16,6 +17,7 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'ruby'
   :version:
+  - 1.6
   - 1.6.1
   - 1.6.2
   - 1.6.3
@@ -23,6 +25,5 @@ vulnerable_version_array:
   - 1.6.5
   - 1.6.6
   - 1.6.7
-  - 1.6
   - 1.8
   - 1.8.1

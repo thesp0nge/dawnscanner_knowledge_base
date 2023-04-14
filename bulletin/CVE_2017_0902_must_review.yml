@@ -6,6 +6,7 @@ applies:
 title: CVE-2017-0902
 cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
 cve: CVE-2017-0902
+name: CVE-2017-0902
 owasp: A9
 release_date: 31/08/2017
 

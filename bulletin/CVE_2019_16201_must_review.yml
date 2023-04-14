@@ -6,6 +6,7 @@ applies:
 title: CVE-2019-16201
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:C
 cve: CVE-2019-16201
+name: CVE-2019-16201
 owasp: A9
 release_date: 26/11/2019
 

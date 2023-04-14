@@ -6,6 +6,7 @@ applies:
 title: CVE-2018-5087
 cvss: AV:L/AC:L/Au:N/C:P/I:P/A:C
 cve: CVE-2018-5087
+name: CVE-2018-5087
 owasp: A9
 release_date: 03/01/2018
 

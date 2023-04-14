@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-7671
 cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
 cve: CVE-2020-7671
+name: CVE-2020-7671
 owasp: A9
 release_date: 10/06/2020
 

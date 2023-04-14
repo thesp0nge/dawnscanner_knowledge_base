@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-4489
 cvss: AV:N/AC:L/Au:S/C:P/I:P/A:P
 cve: CVE-2013-4489
+name: CVE-2013-4489
 owasp: A9
 release_date: 17/05/2014
 
@@ -16,11 +17,11 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'gitlab'
   :version:
+  - 5.2.0
+  - 5.3.0
+  - 5.4.0
   - 6.0.0
   - 6.1.0
-  - 5.4.0
   - 6.2.0
-  - 6.2.2
-  - 5.3.0
   - 6.2.1
-  - 5.2.0
+  - 6.2.2

@@ -6,6 +6,7 @@ applies:
 title: CVE-2017-2096
 cvss: AV:N/AC:L/Au:N/C:C/I:C/A:C
 cve: CVE-2017-2096
+name: CVE-2017-2096
 owasp: A9
 release_date: 28/04/2017
 

@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-6840
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2020-6840
+name: CVE-2020-6840
 owasp: A9
 release_date: 11/01/2020
 

@@ -6,6 +6,7 @@ applies:
 title: CVE-2018-3740
 cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
 cve: CVE-2018-3740
+name: CVE-2018-3740
 owasp: A9
 release_date: 30/03/2018
 

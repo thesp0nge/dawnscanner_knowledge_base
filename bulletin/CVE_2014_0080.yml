@@ -6,6 +6,7 @@ applies:
 title: CVE-2014-0080
 cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
 cve: CVE-2014-0080
+name: CVE-2014-0080
 owasp: A9
 release_date: 20/02/2014
 
@@ -16,14 +17,14 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'rails'
   :version:
+  - 4.0.0
+  - 4.0.0
+  - 4.0.0
+  - 4.0.0
+  - 4.0.1
+  - 4.0.1
+  - 4.0.1
+  - 4.0.1
+  - 4.0.1
   - 4.0.2
-  - 4.0.1
-  - 4.0.1
   - 4.1.0
-  - 4.0.0
-  - 4.0.0
-  - 4.0.0
-  - 4.0.1
-  - 4.0.1
-  - 4.0.1
-  - 4.0.0

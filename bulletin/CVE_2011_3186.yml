@@ -6,6 +6,7 @@ applies:
 title: CVE-2011-3186
 cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
 cve: CVE-2011-3186
+name: CVE-2011-3186
 owasp: A9
 release_date: 29/08/2011
 
@@ -16,10 +17,10 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'rails'
   :version:
-  - 2.3.12
-  - 2.3.3
-  - 2.3.9
-  - 2.3.4
-  - 2.3.11
-  - 2.3.10
   - 2.3.2
+  - 2.3.3
+  - 2.3.4
+  - 2.3.9
+  - 2.3.10
+  - 2.3.11
+  - 2.3.12

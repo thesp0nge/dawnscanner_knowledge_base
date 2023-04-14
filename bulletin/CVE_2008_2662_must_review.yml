@@ -6,6 +6,7 @@ applies:
 title: CVE-2008-2662
 cvss: AV:N/AC:L/Au:N/C:C/I:C/A:C
 cve: CVE-2008-2662
+name: CVE-2008-2662
 owasp: A9
 release_date: 24/06/2008
 

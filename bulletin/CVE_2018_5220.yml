@@ -6,6 +6,7 @@ applies:
 title: CVE-2018-5220
 cvss: AV:L/AC:L/Au:N/C:P/I:P/A:C
 cve: CVE-2018-5220
+name: CVE-2018-5220
 owasp: A9
 release_date: 04/01/2018
 

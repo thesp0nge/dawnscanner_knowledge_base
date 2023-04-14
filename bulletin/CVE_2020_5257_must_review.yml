@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-5257
 cvss: AV:N/AC:L/Au:S/C:P/I:P/A:N
 cve: CVE-2020-5257
+name: CVE-2020-5257
 owasp: A9
 release_date: 13/03/2020
 

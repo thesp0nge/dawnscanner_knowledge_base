@@ -6,6 +6,7 @@ applies:
 title: CVE-2006-2582
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2006-2582
+name: CVE-2006-2582
 owasp: A9
 release_date: 25/05/2006
 

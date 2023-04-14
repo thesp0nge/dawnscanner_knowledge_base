@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-11020
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2020-11020
+name: CVE-2020-11020
 owasp: A9
 release_date: 29/04/2020
 

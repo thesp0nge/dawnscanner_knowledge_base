@@ -6,6 +6,7 @@ applies:
 title: CVE-2016-11086
 cvss: AV:N/AC:M/Au:N/C:P/I:P/A:N
 cve: CVE-2016-11086
+name: CVE-2016-11086
 owasp: A9
 release_date: 24/09/2020
 

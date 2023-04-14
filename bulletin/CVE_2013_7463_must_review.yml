@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-7463
 cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
 cve: CVE-2013-7463
+name: CVE-2013-7463
 owasp: A9
 release_date: 19/04/2017
 

@@ -6,6 +6,7 @@ applies:
 title: CVE-2008-1145
 cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
 cve: CVE-2008-1145
+name: CVE-2008-1145
 owasp: A9
 release_date: 04/03/2008
 

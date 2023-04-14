@@ -6,6 +6,7 @@ applies:
 title: CVE-2021-22881
 cvss: AV:N/AC:M/Au:N/C:P/I:P/A:N
 cve: CVE-2021-22881
+name: CVE-2021-22881
 owasp: A9
 release_date: 11/02/2021
 

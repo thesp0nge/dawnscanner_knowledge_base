@@ -6,6 +6,7 @@ applies:
 title: CVE-2015-5274
 cvss: AV:N/AC:L/Au:S/C:P/I:P/A:P
 cve: CVE-2015-5274
+name: CVE-2015-5274
 owasp: A9
 release_date: 18/09/2015
 

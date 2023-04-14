@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-1875
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2013-1875
+name: CVE-2013-1875
 owasp: A9
 release_date: 20/03/2013
 

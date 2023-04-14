@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-10187
 cvss: AV:N/AC:M/Au:N/C:P/I:N/A:N
 cve: CVE-2020-10187
+name: CVE-2020-10187
 owasp: A9
 release_date: 04/05/2020
 

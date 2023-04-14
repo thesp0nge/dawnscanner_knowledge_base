@@ -6,6 +6,7 @@ applies:
 title: CVE-2014-2322
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2014-2322
+name: CVE-2014-2322
 owasp: A9
 release_date: 02/05/2014
 

@@ -6,6 +6,7 @@ applies:
 title: CVE-2015-4020
 cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
 cve: CVE-2015-4020
+name: CVE-2015-4020
 owasp: A9
 release_date: 25/08/2015
 

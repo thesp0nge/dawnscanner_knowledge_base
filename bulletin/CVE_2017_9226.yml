@@ -6,6 +6,7 @@ applies:
 title: CVE-2017-9226
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2017-9226
+name: CVE-2017-9226
 owasp: A9
 release_date: 24/05/2017
 

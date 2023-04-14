@@ -6,6 +6,7 @@ applies:
 title: CVE-2014-0084
 cvss: AV:L/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2014-0084
+name: CVE-2014-0084
 owasp: A9
 release_date: 21/11/2019
 

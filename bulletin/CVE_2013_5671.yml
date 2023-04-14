@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-5671
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2013-5671
+name: CVE-2013-5671
 owasp: A9
 release_date: 12/05/2014
 

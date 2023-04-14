@@ -6,6 +6,7 @@ applies:
 title: CVE-2015-3225
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2015-3225
+name: CVE-2015-3225
 owasp: A9
 release_date: 26/07/2015
 

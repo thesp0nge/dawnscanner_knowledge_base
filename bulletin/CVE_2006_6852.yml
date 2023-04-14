@@ -6,6 +6,7 @@ applies:
 title: CVE-2006-6852
 cvss: AV:N/AC:M/Au:S/C:P/I:P/A:P
 cve: CVE-2006-6852
+name: CVE-2006-6852
 owasp: A9
 release_date: 31/12/2006
 

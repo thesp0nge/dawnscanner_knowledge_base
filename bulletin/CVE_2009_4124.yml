@@ -6,6 +6,7 @@ applies:
 title: CVE-2009-4124
 cvss: AV:N/AC:L/Au:N/C:C/I:C/A:C
 cve: CVE-2009-4124
+name: CVE-2009-4124
 owasp: A9
 release_date: 11/12/2009
 

@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-7670
 cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
 cve: CVE-2020-7670
+name: CVE-2020-7670
 owasp: A9
 release_date: 10/06/2020
 

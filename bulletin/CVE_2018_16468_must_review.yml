@@ -6,6 +6,7 @@ applies:
 title: CVE-2018-16468
 cvss: AV:N/AC:M/Au:S/C:N/I:P/A:N
 cve: CVE-2018-16468
+name: CVE-2018-16468
 owasp: A9
 release_date: 30/10/2018
 

@@ -6,6 +6,7 @@ applies:
 title: CVE-2014-3248
 cvss: AV:L/AC:H/Au:N/C:C/I:C/A:C
 cve: CVE-2014-3248
+name: CVE-2014-3248
 owasp: A9
 release_date: 16/11/2014
 
@@ -16,12 +17,12 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'facter'
   :version:
+  - 2.0.0
+  - 2.0.0
+  - 2.0.0
+  - 2.0.0
   - 2.0.1
   - 2.0.1
-  - 2.0.0
-  - 2.0.0
-  - 2.0.0
   - 2.0.1
-  - 2.0.0
   - 2.0.1
   - 2.0.1

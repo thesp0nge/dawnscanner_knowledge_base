@@ -6,6 +6,7 @@ applies:
 title: CVE-2017-7540
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2017-7540
+name: CVE-2017-7540
 owasp: A9
 release_date: 21/07/2017
 

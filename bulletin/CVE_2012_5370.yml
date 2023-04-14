@@ -6,6 +6,7 @@ applies:
 title: CVE-2012-5370
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2012-5370
+name: CVE-2012-5370
 owasp: A9
 release_date: 28/11/2012
 

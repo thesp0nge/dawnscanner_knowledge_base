@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-6443
 cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
 cve: CVE-2013-6443
+name: CVE-2013-6443
 owasp: A9
 release_date: 23/01/2014
 

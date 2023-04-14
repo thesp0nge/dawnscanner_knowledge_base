@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-6414
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2013-6414
+name: CVE-2013-6414
 owasp: A9
 release_date: 07/12/2013
 
@@ -18,6 +19,6 @@ vulnerable_version_array:
   :version:
   - 4.0.0
   - 4.0.0
+  - 4.0.0
+  - 4.0.0
   - 4.0.1
-  - 4.0.0
-  - 4.0.0

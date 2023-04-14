@@ -6,6 +6,7 @@ applies:
 title: CVE-2015-3227
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2015-3227
+name: CVE-2015-3227
 owasp: A9
 release_date: 26/07/2015
 
@@ -16,5 +17,5 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'opensuse'
   :version:
-  - 13.2
   - 13.1
+  - 13.2

@@ -6,6 +6,7 @@ applies:
 title: CVE-2006-3694
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:N
 cve: CVE-2006-3694
+name: CVE-2006-3694
 owasp: A9
 release_date: 21/07/2006
 

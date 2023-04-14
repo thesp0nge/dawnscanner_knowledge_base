@@ -6,6 +6,7 @@ applies:
 title: CVE-2016-4864
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2016-4864
+name: CVE-2016-4864
 owasp: A9
 release_date: 12/05/2017
 

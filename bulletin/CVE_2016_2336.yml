@@ -6,6 +6,7 @@ applies:
 title: CVE-2016-2336
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2016-2336
+name: CVE-2016-2336
 owasp: A9
 release_date: 06/01/2017
 
@@ -16,5 +17,5 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'ruby'
   :version:
-  - 2.3.0
   - 2.2.2
+  - 2.3.0

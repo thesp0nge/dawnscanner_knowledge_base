@@ -6,6 +6,7 @@ applies:
 title: CVE-2011-3187
 cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
 cve: CVE-2011-3187
+name: CVE-2011-3187
 owasp: A9
 release_date: 29/08/2011
 

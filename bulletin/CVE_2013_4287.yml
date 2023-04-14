@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-4287
 cvss: AV:N/AC:M/Au:N/C:N/I:N/A:P
 cve: CVE-2013-4287
+name: CVE-2013-4287
 owasp: A9
 release_date: 17/10/2013
 

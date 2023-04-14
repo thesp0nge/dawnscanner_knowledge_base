@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-4318
 cvss: AV:N/AC:M/Au:S/C:N/I:P/A:N
 cve: CVE-2013-4318
+name: CVE-2013-4318
 owasp: A9
 release_date: 26/12/2019
 

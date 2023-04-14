@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-8163
 cvss: AV:N/AC:L/Au:S/C:P/I:P/A:P
 cve: CVE-2020-8163
+name: CVE-2020-8163
 owasp: A9
 release_date: 02/07/2020
 

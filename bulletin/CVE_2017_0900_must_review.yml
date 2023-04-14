@@ -6,6 +6,7 @@ applies:
 title: CVE-2017-0900
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2017-0900
+name: CVE-2017-0900
 owasp: A9
 release_date: 31/08/2017
 

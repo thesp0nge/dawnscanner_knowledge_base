@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-4492
 cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
 cve: CVE-2013-4492
+name: CVE-2013-4492
 owasp: A9
 release_date: 07/12/2013
 

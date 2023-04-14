@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-4164
 cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
 cve: CVE-2013-4164
+name: CVE-2013-4164
 owasp: A9
 release_date: 23/11/2013
 
@@ -16,10 +17,10 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'ruby'
   :version:
-  - 2.1
-  - 2.0.0
+  - 1.8
   - 1.9
-  - 1.9.3
   - 1.9.1
   - 1.9.2
-  - 1.8
+  - 1.9.3
+  - 2.0.0
+  - 2.1

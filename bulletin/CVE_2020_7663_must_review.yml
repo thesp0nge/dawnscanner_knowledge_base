@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-7663
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2020-7663
+name: CVE-2020-7663
 owasp: A9
 release_date: 02/06/2020
 

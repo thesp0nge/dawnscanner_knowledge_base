@@ -6,6 +6,7 @@ applies:
 title: CVE-2018-0833
 cvss: AV:N/AC:M/Au:S/C:N/I:N/A:C
 cve: CVE-2018-0833
+name: CVE-2018-0833
 owasp: A9
 release_date: 15/02/2018
 

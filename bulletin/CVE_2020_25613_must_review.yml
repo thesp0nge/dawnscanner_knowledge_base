@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-25613
 cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
 cve: CVE-2020-25613
+name: CVE-2020-25613
 owasp: A9
 release_date: 06/10/2020
 

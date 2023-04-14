@@ -6,6 +6,7 @@ applies:
 title: CVE-2007-6612
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:N
 cve: CVE-2007-6612
+name: CVE-2007-6612
 owasp: A9
 release_date: 03/01/2008
 

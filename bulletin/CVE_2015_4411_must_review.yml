@@ -6,6 +6,7 @@ applies:
 title: CVE-2015-4411
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2015-4411
+name: CVE-2015-4411
 owasp: A9
 release_date: 20/02/2020
 

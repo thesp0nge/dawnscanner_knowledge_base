@@ -6,6 +6,7 @@ applies:
 title: CVE-2014-8080
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2014-8080
+name: CVE-2014-8080
 owasp: A9
 release_date: 03/11/2014
 
@@ -16,5 +17,5 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'opensuse'
   :version:
-  - 13.1
   - 12.3
+  - 13.1

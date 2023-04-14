@@ -6,6 +6,7 @@ applies:
 title: CVE-2011-5331
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2011-5331
+name: CVE-2011-5331
 owasp: A9
 release_date: 18/11/2019
 

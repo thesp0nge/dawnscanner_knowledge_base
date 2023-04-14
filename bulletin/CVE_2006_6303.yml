@@ -6,6 +6,7 @@ applies:
 title: CVE-2006-6303
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2006-6303
+name: CVE-2006-6303
 owasp: A9
 release_date: 06/12/2006
 
@@ -16,11 +17,11 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'ruby'
   :version:
-  - 1.8.3
-  - 1.8.4
+  - 1.8
   - 1.8.1
   - 1.8.2
-  - 1.8
-  - 1.8.5
   - 1.8.2_pre1
   - 1.8.2_pre2
+  - 1.8.3
+  - 1.8.4
+  - 1.8.5

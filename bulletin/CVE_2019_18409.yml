@@ -6,6 +6,7 @@ applies:
 title: CVE-2019-18409
 cvss: AV:L/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2019-18409
+name: CVE-2019-18409
 owasp: A9
 release_date: 24/10/2019
 

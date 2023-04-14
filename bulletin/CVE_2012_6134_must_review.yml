@@ -6,6 +6,7 @@ applies:
 title: CVE-2012-6134
 cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
 cve: CVE-2012-6134
+name: CVE-2012-6134
 owasp: A9
 release_date: 09/04/2013
 

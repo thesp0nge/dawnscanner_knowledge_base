@@ -6,6 +6,7 @@ applies:
 title: CVE-2014-5683
 cvss: AV:A/AC:M/Au:N/C:P/I:P/A:P
 cve: CVE-2014-5683
+name: CVE-2014-5683
 owasp: A9
 release_date: 09/09/2014
 

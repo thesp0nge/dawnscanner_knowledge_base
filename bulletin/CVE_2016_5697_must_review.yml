@@ -6,6 +6,7 @@ applies:
 title: CVE-2016-5697
 cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
 cve: CVE-2016-5697
+name: CVE-2016-5697
 owasp: A9
 release_date: 23/01/2017
 

@@ -6,6 +6,7 @@ applies:
 title: CVE-2008-1891
 cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
 cve: CVE-2008-1891
+name: CVE-2008-1891
 owasp: A9
 release_date: 18/04/2008
 

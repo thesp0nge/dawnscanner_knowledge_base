@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-5241
 cvss: AV:N/AC:M/Au:S/C:N/I:P/A:N
 cve: CVE-2020-5241
+name: CVE-2020-5241
 owasp: A9
 release_date: 13/02/2020
 

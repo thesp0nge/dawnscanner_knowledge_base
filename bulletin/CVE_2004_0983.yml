@@ -6,6 +6,7 @@ applies:
 title: CVE-2004-0983
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2004-0983
+name: CVE-2004-0983
 owasp: A9
 release_date: 01/03/2005
 
@@ -16,9 +17,9 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'ruby'
   :version:
-  - 1.8.2_pre2
+  - 1.6
   - 1.6.7
   - 1.8
-  - 1.6
   - 1.8.1
   - 1.8.2_pre1
+  - 1.8.2_pre2

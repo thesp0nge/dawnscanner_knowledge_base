@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-2516
 cvss: AV:N/AC:M/Au:N/C:C/I:C/A:C
 cve: CVE-2013-2516
+name: CVE-2013-2516
 owasp: A9
 release_date: 15/02/2019
 

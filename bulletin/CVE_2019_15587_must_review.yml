@@ -6,6 +6,7 @@ applies:
 title: CVE-2019-15587
 cvss: AV:N/AC:M/Au:S/C:N/I:P/A:N
 cve: CVE-2019-15587
+name: CVE-2019-15587
 owasp: A9
 release_date: 22/10/2019
 

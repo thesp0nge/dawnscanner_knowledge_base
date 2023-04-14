@@ -6,6 +6,7 @@ applies:
 title: CVE-2017-15928
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2017-15928
+name: CVE-2017-15928
 owasp: A9
 release_date: 27/10/2017
 

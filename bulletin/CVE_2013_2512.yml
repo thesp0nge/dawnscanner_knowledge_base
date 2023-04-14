@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-2512
 cvss: AV:N/AC:L/Au:N/C:C/I:C/A:C
 cve: CVE-2013-2512
+name: CVE-2013-2512
 owasp: A9
 release_date: 26/01/2021
 

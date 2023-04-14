@@ -6,6 +6,7 @@ applies:
 title: CVE-2018-12249
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2018-12249
+name: CVE-2018-12249
 owasp: A9
 release_date: 12/06/2018
 

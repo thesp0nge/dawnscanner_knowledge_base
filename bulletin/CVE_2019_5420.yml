@@ -6,6 +6,7 @@ applies:
 title: CVE-2019-5420
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2019-5420
+name: CVE-2019-5420
 owasp: A9
 release_date: 27/03/2019
 

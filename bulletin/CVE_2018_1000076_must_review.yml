@@ -6,6 +6,7 @@ applies:
 title: CVE-2018-1000076
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2018-1000076
+name: CVE-2018-1000076
 owasp: A9
 release_date: 13/03/2018
 

@@ -6,6 +6,7 @@ applies:
 title: CVE-2015-9097
 cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
 cve: CVE-2015-9097
+name: CVE-2015-9097
 owasp: A9
 release_date: 12/06/2017
 

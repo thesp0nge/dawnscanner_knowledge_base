@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-11076
 cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
 cve: CVE-2020-11076
+name: CVE-2020-11076
 owasp: A9
 release_date: 22/05/2020
 

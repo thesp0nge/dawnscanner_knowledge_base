@@ -6,6 +6,7 @@ applies:
 title: CVE-2017-17790
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2017-17790
+name: CVE-2017-17790
 owasp: A9
 release_date: 20/12/2017
 

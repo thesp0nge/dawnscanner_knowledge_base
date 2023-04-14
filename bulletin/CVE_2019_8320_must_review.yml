@@ -6,6 +6,7 @@ applies:
 title: CVE-2019-8320
 cvss: AV:N/AC:M/Au:N/C:N/I:C/A:C
 cve: CVE-2019-8320
+name: CVE-2019-8320
 owasp: A9
 release_date: 06/06/2019
 

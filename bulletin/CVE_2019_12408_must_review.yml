@@ -6,6 +6,7 @@ applies:
 title: CVE-2019-12408
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2019-12408
+name: CVE-2019-12408
 owasp: A9
 release_date: 08/11/2019
 

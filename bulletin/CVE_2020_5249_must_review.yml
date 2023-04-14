@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-5249
 cvss: AV:N/AC:L/Au:S/C:N/I:P/A:N
 cve: CVE-2020-5249
+name: CVE-2020-5249
 owasp: A9
 release_date: 02/03/2020
 

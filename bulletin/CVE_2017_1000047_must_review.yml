@@ -6,6 +6,7 @@ applies:
 title: CVE-2017-1000047
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2017-1000047
+name: CVE-2017-1000047
 owasp: A9
 release_date: 17/07/2017
 

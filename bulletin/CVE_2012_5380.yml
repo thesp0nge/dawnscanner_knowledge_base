@@ -6,6 +6,7 @@ applies:
 title: CVE-2012-5380
 cvss: AV:L/AC:H/Au:S/C:C/I:C/A:C
 cve: CVE-2012-5380
+name: CVE-2012-5380
 owasp: A9
 release_date: 11/10/2012
 

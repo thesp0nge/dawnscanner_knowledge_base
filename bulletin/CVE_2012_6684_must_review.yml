@@ -6,6 +6,7 @@ applies:
 title: CVE-2012-6684
 cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
 cve: CVE-2012-6684
+name: CVE-2012-6684
 owasp: A9
 release_date: 08/01/2015
 

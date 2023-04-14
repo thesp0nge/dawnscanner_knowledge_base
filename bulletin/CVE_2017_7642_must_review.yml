@@ -6,6 +6,7 @@ applies:
 title: CVE-2017-7642
 cvss: AV:L/AC:L/Au:N/C:C/I:C/A:C
 cve: CVE-2017-7642
+name: CVE-2017-7642
 owasp: A9
 release_date: 02/08/2017
 

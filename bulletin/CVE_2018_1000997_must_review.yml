@@ -6,6 +6,7 @@ applies:
 title: CVE-2018-1000997
 cvss: AV:N/AC:L/Au:S/C:P/I:N/A:N
 cve: CVE-2018-1000997
+name: CVE-2018-1000997
 owasp: A9
 release_date: 23/01/2019
 

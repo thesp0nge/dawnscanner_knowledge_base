@@ -6,6 +6,7 @@ applies:
 title: CVE-2014-2734
 cvss: AV:N/AC:M/Au:N/C:P/I:P/A:N
 cve: CVE-2014-2734
+name: CVE-2014-2734
 owasp: A9
 release_date: 24/04/2014
 
@@ -16,15 +17,15 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'ruby'
   :version:
-  - 2.1.1
-  - 2.1
-  - 2.0.0
-  - 2.0.0
-  - 2.0.0
-  - 2.0.0
-  - 2.0.0
   - 2.0
   - 2.0.0
+  - 2.0.0
+  - 2.0.0
+  - 2.0.0
+  - 2.0.0
+  - 2.0.0
+  - 2.0.0
+  - 2.0.0
   - 2.1
-  - 2.0.0
-  - 2.0.0
+  - 2.1
+  - 2.1.1

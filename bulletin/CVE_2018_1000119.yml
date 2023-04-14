@@ -6,6 +6,7 @@ applies:
 title: CVE-2018-1000119
 cvss: AV:N/AC:M/Au:N/C:P/I:N/A:N
 cve: CVE-2018-1000119
+name: CVE-2018-1000119
 owasp: A9
 release_date: 07/03/2018
 

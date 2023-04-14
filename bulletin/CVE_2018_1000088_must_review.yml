@@ -6,6 +6,7 @@ applies:
 title: CVE-2018-1000088
 cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
 cve: CVE-2018-1000088
+name: CVE-2018-1000088
 owasp: A9
 release_date: 13/03/2018
 

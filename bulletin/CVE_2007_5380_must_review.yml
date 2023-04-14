@@ -6,6 +6,7 @@ applies:
 title: CVE-2007-5380
 cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
 cve: CVE-2007-5380
+name: CVE-2007-5380
 owasp: A9
 release_date: 19/10/2007
 

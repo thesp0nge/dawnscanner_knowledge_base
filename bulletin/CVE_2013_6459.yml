@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-6459
 cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
 cve: CVE-2013-6459
+name: CVE-2013-6459
 owasp: A9
 release_date: 31/12/2013
 
@@ -16,7 +17,7 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'will_paginate'
   :version:
-  - 3.0.3
-  - 3.0.2
-  - 3.0.1
   - 3.0
+  - 3.0.1
+  - 3.0.2
+  - 3.0.3

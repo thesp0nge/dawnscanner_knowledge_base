@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-2065
 cvss: AV:N/AC:L/Au:N/C:P/I:P/A:N
 cve: CVE-2013-2065
+name: CVE-2013-2065
 owasp: A9
 release_date: 02/11/2013
 

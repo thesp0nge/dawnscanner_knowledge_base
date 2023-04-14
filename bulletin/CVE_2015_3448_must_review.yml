@@ -6,6 +6,7 @@ applies:
 title: CVE-2015-3448
 cvss: AV:L/AC:L/Au:N/C:P/I:N/A:N
 cve: CVE-2015-3448
+name: CVE-2015-3448
 owasp: A9
 release_date: 29/04/2015
 

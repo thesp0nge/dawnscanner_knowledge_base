@@ -6,6 +6,7 @@ applies:
 title: CVE-2019-10842
 cvss: AV:N/AC:L/Au:N/C:C/I:C/A:C
 cve: CVE-2019-10842
+name: CVE-2019-10842
 owasp: A9
 release_date: 04/04/2019
 

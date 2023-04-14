@@ -6,6 +6,7 @@ applies:
 title: CVE-2010-0541
 cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
 cve: CVE-2010-0541
+name: CVE-2010-0541
 owasp: A9
 release_date: 17/06/2010
 
@@ -16,13 +17,13 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'mac_os_x'
   :version:
-  - 10.6.2
-  - 10.6.0
+  - 10.5.8
   - 10.6.0
   - 10.6.1
-  - 10.6.3
+  - 10.6.2
   - 10.6.3
   - 10.5.8
-  - 10.5.8
+  - 10.6.0
   - 10.6.1
   - 10.6.2
+  - 10.6.3

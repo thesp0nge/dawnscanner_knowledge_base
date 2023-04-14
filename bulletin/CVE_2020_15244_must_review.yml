@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-15244
 cvss: AV:N/AC:L/Au:S/C:P/I:P/A:P
 cve: CVE-2020-15244
+name: CVE-2020-15244
 owasp: A9
 release_date: 21/10/2020
 

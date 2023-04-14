@@ -6,6 +6,7 @@ applies:
 title: CVE-2015-3649
 cvss: AV:L/AC:L/Au:N/C:P/I:P/A:P
 cve: CVE-2015-3649
+name: CVE-2015-3649
 owasp: A9
 release_date: 18/08/2017
 

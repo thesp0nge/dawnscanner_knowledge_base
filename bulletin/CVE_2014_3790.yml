@@ -6,6 +6,7 @@ applies:
 title: CVE-2014-3790
 cvss: AV:N/AC:L/Au:S/C:C/I:C/A:C
 cve: CVE-2014-3790
+name: CVE-2014-3790
 owasp: A9
 release_date: 01/06/2014
 
@@ -16,5 +17,5 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'vcenter_server_appliance'
   :version:
-  - 5.5
   - 5.1
+  - 5.5

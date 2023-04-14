@@ -6,6 +6,7 @@ applies:
 title: CVE-2019-11027
 cvss: AV:N/AC:L/Au:N/C:C/I:C/A:C
 cve: CVE-2019-11027
+name: CVE-2019-11027
 owasp: A9
 release_date: 10/06/2019
 

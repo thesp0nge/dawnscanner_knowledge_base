@@ -6,6 +6,7 @@ applies:
 title: CVE-2017-16229
 cvss: AV:N/AC:M/Au:N/C:N/I:N/A:P
 cve: CVE-2017-16229
+name: CVE-2017-16229
 owasp: A9
 release_date: 26/02/2018
 

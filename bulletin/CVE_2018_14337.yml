@@ -6,6 +6,7 @@ applies:
 title: CVE-2018-14337
 cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
 cve: CVE-2018-14337
+name: CVE-2018-14337
 owasp: A9
 release_date: 17/07/2018
 

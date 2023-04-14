@@ -6,6 +6,7 @@ applies:
 title: CVE-2014-1835
 cvss: AV:L/AC:L/Au:N/C:P/I:N/A:N
 cve: CVE-2014-1835
+name: CVE-2014-1835
 owasp: A9
 release_date: 02/02/2018
 

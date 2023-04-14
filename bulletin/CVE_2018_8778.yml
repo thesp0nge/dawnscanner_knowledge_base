@@ -6,6 +6,7 @@ applies:
 title: CVE-2018-8778
 cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
 cve: CVE-2018-8778
+name: CVE-2018-8778
 owasp: A9
 release_date: 03/04/2018
 

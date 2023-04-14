@@ -6,6 +6,7 @@ applies:
 title: CVE-2009-0642
 cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
 cve: CVE-2009-0642
+name: CVE-2009-0642
 owasp: A9
 release_date: 20/02/2009
 
@@ -16,5 +17,5 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'ruby'
   :version:
-  - 1.9
   - 1.8
+  - 1.9

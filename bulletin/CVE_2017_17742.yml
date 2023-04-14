@@ -6,6 +6,7 @@ applies:
 title: CVE-2017-17742
 cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
 cve: CVE-2017-17742
+name: CVE-2017-17742
 owasp: A9
 release_date: 03/04/2018
 

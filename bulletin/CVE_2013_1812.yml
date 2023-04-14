@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-1812
 cvss: AV:N/AC:M/Au:N/C:N/I:N/A:P
 cve: CVE-2013-1812
+name: CVE-2013-1812
 owasp: A9
 release_date: 12/12/2013
 
@@ -16,5 +17,5 @@ check_family: :bulletin
 vulnerable_version_array:
 - :name: 'fedora'
   :version:
-  - 18
   - 17
+  - 18

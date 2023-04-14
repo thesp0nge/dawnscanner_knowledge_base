@@ -6,6 +6,7 @@ applies:
 title: CVE-2017-5594
 cvss: AV:N/AC:M/Au:N/C:P/I:N/A:N
 cve: CVE-2017-5594
+name: CVE-2017-5594
 owasp: A9
 release_date: 25/01/2017
 

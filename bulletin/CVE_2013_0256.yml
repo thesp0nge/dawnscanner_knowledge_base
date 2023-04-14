@@ -6,6 +6,7 @@ applies:
 title: CVE-2013-0256
 cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
 cve: CVE-2013-0256
+name: CVE-2013-0256
 owasp: A9
 release_date: 01/03/2013
 
@@ -14,21 +15,19 @@ message: |-
  darkfish.js in RDoc 2.3.0 through 3.12 and 4.x before 4.0.0.preview2.1, as used in Ruby, does not properly generate documents, which allows remote attackers to conduct cross-site scripting (XSS) attacks via a crafted URL.
 check_family: :bulletin
 vulnerable_version_array:
-- :name: 'ruby'
+- :name: 'rdoc'
   :version:
-  - 1.9.3
-  - 1.9.1
-  - 2.0.0
-  - 2.0
-  - 1.9
-  - 1.9.3
-  - 2.0.0
-  - 2.0.0
-  - 2.3.0
-  - 1.9.3
-  - 1.9.3
-  - 3.12
   - 4.0.0
-  - 1.9.3
+  - 1.9
+  - 1.9.1
   - 1.9.2
   - 1.9.3
+  - 1.9.3
+  - 1.9.3
+  - 1.9.3
+  - 1.9.3
+  - 1.9.3
+  - 2.0
+  - 2.0.0
+  - 2.0.0
+  - 2.0.0

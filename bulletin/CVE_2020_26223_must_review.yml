@@ -6,6 +6,7 @@ applies:
 title: CVE-2020-26223
 cvss: AV:N/AC:L/Au:S/C:P/I:N/A:N
 cve: CVE-2020-26223
+name: CVE-2020-26223
 owasp: A9
 release_date: 13/11/2020
 

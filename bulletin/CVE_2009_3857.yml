@@ -6,6 +6,7 @@ applies:
 title: CVE-2009-3857
 cvss: AV:N/AC:M/Au:N/C:N/I:N/A:P
 cve: CVE-2009-3857
+name: CVE-2009-3857
 owasp: A9
 release_date: 04/11/2009
 

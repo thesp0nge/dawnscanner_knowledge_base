@@ -6,6 +6,7 @@ applies:
 title: CVE-2014-4995
 cvss: AV:L/AC:M/Au:N/C:P/I:N/A:N
 cve: CVE-2014-4995
+name: CVE-2014-4995
 owasp: A9
 release_date: 10/01/2018
 

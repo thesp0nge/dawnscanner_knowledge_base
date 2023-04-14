@@ -6,6 +6,7 @@ applies:
 title: CVE-2014-10077
 cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
 cve: CVE-2014-10077
+name: CVE-2014-10077
 owasp: A9
 release_date: 06/11/2018
 
