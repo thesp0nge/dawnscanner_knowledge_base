@@ -1,0 +1,21 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2016-2338
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+cve: CVE-2016-2338
+name: CVE-2016-2338
+owasp: A9
+release_date: 29/09/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ An exploitable heap overflow vulnerability exists in the Psych::Emitter start_document function of Ruby. In Psych::Emitter start_document function heap buffer "head" allocation is made based on tags array length. Specially constructed object passed as element of tags array can increase this array size after mentioned allocation and cause heap overflow.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ruby'
+  :version:
+  - 2.2.2
+  - 2.3.0

@@ -1,0 +1,21 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-10716
+cvss: AV:N/AC:L/Au:S/C:P/I:N/A:N
+cve: CVE-2020-10716
+name: CVE-2020-10716
+owasp: A9
+release_date: 27/05/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ A flaw was found in Red Hat Satellite's Job Invocation, where the "User Input" entry was not properly restricted to the view. This flaw allows a malicious Satellite user to scan through the Job Invocation, with the ability to search for passwords and other sensitive data. This flaw affects tfm-rubygem-foreman_ansible versions before 4.0.3.4.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'satellite'
+  :version:
+  - 6.7
+  - 6.7

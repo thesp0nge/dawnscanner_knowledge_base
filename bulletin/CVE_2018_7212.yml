@@ -1,0 +1,28 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-7212
+cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
+cve: CVE-2018-7212
+name: CVE-2018-7212
+owasp: A9
+release_date: 18/02/2018
+
+kind: :unsafe_dependency_check
+message: |-
+ An issue was discovered in rack-protection/lib/rack/protection/path_traversal.rb in Sinatra 2.x before 2.0.1 on Windows. Path traversal is possible via backslash characters.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'sinatra'
+  :version:
+  - 2.0.0
+  - 2.0.0
+  - 2.0.0
+  - 2.0.0
+  - 2.0.0
+  - 2.0.0
+  - 2.0.0
+  - 2.0.0
+  - 2.0.1

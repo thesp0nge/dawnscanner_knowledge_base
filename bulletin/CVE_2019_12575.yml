@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2019-12575
+cvss: AV:L/AC:L/Au:N/C:C/I:C/A:C
+cve: CVE-2019-12575
+name: CVE-2019-12575
+owasp: A9
+release_date: 11/07/2019
+
+kind: :unsafe_dependency_check
+message: |-
+ A vulnerability in the London Trust Media Private Internet Access (PIA) VPN Client v82 for Linux could allow an authenticated, local attacker to run arbitrary code with elevated privileges. The root_runner.64 binary is setuid root. This binary executes /opt/pia/ruby/64/ruby, which in turn attempts to load several libraries under /tmp/ruby-deploy.old/lib. A local unprivileged user can create a malicious library under this path to execute arbitrary code as the root user.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'private_internet_access_vpn_client'
+  :version:
+  - 82

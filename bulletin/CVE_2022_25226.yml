@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-25226
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2022-25226
+name: CVE-2022-25226
+owasp: A9
+release_date: 18/04/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ ThinVNC version 1.0b1 allows an unauthenticated user to bypass the authentication process via 'http://thin-vnc:8080/cmd?cmd=connect' by obtaining a valid SID without any kind of authentication. It is possible to achieve code execution on the server by sending keyboard or mouse events to the server.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'thinvnc'
+  :version:
+  - 1.0

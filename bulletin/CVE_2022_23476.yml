@@ -1,0 +1,21 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-23476
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+cve: CVE-2022-23476
+name: CVE-2022-23476
+owasp: A9
+release_date: 08/12/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ Nokogiri is an open source XML and HTML library for the Ruby programming language. Nokogiri `1.13.8` and `1.13.9` fail to check the return value from `xmlTextReaderExpand` in the method `Nokogiri::XML::Reader#attribute_hash`. This can lead to a null pointer exception when invalid markup is being parsed. For applications using `XML::Reader` to parse untrusted inputs, this may potentially be a vector for a denial of service attack. Users are advised to upgrade to Nokogiri `>= 1.13.10`. Users may be able to search their code for calls to either `XML::Reader#attributes` or `XML::Reader#attribute_hash` to determine if they are affected.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'nokogiri'
+  :version:
+  - 1.13.8
+  - 1.13.9

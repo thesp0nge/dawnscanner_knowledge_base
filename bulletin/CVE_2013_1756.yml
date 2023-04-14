@@ -1,0 +1,45 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2013-1756
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2013-1756
+name: CVE-2013-1756
+owasp: A9
+release_date: 09/06/2014
+
+kind: :unsafe_dependency_check
+message: |-
+ The Dragonfly gem 0.7 before 0.8.6 and 0.9.x before 0.9.13 for Ruby, when used with Ruby on Rails, allows remote attackers to execute arbitrary code via a crafted request.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'dragonfly_gem'
+  :version:
+  - 0.7.0
+  - 0.7.1
+  - 0.7.2
+  - 0.7.3
+  - 0.7.4
+  - 0.7.5
+  - 0.7.6
+  - 0.7.7
+  - 0.8.0
+  - 0.8.1
+  - 0.8.2
+  - 0.8.4
+  - 0.8.5
+  - 0.9.0
+  - 0.9.1
+  - 0.9.2
+  - 0.9.3
+  - 0.9.4
+  - 0.9.5
+  - 0.9.6
+  - 0.9.7
+  - 0.9.8
+  - 0.9.9
+  - 0.9.10
+  - 0.9.11
+  - 0.9.12

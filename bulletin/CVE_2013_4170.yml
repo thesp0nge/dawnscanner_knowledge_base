@@ -1,0 +1,25 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2013-4170
+cvss: AV:N/AC:H/Au:N/C:N/I:P/A:N
+cve: CVE-2013-4170
+name: CVE-2013-4170
+owasp: A9
+release_date: 30/06/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ In general, Ember.js escapes or strips any user-supplied content before inserting it in strings that will be sent to innerHTML. However, the `tagName` property of an `Ember.View` was inserted into such a string without being sanitized. This means that if an application assigns a view's `tagName` to user-supplied data, a specially-crafted payload could execute arbitrary JavaScript in the context of the current domain ("XSS"). This vulnerability only affects applications that assign or bind user-provided content to `tagName`.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ember.js'
+  :version:
+  - 1.0.0
+  - 1.0.0
+  - 1.0.0
+  - 1.0.0
+  - 1.0.0
+  - 1.0.0

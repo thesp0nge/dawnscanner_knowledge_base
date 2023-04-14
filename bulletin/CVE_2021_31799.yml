@@ -1,0 +1,21 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-31799
+cvss: AV:L/AC:M/Au:N/C:P/I:P/A:P
+cve: CVE-2021-31799
+name: CVE-2021-31799
+owasp: A9
+release_date: 30/07/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ In RDoc 3.11 through 6.x before 6.3.1, as distributed with Ruby through 3.0.1, it is possible to execute arbitrary code via | and tags in a filename.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'debian_linux'
+  :version:
+  - 9.0
+  - 10.0

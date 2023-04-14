@@ -1,0 +1,30 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-45977
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2021-45977
+name: CVE-2021-45977
+owasp: A9
+release_date: 25/02/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ JetBrains IntelliJ IDEA 2021.3.1 Preview, IntelliJ IDEA 2021.3.1 RC, PyCharm Professional 2021.3.1 RC, GoLand 2021.3.1, PhpStorm 2021.3.1 Preview, PhpStorm 2021.3.1 RC, RubyMine 2021.3.1 Preview, RubyMine 2021.3.1 RC, CLion 2021.3.1, WebStorm 2021.3.1 Preview, and WebStorm 2021.3.1 RC (used as Remote Development backend IDEs) bind to the 0.0.0.0 IP address. The fixed versions are: IntelliJ IDEA 2021.3.1, PyCharm Professional 2021.3.1, GoLand 2021.3.2, PhpStorm 2021.3.1 (213.6461.83), RubyMine 2021.3.1, CLion 2021.3.2, and WebStorm 2021.3.1.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'clion'
+  :version:
+  - 2021.3.1
+  - 2021.3.1
+  - 2021.3.1
+  - 2021.3.1
+  - 2021.3.1
+  - 2021.3.1
+  - 2021.3.1
+  - 2021.3.1
+  - 2021.3.1
+  - 2021.3.1
+  - 2021.3.1

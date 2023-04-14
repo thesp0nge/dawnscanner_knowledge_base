@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2013-0175
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2013-0175
+name: CVE-2013-0175
+owasp: A9
+release_date: 25/04/2013
+
+kind: :unsafe_dependency_check
+message: |-
+ multi_xml gem 0.5.2 for Ruby, as used in Grape before 0.2.6 and possibly other products, does not properly restrict casts of string values, which allows remote attackers to conduct object-injection attacks and execute arbitrary code, or cause a denial of service (memory and CPU consumption) involving nested XML entity references, by leveraging support for (1) YAML type conversion or (2) Symbol type conversion, a similar vulnerability to CVE-2013-0156.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'multi_xml'
+  :version:
+  - 0.5.2

@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-32096
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cve: CVE-2021-32096
+name: CVE-2021-32096
+owasp: A9
+release_date: 07/05/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ The ConsoleAction component of U.S. National Security Agency (NSA) Emissary 5.9.0 allows a CSRF attack that results in injecting arbitrary Ruby code (for an eval call) via the CONSOLE_COMMAND_STRING parameter.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'emissary'
+  :version:
+  - 5.9.0

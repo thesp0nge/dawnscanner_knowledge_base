@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-33473
+cvss: AV:N/AC:M/Au:S/C:P/I:P/A:N
+cve: CVE-2021-33473
+name: CVE-2021-33473
+owasp: A9
+release_date: 02/06/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ An argument injection vulnerability in Dragonfly Ruby Gem v1.3.0 allows attackers to read and write arbitrary files when the verify_url option is disabled. This vulnerability is exploited via a crafted URL.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'dragonfly'
+  :version:
+  - 1.3.0
