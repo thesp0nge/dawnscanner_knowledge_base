@@ -1,5 +1,6 @@
 ---
 :kb:
-  :version: '20230414'
+  :version: '20230417'
   :revision: '0'
-  :api: 2.0.0
+  :api: 2.2.0
+  :checks: 665

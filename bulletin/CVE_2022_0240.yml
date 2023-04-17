@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-0240
+cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
+cve: CVE-2022-0240
+name: CVE-2022-0240
+owasp: A9
+release_date: 17/01/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ mruby is vulnerable to NULL Pointer Dereference
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'mruby'
+  :versionEndExcluding: 3.2

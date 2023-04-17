@@ -1,0 +1,22 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-10187
+cvss: AV:N/AC:M/Au:N/C:P/I:N/A:N
+cve: CVE-2020-10187
+name: CVE-2020-10187
+owasp: A9
+release_date: 04/05/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ Doorkeeper version 5.0.0 and later contains an information disclosure vulnerability that allows an attacker to retrieve the client secret only intended for the OAuth application owner. After authorizing the application and allowing access, the attacker simply needs to request the list of their authorized applications in a JSON format (usually GET /oauth/authorized_applications.json). An application is vulnerable if the authorized applications controller is enabled.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'doorkeeper'
+  :versionEndExcluding: 5.0.3
+  :versionEndExcluding: 5.1.1
+  :versionEndExcluding: 5.2.5
+  :versionEndExcluding: 5.3.2

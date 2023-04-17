@@ -16,25 +16,46 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'ruby'
+  :versionEndIncluding: 1.9.2-p136
   :version:
   - 1.9
+  :version:
   - 1.9
+  :version:
   - 1.9.0
+  :version:
   - 1.9.0
+  :version:
   - 1.9.0-0
+  :version:
   - 1.9.0-1
+  :version:
   - 1.9.0-2
+  :version:
   - 1.9.0-20060415
+  :version:
   - 1.9.0-20070709
+  :version:
   - 1.9.1
+  :version:
   - 1.9.1
+  :version:
   - 1.9.1
+  :version:
   - 1.9.1
+  :version:
   - 1.9.1
+  :version:
   - 1.9.1
+  :version:
   - 1.9.1
+  :version:
   - 1.9.1
+  :version:
   - 1.9.1
+  :version:
   - 1.9.1
+  :version:
   - 1.9.2
+  :version:
   - 1.9.2

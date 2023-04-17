@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-36562
+cvss: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+cve: CVE-2022-36562
+name: CVE-2022-36562
+owasp: A9
+release_date: 30/08/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ Incorrect access control in the install directory (C:\Ruby31-x64) of Rubyinstaller2 v3.1.2 and below allows authenticated attackers to execute arbitrary code via overwriting binaries located in the directory.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rubyinstaller2'
+  :versionEndIncluding: 3.1.2

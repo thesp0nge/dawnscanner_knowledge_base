@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-25648
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2022-25648
+name: CVE-2022-25648
+owasp: A9
+release_date: 19/04/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ The package git before 1.11.0 are vulnerable to Command Injection via git argument injection. When calling the fetch(remote = 'origin', opts = {}) function, the remote parameter is passed to the git fetch subcommand in a way that additional flags can be set. The additional flags can be used to perform a command injection.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'git'
+  :versionEndExcluding: 1.11.0

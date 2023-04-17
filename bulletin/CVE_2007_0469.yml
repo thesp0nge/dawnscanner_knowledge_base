@@ -16,5 +16,6 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'rubygems'
+  :versionEndIncluding: 0.9.0
   :version:
   - 0.8.11

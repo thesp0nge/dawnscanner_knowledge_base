@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-37543
+cvss: AV:N/AC:L/Au:S/C:P/I:P/A:P
+cve: CVE-2021-37543
+name: CVE-2021-37543
+owasp: A9
+release_date: 06/08/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ In JetBrains RubyMine before 2021.1.1, code execution without user confirmation was possible for untrusted projects.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rubymine'
+  :versionEndExcluding: 2021.1.1

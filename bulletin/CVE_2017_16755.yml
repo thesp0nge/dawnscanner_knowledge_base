@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-16755
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2017-16755
+name: CVE-2017-16755
+owasp: A9
+release_date: 19/02/2018
+
+kind: :unsafe_dependency_check
+message: |-
+ An issue was discovered in Userscape HelpSpot before 4.7.2. A reflected cross-site scripting vulnerability exists in the "return" parameter of the "index.php?pg=moderated" endpoint. It executes when the return link is clicked.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'helpspot'
+  :versionEndIncluding: 4.7.1

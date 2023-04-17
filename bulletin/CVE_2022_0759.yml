@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-0759
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cve: CVE-2022-0759
+name: CVE-2022-0759
+owasp: A9
+release_date: 25/03/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ A flaw was found in all versions of kubeclient up to (but not including) v4.9.3, the Ruby client for Kubernetes REST API, in the way it parsed kubeconfig files. When the kubeconfig file does not configure custom CA to verify certs, kubeclient ends up accepting any certificate (it wrongly returns VERIFY_NONE). Ruby applications that leverage kubeclient to parse kubeconfig files are susceptible to Man-in-the-middle attacks (MITM).
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'kubeclient'
+  :versionEndExcluding: 4.9.3

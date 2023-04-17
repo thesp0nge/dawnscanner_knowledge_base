@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-45442
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+cve: CVE-2022-45442
+name: CVE-2022-45442
+owasp: A9
+release_date: 28/11/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ Sinatra is a domain-specific language for creating web applications in Ruby. An issue was discovered in Sinatra 2.0 before 2.2.3 and 3.0 before 3.0.4. An application is vulnerable to a reflected file download (RFD) attack that sets the Content-Disposition header of a response when the filename is derived from user-supplied input. Version 2.2.3 and 3.0.4 contain patches for this issue.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'sinatra'
+  :versionEndExcluding: 2.2.3
+  :versionEndExcluding: 3.0.4

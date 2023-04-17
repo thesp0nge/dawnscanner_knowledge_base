@@ -1,0 +1,21 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2019-15845
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:N
+cve: CVE-2019-15845
+name: CVE-2019-15845
+owasp: A9
+release_date: 26/11/2019
+
+kind: :unsafe_dependency_check
+message: |-
+ Ruby through 2.4.7, 2.5.x through 2.5.6, and 2.6.x through 2.6.4 mishandles path checking within File.fnmatch functions.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ruby'
+  :versionEndIncluding: 2.4.7
+  :versionEndIncluding: 2.5.6
+  :versionEndIncluding: 2.6.4

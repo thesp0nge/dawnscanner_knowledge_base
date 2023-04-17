@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2016-7798
+cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
+cve: CVE-2016-7798
+name: CVE-2016-7798
+owasp: A9
+release_date: 30/01/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ The openssl gem for Ruby uses the same initialization vector (IV) in GCM Mode (aes-*-gcm) when the IV is set before the key, which makes it easier for context-dependent attackers to bypass the encryption protection mechanism.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'openssl'
+  :versionEndExcluding: 2.0.0

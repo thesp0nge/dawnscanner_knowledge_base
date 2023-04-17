@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2011-4121
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2011-4121
+name: CVE-2011-4121
+owasp: A9
+release_date: 26/11/2019
+
+kind: :unsafe_dependency_check
+message: |-
+ The OpenSSL extension of Ruby (Git trunk) versions after 2011-09-01 up to 2011-11-03 always generated an exponent value of '1' to be used for private RSA key generation. A remote attacker could use this flaw to bypass or corrupt integrity of services, depending on strong private RSA keys generation mechanism.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ruby'
+  :versionEndExcluding: 1.9.3

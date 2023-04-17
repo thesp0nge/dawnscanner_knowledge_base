@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-23837
+cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
+cve: CVE-2022-23837
+name: CVE-2022-23837
+owasp: A9
+release_date: 21/01/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ In api.rb in Sidekiq before 5.2.10 and 6.4.0, there is no limit on the number of days when requesting stats for the graph. This overloads the system, affecting the Web UI, and makes it unavailable to users.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'sidekiq'
+  :versionEndExcluding: 5.2.10
+  :versionEndExcluding: 6.4.0

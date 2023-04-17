@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-0900
+cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
+cve: CVE-2017-0900
+name: CVE-2017-0900
+owasp: A9
+release_date: 31/08/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ RubyGems version 2.6.12 and earlier is vulnerable to maliciously crafted gem specifications to cause a denial of service attack against RubyGems clients who have issued a `query` command.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rubygems'
+  :versionEndIncluding: 2.6.12

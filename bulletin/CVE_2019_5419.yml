@@ -1,0 +1,22 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2019-5419
+cvss: AV:N/AC:L/Au:N/C:N/I:N/A:C
+cve: CVE-2019-5419
+name: CVE-2019-5419
+owasp: A9
+release_date: 27/03/2019
+
+kind: :unsafe_dependency_check
+message: |-
+ There is a possible denial of service vulnerability in Action View (Rails) <5.2.2.1, <5.1.6.2, <5.0.7.2, <4.2.11.1 where specially crafted accept headers can cause action view to consume 100% cpu and make the server unresponsive.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rails'
+  :versionEndExcluding: 4.2.11.1
+  :versionEndExcluding: 5.0.7.2
+  :versionEndExcluding: 5.1.6.2
+  :versionEndExcluding: 5.2.2.1

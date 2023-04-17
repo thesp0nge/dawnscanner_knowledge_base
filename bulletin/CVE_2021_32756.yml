@@ -18,14 +18,25 @@ vulnerable_version_array:
 - :name: 'manageiq'
   :version:
   - jansa-1
+  :version:
   - jansa-1
+  :version:
   - jansa-1
+  :version:
   - jansa-1
+  :version:
   - jansa-1
+  :version:
   - jansa-2
+  :version:
   - jansa-3
+  :version:
   - kasparov-1
+  :version:
   - kasparov-1
+  :version:
   - kasparov-1
+  :version:
   - kasparov-1
+  :version:
   - lasker-1

@@ -1,0 +1,21 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2023-22792
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+cve: CVE-2023-22792
+name: CVE-2023-22792
+owasp: A9
+release_date: 09/02/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ A regular expression based DoS vulnerability in Action Dispatch <6.0.6.1,< 6.1.7.1, and <7.0.4.1. Specially crafted cookies, in combination with a specially crafted X_FORWARDED_HOST header can cause the regular expression engine to enter a state of catastrophic backtracking. This can cause the process to use large amounts of CPU and memory, leading to a possible DoS vulnerability All users running an affected release should either upgrade or use one of the workarounds immediately.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rails'
+  :versionEndExcluding: 6.0.6.1
+  :versionEndExcluding: 6.1.7.1
+  :versionEndExcluding: 7.0.4.1

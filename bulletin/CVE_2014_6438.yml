@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2014-6438
+cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
+cve: CVE-2014-6438
+name: CVE-2014-6438
+owasp: A9
+release_date: 06/09/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ The URI.decode_www_form_component method in Ruby before 1.9.2-p330 allows remote attackers to cause a denial of service (catastrophic regular expression backtracking, resource consumption, or application crash) via a crafted string.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ruby'
+  :versionEndIncluding: 1.9.2

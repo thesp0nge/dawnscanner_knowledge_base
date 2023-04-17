@@ -16,6 +16,8 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'dependabot'
+  :versionEndExcluding: 0.125.1
   :version:
   - 0.119.0
+  :version:
   - 0.119.0

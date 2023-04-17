@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-1000073
+cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
+cve: CVE-2018-1000073
+name: CVE-2018-1000073
+owasp: A9
+release_date: 13/03/2018
+
+kind: :unsafe_dependency_check
+message: |-
+ RubyGems version Ruby 2.2 series: 2.2.9 and earlier, Ruby 2.3 series: 2.3.6 and earlier, Ruby 2.4 series: 2.4.3 and earlier, Ruby 2.5 series: 2.5.0 and earlier, prior to trunk revision 62422 contains a Directory Traversal vulnerability in install_location function of package.rb that can result in path traversal when writing to a symlinked basedir outside of the root. This vulnerability appears to have been fixed in 2.7.6.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rubygems'
+  :versionEndIncluding: 2.2.9

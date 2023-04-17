@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2015-2963
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2015-2963
+name: CVE-2015-2963
+owasp: A9
+release_date: 10/07/2015
+
+kind: :unsafe_dependency_check
+message: |-
+ The thoughtbot paperclip gem before 4.2.2 for Ruby does not consider the content-type value during media-type validation, which allows remote attackers to upload HTML documents and conduct cross-site scripting (XSS) attacks via a spoofed value, as demonstrated by image/jpeg.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'paperclip'
+  :versionEndIncluding: 4.2.1

@@ -16,7 +16,21 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'sprockets'
+  :versionEndExcluding: 2.0.5
+  :versionEndExcluding: 2.1.4
+  :versionEndExcluding: 2.2.3
+  :versionEndExcluding: 2.3.3
+  :versionEndExcluding: 2.4.6
+  :versionEndExcluding: 2.5.1
+  :versionEndExcluding: 2.7.1
+  :versionEndExcluding: 2.8.3
+  :versionEndExcluding: 2.9.4
+  :versionEndExcluding: 2.10.2
+  :versionEndExcluding: 2.11.3
+  :versionEndExcluding: 2.12.3
   :version:
   - 2.6.0
+  :version:
   - 3.0.0
+  :version:
   - 3.0.0

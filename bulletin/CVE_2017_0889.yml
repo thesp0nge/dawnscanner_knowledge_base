@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-0889
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2017-0889
+name: CVE-2017-0889
+owasp: A9
+release_date: 13/11/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ Paperclip ruby gem version 3.1.4 and later suffers from a Server-SIde Request Forgery (SSRF) vulnerability in the Paperclip::UriAdapter class. Attackers may be able to access information about internal network resources.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'paperclip'
+  :versionEndExcluding: 5.2.0

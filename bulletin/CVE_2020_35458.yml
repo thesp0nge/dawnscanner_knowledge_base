@@ -18,4 +18,5 @@ vulnerable_version_array:
 - :name: 'hawk'
   :version:
   - 2.2.0-12
+  :version:
   - 2.3.0-12

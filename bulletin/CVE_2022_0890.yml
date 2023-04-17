@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-0890
+cvss: AV:N/AC:M/Au:N/C:N/I:N/A:C
+cve: CVE-2022-0890
+name: CVE-2022-0890
+owasp: A9
+release_date: 10/03/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ NULL Pointer Dereference in GitHub repository mruby/mruby prior to 3.2.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'mruby'
+  :versionEndExcluding: 3.2

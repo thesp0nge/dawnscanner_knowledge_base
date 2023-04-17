@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-28966
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
+cve: CVE-2021-28966
+name: CVE-2021-28966
+owasp: A9
+release_date: 30/07/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ In Ruby through 3.0 on Windows, a remote attacker can submit a crafted path when a Web application handles a parameter with TmpDir.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ruby'
+  :versionEndExcluding: 2.7.3
+  :versionEndExcluding: 3.0.1

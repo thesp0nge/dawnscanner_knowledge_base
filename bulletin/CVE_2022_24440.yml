@@ -16,5 +16,6 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'cocoapods-downloader'
+  :versionEndExcluding: 1.6.0
   :version:
   - 1.6.2

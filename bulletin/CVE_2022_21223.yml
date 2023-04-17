@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-21223
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2022-21223
+name: CVE-2022-21223
+owasp: A9
+release_date: 01/04/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ The package cocoapods-downloader before 1.6.2 are vulnerable to Command Injection via hg argument injection. When calling the download function (when using hg), the url (and/or revision, tag, branch) is passed to the hg clone command in a way that additional flags can be set. The additional flags can be used to perform a command injection.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'cocoapods-downloader'
+  :versionEndExcluding: 1.6.2

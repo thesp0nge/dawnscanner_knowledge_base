@@ -16,7 +16,10 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'rubygem-sqlite3'
+  :versionEndIncluding: 1.2.3
   :version:
   - 1.2.0
+  :version:
   - 1.2.1
+  :version:
   - 1.2.2

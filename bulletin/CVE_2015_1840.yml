@@ -18,4 +18,5 @@ vulnerable_version_array:
 - :name: 'fedora'
   :version:
   - 21
+  :version:
   - 22

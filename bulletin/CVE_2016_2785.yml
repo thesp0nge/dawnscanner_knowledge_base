@@ -18,16 +18,29 @@ vulnerable_version_array:
 - :name: 'puppet'
   :version:
   - 4.0.0
+  :version:
   - 4.0.0
+  :version:
   - 4.0.0
+  :version:
   - 4.0.0
+  :version:
   - 4.1.0
+  :version:
   - 4.2.0
+  :version:
   - 4.2.1
+  :version:
   - 4.2.2
+  :version:
   - 4.2.3
+  :version:
   - 4.3.0
+  :version:
   - 4.3.1
+  :version:
   - 4.3.2
+  :version:
   - 4.4.0
+  :version:
   - 4.4.1

@@ -1,0 +1,22 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2023-27530
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+cve: CVE-2023-27530
+name: CVE-2023-27530
+owasp: A9
+release_date: 10/03/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ A DoS vulnerability exists in Rack <v3.0.4.2, <v2.2.6.3, <v2.1.4.3 and <v2.0.9.3 within in the Multipart MIME parsing code in which could allow an attacker to craft requests that can be abuse to cause multipart parsing to take longer than expected.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rack'
+  :versionEndExcluding: 2.0.9.3
+  :versionEndExcluding: 2.1.4.3
+  :versionEndExcluding: 2.2.6.3
+  :versionEndExcluding: 3.0.4.2

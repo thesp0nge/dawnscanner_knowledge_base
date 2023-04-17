@@ -18,10 +18,17 @@ vulnerable_version_array:
 - :name: 'rails'
   :version:
   - 2.1.0
+  :version:
   - 2.1.1
+  :version:
   - 2.1.2
+  :version:
   - 2.2.0
+  :version:
   - 2.2.1
+  :version:
   - 2.2.2
+  :version:
   - 2.3.2
+  :version:
   - 2.3.3

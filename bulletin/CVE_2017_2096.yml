@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-2096
+cvss: AV:N/AC:L/Au:N/C:C/I:C/A:C
+cve: CVE-2017-2096
+name: CVE-2017-2096
+owasp: A9
+release_date: 28/04/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ smalruby-editor v0.4.0 and earlier allows remote attackers to execute arbitrary OS commands via unspecified vectors.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'smalruby-editor'
+  :versionEndIncluding: 0.4.0

@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-1000997
+cvss: AV:N/AC:L/Au:S/C:P/I:N/A:N
+cve: CVE-2018-1000997
+name: CVE-2018-1000997
+owasp: A9
+release_date: 23/01/2019
+
+kind: :unsafe_dependency_check
+message: |-
+ A path traversal vulnerability exists in the Stapler web framework used by Jenkins 2.145 and earlier, LTS 2.138.1 and earlier in core/src/main/java/org/kohsuke/stapler/Facet.java, groovy/src/main/java/org/kohsuke/stapler/jelly/groovy/GroovyFacet.java, jelly/src/main/java/org/kohsuke/stapler/jelly/JellyFacet.java, jruby/src/main/java/org/kohsuke/stapler/jelly/jruby/JRubyFacet.java, jsp/src/main/java/org/kohsuke/stapler/jsp/JSPFacet.java that allows attackers to render routable objects using any view in Jenkins, exposing internal information about those objects not intended to be viewed, such as their toString() representation.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'jenkins'
+  :versionEndIncluding: 2.138.1
+  :versionEndIncluding: 2.145

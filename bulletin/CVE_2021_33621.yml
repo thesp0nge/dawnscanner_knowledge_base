@@ -1,0 +1,21 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-33621
+cvss: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+cve: CVE-2021-33621
+name: CVE-2021-33621
+owasp: A9
+release_date: 18/11/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ The cgi gem before 0.1.0.2, 0.2.x before 0.2.2, and 0.3.x before 0.3.5 for Ruby allows HTTP response splitting. This is relevant to applications that use untrusted user input either to generate an HTTP response or to create a CGI::Cookie object.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'cgi'
+  :versionEndExcluding: 0.1.0.2
+  :versionEndExcluding: 0.2.2
+  :versionEndExcluding: 0.3.5

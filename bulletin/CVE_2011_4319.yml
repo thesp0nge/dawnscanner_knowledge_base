@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2011-4319
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2011-4319
+name: CVE-2011-4319
+owasp: A9
+release_date: 28/11/2011
+
+kind: :unsafe_dependency_check
+message: |-
+ Cross-site scripting (XSS) vulnerability in the i18n translations helper method in Ruby on Rails 3.0.x before 3.0.11 and 3.1.x before 3.1.2, and the rails_xss plugin in Ruby on Rails 2.3.x, allows remote attackers to inject arbitrary web script or HTML via vectors related to a translations string whose name ends with an "html" substring.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rails'
+- :versionEndIncluding: '3.1.2'

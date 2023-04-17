@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-48338
+cvss: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+cve: CVE-2022-48338
+name: CVE-2022-48338
+owasp: A9
+release_date: 20/02/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ An issue was discovered in GNU Emacs through 28.2. In ruby-mode.el, the ruby-find-library-file function has a local command injection vulnerability. The ruby-find-library-file function is an interactive function, and bound to C-c C-f. Inside the function, the external command gem is called through shell-command-to-string, but the feature-name parameters are not escaped. Thus, malicious Ruby source files may cause commands to be executed.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'emacs'
+  :versionEndIncluding: 28.2

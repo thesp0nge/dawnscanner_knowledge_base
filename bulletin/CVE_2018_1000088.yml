@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-1000088
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2018-1000088
+name: CVE-2018-1000088
+owasp: A9
+release_date: 13/03/2018
+
+kind: :unsafe_dependency_check
+message: |-
+ Doorkeeper version 2.1.0 through 4.2.5 contains a Cross Site Scripting (XSS) vulnerability in web view's OAuth app form, user authorization prompt web view that can result in Stored XSS on the OAuth Client's name will cause users interacting with it will execute payload. This attack appear to be exploitable via The victim must be tricked to click an opaque link to the web view that runs the XSS payload. A malicious version virtually indistinguishable from a normal link.. This vulnerability appears to have been fixed in 4.2.6, 4.3.0.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'doorkeeper'
+  :versionEndIncluding: 4.2.5

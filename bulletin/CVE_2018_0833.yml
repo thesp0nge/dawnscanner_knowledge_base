@@ -18,5 +18,7 @@ vulnerable_version_array:
 - :name: 'windows_8.1'
   :version:
   - -
+  :version:
   - -
+  :version:
   - r2

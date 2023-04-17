@@ -16,17 +16,30 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'extlib'
+  :versionEndIncluding: 0.9.15
   :version:
   - 0.9.2
+  :version:
   - 0.9.3
+  :version:
   - 0.9.4
+  :version:
   - 0.9.5
+  :version:
   - 0.9.6
+  :version:
   - 0.9.7
+  :version:
   - 0.9.8
+  :version:
   - 0.9.9
+  :version:
   - 0.9.10
+  :version:
   - 0.9.11
+  :version:
   - 0.9.12
+  :version:
   - 0.9.13
+  :version:
   - 0.9.14

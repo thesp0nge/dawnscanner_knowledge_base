@@ -18,11 +18,19 @@ vulnerable_version_array:
 - :name: 'sinatra'
   :version:
   - 2.0.0
+  :version:
   - 2.0.0
+  :version:
   - 2.0.0
+  :version:
   - 2.0.0
+  :version:
   - 2.0.0
+  :version:
   - 2.0.0
+  :version:
   - 2.0.0
+  :version:
   - 2.0.0
+  :version:
   - 2.0.1

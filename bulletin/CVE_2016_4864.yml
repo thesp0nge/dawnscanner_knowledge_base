@@ -16,6 +16,8 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'h2o'
+  :versionEndIncluding: 2.0.3
   :version:
   - 2.1.0
+  :version:
   - 2.1.0

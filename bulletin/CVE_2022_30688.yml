@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-30688
+cvss: AV:L/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2022-30688
+name: CVE-2022-30688
+owasp: A9
+release_date: 17/05/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ needrestart 0.8 through 3.5 before 3.6 is prone to local privilege escalation. Regexes to detect the Perl, Python, and Ruby interpreters are not anchored, allowing a local user to escalate privileges when needrestart tries to detect if interpreters are using old source files.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'needrestart'
+  :versionEndExcluding: 3.6

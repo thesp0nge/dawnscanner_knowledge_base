@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-10191
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2018-10191
+name: CVE-2018-10191
+owasp: A9
+release_date: 17/04/2018
+
+kind: :unsafe_dependency_check
+message: |-
+ In versions of mruby up to and including 1.4.0, an integer overflow exists in src/vm.c::mrb_vm_exec() when handling OP_GETUPVAR in the presence of deep scope nesting, resulting in a use-after-free. An attacker that can cause Ruby code to be run can use this to possibly execute arbitrary code.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'mruby'
+  :versionEndIncluding: 1.4.0

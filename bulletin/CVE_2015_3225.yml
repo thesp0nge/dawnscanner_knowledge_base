@@ -16,6 +16,8 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'rack'
+  :versionEndIncluding: 1.5.3
   :version:
   - 1.6.0
+  :version:
   - 1.6.1

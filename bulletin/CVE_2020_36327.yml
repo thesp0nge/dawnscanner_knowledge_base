@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-36327
+cvss: AV:N/AC:M/Au:N/C:C/I:C/A:C
+cve: CVE-2020-36327
+name: CVE-2020-36327
+owasp: A9
+release_date: 29/04/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ Bundler 1.16.0 through 2.2.9 and 2.2.11 through 2.2.16 sometimes chooses a dependency source based on the highest gem version number, which means that a rogue gem found at a public source may be chosen, even if the intended choice was a private gem that is a dependency of another private gem that is explicitly depended on by the application. NOTE: it is not correct to use CVE-2021-24105 for every "Dependency Confusion" issue in every product.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'bundler'
+  :versionEndExcluding: 2.2.10
+  :versionEndIncluding: 2.2.16

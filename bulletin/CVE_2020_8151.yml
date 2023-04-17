@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-8151
+cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
+cve: CVE-2020-8151
+name: CVE-2020-8151
+owasp: A9
+release_date: 12/05/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ There is a possible information disclosure issue in Active Resource <v5.1.1 that could allow an attacker to create specially crafted requests to access data in an unexpected way and possibly leak information.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'active_resource'
+  :versionEndExcluding: 5.1.1

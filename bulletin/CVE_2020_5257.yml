@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-5257
+cvss: AV:N/AC:L/Au:S/C:P/I:P/A:N
+cve: CVE-2020-5257
+name: CVE-2020-5257
+owasp: A9
+release_date: 13/03/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ In Administrate (rubygem) before version 0.13.0, when sorting by attributes on a dashboard, the direction parameter was not validated before being interpolated into the SQL query. This could present a SQL injection if the attacker were able to modify the `direction` parameter and bypass ActiveRecord SQL protections. Whilst this does have a high-impact, to exploit this you need access to the Administrate dashboards, which we would expect to be behind authentication. This is patched in wersion 0.13.0.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'administrate'
+  :versionEndExcluding: 0.13.0

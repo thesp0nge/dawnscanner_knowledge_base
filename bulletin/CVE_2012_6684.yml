@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2012-6684
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2012-6684
+name: CVE-2012-6684
+owasp: A9
+release_date: 08/01/2015
+
+kind: :unsafe_dependency_check
+message: |-
+ Cross-site scripting (XSS) vulnerability in the RedCloth library 4.2.9 for Ruby and earlier allows remote attackers to inject arbitrary web script or HTML via a javascript: URI.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'redcloth_library'
+  :versionEndIncluding: 4.2.9

@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-11077
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
+cve: CVE-2020-11077
+name: CVE-2020-11077
+owasp: A9
+release_date: 22/05/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ In Puma (RubyGem) before 4.3.5 and 3.12.6, a client could smuggle a request through a proxy, causing the proxy to send a response back to another unknown client. If the proxy uses persistent connections and the client adds another request in via HTTP pipelining, the proxy may mistake it as the first request's body. Puma, however, would see it as two requests, and when processing the second request, send back a response that the proxy does not expect. If the proxy has reused the persistent connection to Puma to send another request for a different client, the second response from the first client will be sent to the second client. This is a similar but different vulnerability from CVE-2020-11076. The problem has been fixed in Puma 3.12.6 and Puma 4.3.5.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'puma'
+  :versionEndExcluding: 3.12.6
+  :versionEndExcluding: 4.3.5

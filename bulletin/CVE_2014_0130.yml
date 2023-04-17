@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2014-0130
+cvss: AV:N/AC:M/Au:N/C:P/I:N/A:N
+cve: CVE-2014-0130
+name: CVE-2014-0130
+owasp: A9
+release_date: 07/05/2014
+
+kind: :unsafe_dependency_check
+message: |-
+ Directory traversal vulnerability in actionpack/lib/abstract_controller/base.rb in the implicit-render implementation in Ruby on Rails before 3.2.18, 4.0.x before 4.0.5, and 4.1.x before 4.1.1, when certain route globbing configurations are enabled, allows remote attackers to read arbitrary files via a crafted request.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'subscription_asset_manager'
+  :versionEndIncluding: 1.3.0

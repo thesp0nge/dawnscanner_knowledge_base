@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2007-5379
+cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
+cve: CVE-2007-5379
+name: CVE-2007-5379
+owasp: A9
+release_date: 19/10/2007
+
+kind: :unsafe_dependency_check
+message: |-
+ Rails before 1.2.4, as used for Ruby on Rails, allows remote attackers and ActiveResource servers to determine the existence of arbitrary files and read arbitrary XML files via the Hash.from_xml (Hash#from_xml) method, which uses XmlSimple (XML::Simple) unsafely, as demonstrated by reading passwords from the Pidgin (Gaim) .purple/accounts.xml file.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ruby_on_rails'
+  :versionEndIncluding: 1.2.3

@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2011-4838
+cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
+cve: CVE-2011-4838
+name: CVE-2011-4838
+owasp: A9
+release_date: 30/12/2011
+
+kind: :unsafe_dependency_check
+message: |-
+ JRuby before 1.6.5.1 computes hash values without restricting the ability to trigger hash collisions predictably, which allows context-dependent attackers to cause a denial of service (CPU consumption) via crafted input to an application that maintains a hash table.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'jruby'
+  :versionEndExcluding: 1.6.5.1

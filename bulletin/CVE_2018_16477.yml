@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-16477
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2018-16477
+name: CVE-2018-16477
+owasp: A9
+release_date: 30/11/2018
+
+kind: :unsafe_dependency_check
+message: |-
+ A bypass vulnerability in Active Storage >= 5.2.0 for Google Cloud Storage and Disk services allow an attacker to modify the `content-disposition` and `content-type` parameters which can be used in with HTML files and have them executed inline. Additionally, if combined with other techniques such as cookie bombing and specially crafted AppCache manifests, an attacker can gain access to private signed URLs within a specific storage path. This vulnerability has been fixed in version 5.2.1.1.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rails'
+  :versionEndExcluding: 5.2.1.1

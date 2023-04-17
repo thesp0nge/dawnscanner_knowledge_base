@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2015-3224
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2015-3224
+name: CVE-2015-3224
+owasp: A9
+release_date: 26/07/2015
+
+kind: :unsafe_dependency_check
+message: |-
+ request.rb in Web Console before 2.1.3, as used with Ruby on Rails 3.x and 4.x, does not properly restrict the use of X-Forwarded-For headers in determining a client's IP address, which allows remote attackers to bypass the whitelisted_ips protection mechanism via a crafted request.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'web_console'
+  :versionEndIncluding: 2.1.2

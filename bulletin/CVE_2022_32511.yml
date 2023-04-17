@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-32511
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2022-32511
+name: CVE-2022-32511
+owasp: A9
+release_date: 06/06/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ jmespath.rb (aka JMESPath for Ruby) before 1.6.1 uses JSON.load in a situation where JSON.parse is preferable.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'jmespath'
+  :versionEndExcluding: 1.6.1

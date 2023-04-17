@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-11076
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
+cve: CVE-2020-11076
+name: CVE-2020-11076
+owasp: A9
+release_date: 22/05/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ In Puma (RubyGem) before 4.3.4 and 3.12.5, an attacker could smuggle an HTTP response, by using an invalid transfer-encoding header. The problem has been fixed in Puma 3.12.5 and Puma 4.3.4.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'puma'
+  :versionEndExcluding: 3.12.6
+  :versionEndExcluding: 4.3.5

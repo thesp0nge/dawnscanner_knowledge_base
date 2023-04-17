@@ -18,4 +18,6 @@ vulnerable_version_array:
 - :name: 'cloudforms'
   :version:
   - 3.0
+  :versionEndIncluding: 5.2.1
+  :version:
   - 5.2

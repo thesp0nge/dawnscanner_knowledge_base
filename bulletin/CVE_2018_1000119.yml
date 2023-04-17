@@ -16,7 +16,10 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'rack-protection'
+  :versionEndExcluding: 1.5.5
   :version:
   - 2.0.0
+  :version:
   - 2.0.0
+  :version:
   - 2.0.0

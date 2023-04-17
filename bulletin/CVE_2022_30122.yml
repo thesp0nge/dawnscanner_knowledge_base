@@ -1,0 +1,21 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-30122
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+cve: CVE-2022-30122
+name: CVE-2022-30122
+owasp: A9
+release_date: 05/12/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ A possible denial of service vulnerability exists in Rack <2.0.9.1, <2.1.4.1 and <2.2.3.1 in the multipart parsing component of Rack.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rack'
+  :versionEndExcluding: 2.0.9.1
+  :versionEndExcluding: 2.1.4.1
+  :versionEndExcluding: 2.2.3.1

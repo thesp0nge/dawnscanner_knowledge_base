@@ -16,5 +16,6 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'github'
+  :versionEndExcluding: 2.8.7
   :version:
   - 2.8.7

@@ -1,0 +1,22 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-22577
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2022-22577
+name: CVE-2022-22577
+owasp: A9
+release_date: 26/05/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ An XSS Vulnerability in Action Pack >= 5.2.0 and < 5.2.0 that could allow an attacker to bypass CSP for non HTML like responses.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'actionpack'
+  :versionEndExcluding: 5.2.7.1
+  :versionEndExcluding: 6.0.4.8
+  :versionEndExcluding: 6.1.5.1
+  :versionEndExcluding: 7.0.2.4

@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-21289
+cvss: AV:N/AC:H/Au:N/C:C/I:C/A:C
+cve: CVE-2021-21289
+name: CVE-2021-21289
+owasp: A9
+release_date: 02/02/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ Mechanize is an open-source ruby library that makes automated web interaction easy. In Mechanize from version 2.0.0 and before version 2.7.7 there is a command injection vulnerability. Affected versions of mechanize allow for OS commands to be injected using several classes' methods which implicitly use Ruby's Kernel.open method. Exploitation is possible only if untrusted input is used as a local filename and passed to any of these calls: Mechanize::CookieJar#load, Mechanize::CookieJar#save_as, Mechanize#download, Mechanize::Download#save, Mechanize::File#save, and Mechanize::FileResponse#read_body. This is fixed in version 2.7.7.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'mechanize'
+  :versionEndExcluding: 2.7.7

@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-24790
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
+cve: CVE-2022-24790
+name: CVE-2022-24790
+owasp: A9
+release_date: 30/03/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ Puma is a simple, fast, multi-threaded, parallel HTTP 1.1 server for Ruby/Rack applications. When using Puma behind a proxy that does not properly validate that the incoming HTTP request matches the RFC7230 standard, Puma and the frontend proxy may disagree on where a request starts and ends. This would allow requests to be smuggled via the front-end proxy to Puma. The vulnerability has been fixed in 5.6.4 and 4.3.12. Users are advised to upgrade as soon as possible. Workaround: when deploying a proxy in front of Puma, turning on any and all functionality to make sure that the request matches the RFC7230 standard.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'puma'
+  :versionEndExcluding: 4.3.12
+  :versionEndExcluding: 5.6.4

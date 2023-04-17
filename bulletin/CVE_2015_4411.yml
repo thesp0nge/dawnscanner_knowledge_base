@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2015-4411
+cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
+cve: CVE-2015-4411
+name: CVE-2015-4411
+owasp: A9
+release_date: 20/02/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ The Moped::BSON::ObjecId.legal? method in mongodb/bson-ruby before 3.0.4 as used in rubygem-moped allows remote attackers to cause a denial of service (worker resource consumption) via a crafted string. NOTE: This issue is due to an incomplete fix to CVE-2015-4410.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'bson'
+  :versionEndExcluding: 3.0.4

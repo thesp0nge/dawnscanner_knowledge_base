@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-29181
+cvss: AV:N/AC:L/Au:N/C:P/I:N/A:P
+cve: CVE-2022-29181
+name: CVE-2022-29181
+owasp: A9
+release_date: 20/05/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ Nokogiri is an open source XML and HTML library for Ruby. Nokogiri prior to version 1.13.6 does not type-check all inputs into the XML and HTML4 SAX parsers, allowing specially crafted untrusted inputs to cause illegal memory access errors (segfault) or reads from unrelated memory. Version 1.13.6 contains a patch for this issue. As a workaround, ensure the untrusted input is a `String` by calling `#to_s` or equivalent.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'nokogiri'
+  :versionEndExcluding: 1.13.6

@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-7642
+cvss: AV:L/AC:L/Au:N/C:C/I:C/A:C
+cve: CVE-2017-7642
+name: CVE-2017-7642
+owasp: A9
+release_date: 02/08/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ The sudo helper in the HashiCorp Vagrant VMware Fusion plugin (aka vagrant-vmware-fusion) before 4.0.21 allows local users to gain root privileges by leveraging failure to verify the path to the encoded ruby script or scrub the PATH variable.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'vagrant_vmware_fusion'
+  :versionEndIncluding: 4.0.20

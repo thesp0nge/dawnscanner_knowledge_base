@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-0570
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2022-0570
+name: CVE-2022-0570
+owasp: A9
+release_date: 14/02/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ Heap-based Buffer Overflow in Homebrew mruby prior to 3.2.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'mruby'
+  :versionEndIncluding: 3.1

@@ -18,4 +18,5 @@ vulnerable_version_array:
 - :name: 'trestle-auth'
   :version:
   - 0.4.0
+  :version:
   - 0.4.1

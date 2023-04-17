@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2014-6140
+cvss: AV:N/AC:M/Au:N/C:C/I:C/A:C
+cve: CVE-2014-6140
+name: CVE-2014-6140
+owasp: A9
+release_date: 06/12/2014
+
+kind: :unsafe_dependency_check
+message: |-
+ IBM Tivoli Endpoint Manager Mobile Device Management (MDM) before 9.0.60100 uses the same secret HMAC token across different customers' installations, which allows remote attackers to execute arbitrary code via crafted marshalled Ruby objects in cookies to (1) Enrollment and Apple iOS Management Extender, (2) Self-service portal, (3) Trusted Services provider, or (4) Admin Portal.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'tivoli_endpoint_manager_mobile_device_management'
+  :versionEndIncluding: 9.0

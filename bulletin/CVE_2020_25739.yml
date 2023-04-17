@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-25739
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2020-25739
+name: CVE-2020-25739
+owasp: A9
+release_date: 23/09/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ An issue was discovered in the gon gem before gon-6.4.0 for Ruby. MultiJson does not honor the escape_mode parameter to escape fields as an XSS protection mechanism. To mitigate, json_dumper.rb in gon now does escaping for XSS by default without relying on MultiJson.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'gon'
+  :versionEndExcluding: 6.4.0

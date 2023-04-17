@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2019-8322
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
+cve: CVE-2019-8322
+name: CVE-2019-8322
+owasp: A9
+release_date: 17/06/2019
+
+kind: :unsafe_dependency_check
+message: |-
+ An issue was discovered in RubyGems 2.6 and later through 3.0.2. The gem owner command outputs the contents of the API response directly to stdout. Therefore, if the response is crafted, escape sequence injection may occur.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rubygems'
+  :versionEndIncluding: 3.0.2

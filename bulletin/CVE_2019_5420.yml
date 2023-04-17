@@ -16,6 +16,8 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'rails'
+  :versionEndExcluding: 5.2.2.1
   :version:
   - 6.0.0
+  :version:
   - 6.0.0

@@ -1,0 +1,22 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-27777
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2022-27777
+name: CVE-2022-27777
+owasp: A9
+release_date: 26/05/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ A XSS Vulnerability in Action View tag helpers >= 5.2.0 and < 5.2.0 which would allow an attacker to inject content if able to control input into specific attributes.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'actionpack'
+  :versionEndExcluding: 5.2.7.1
+  :versionEndExcluding: 6.0.4.8
+  :versionEndExcluding: 6.1.5.1
+  :versionEndExcluding: 7.0.2.4

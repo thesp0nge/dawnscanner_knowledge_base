@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2013-1607
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2013-1607
+name: CVE-2013-1607
+owasp: A9
+release_date: 11/02/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ Ruby PDFKit gem prior to 0.5.3 has a Code Execution Vulnerability
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'pdfkit'
+  :versionEndExcluding: 0.5.3

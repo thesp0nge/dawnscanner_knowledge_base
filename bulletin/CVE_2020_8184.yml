@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-8184
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
+cve: CVE-2020-8184
+name: CVE-2020-8184
+owasp: A9
+release_date: 19/06/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ A reliance on cookies without validation/integrity check security vulnerability exists in rack < 2.2.3, rack < 2.1.4 that makes it is possible for an attacker to forge a secure or host-only cookie prefix.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rack'
+  :versionEndExcluding: 2.1.4
+  :versionEndExcluding: 2.2.3

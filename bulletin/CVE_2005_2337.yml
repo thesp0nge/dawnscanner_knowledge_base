@@ -18,14 +18,25 @@ vulnerable_version_array:
 - :name: 'ruby'
   :version:
   - 1.6
+  :version:
   - 1.6.1
+  :version:
   - 1.6.2
+  :version:
   - 1.6.3
+  :version:
   - 1.6.4
+  :version:
   - 1.6.5
+  :version:
   - 1.6.6
+  :version:
   - 1.6.7
+  :version:
   - 1.8
+  :version:
   - 1.8.1
+  :version:
   - 1.8.2_pre1
+  :version:
   - 1.8.2_pre2

@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-41816
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2021-41816
+name: CVE-2021-41816
+owasp: A9
+release_date: 06/02/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ CGI.escape_html in Ruby before 2.7.5 and 3.x before 3.0.3 has an integer overflow and resultant buffer overflow via a long string on platforms (such as Windows) where size_t and long have different numbers of bytes. This also affects the CGI gem before 0.3.1 for Ruby.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'cgi'
+  :versionEndExcluding: 0.3.1

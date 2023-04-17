@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-41875
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+cve: CVE-2022-41875
+name: CVE-2022-41875
+owasp: A9
+release_date: 23/11/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ A remote code execution (RCE) vulnerability in Optica allows unauthenticated attackers to execute arbitrary code via specially crafted JSON payloads. Specially crafted JSON payloads may lead to RCE (remote code execution) on the attacked system running Optica. The vulnerability was patched in v. 0.10.2, where the call to the function `oj.load` was changed to `oj.safe_load`.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'optica'
+  :versionEndExcluding: 0.10.2

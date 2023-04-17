@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2023-22797
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+cve: CVE-2023-22797
+name: CVE-2023-22797
+owasp: A9
+release_date: 09/02/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ An open redirect vulnerability is fixed in Rails 7.0.4.1 with the new protection against open redirects from calling redirect_to with untrusted user input. In prior versions the developer was fully responsible for only providing trusted input. However the check introduced could allow an attacker to bypass with a carefully crafted URL resulting in an open redirect vulnerability.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'actionpack'
+  :versionEndExcluding: 7.0.4.1
+  :versionEndExcluding: 7.0.4.1

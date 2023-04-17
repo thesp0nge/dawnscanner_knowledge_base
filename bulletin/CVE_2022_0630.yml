@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-0630
+cvss: AV:N/AC:M/Au:N/C:P/I:N/A:P
+cve: CVE-2022-0630
+name: CVE-2022-0630
+owasp: A9
+release_date: 19/02/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ Out-of-bounds Read in Homebrew mruby prior to 3.2.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'mruby'
+  :versionEndExcluding: 3.2

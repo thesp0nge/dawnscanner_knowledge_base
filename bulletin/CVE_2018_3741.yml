@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-3741
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2018-3741
+name: CVE-2018-3741
+owasp: A9
+release_date: 30/03/2018
+
+kind: :unsafe_dependency_check
+message: |-
+ There is a possible XSS vulnerability in all rails-html-sanitizer gem versions below 1.0.4 for Ruby. The gem allows non-whitelisted attributes to be present in sanitized output when input with specially-crafted HTML fragments, and these attributes can lead to an XSS attack on target applications. This issue is similar to CVE-2018-8048 in Loofah. All users running an affected release should either upgrade or use one of the workarounds immediately.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'html_sanitizer'
+  :versionEndIncluding: 1.0.3

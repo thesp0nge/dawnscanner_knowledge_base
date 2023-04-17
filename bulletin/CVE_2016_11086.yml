@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2016-11086
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:N
+cve: CVE-2016-11086
+name: CVE-2016-11086
+owasp: A9
+release_date: 24/09/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ lib/oauth/consumer.rb in the oauth-ruby gem through 0.5.4 for Ruby does not verify server X.509 certificates if a certificate bundle cannot be found, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'oauth-ruby'
+  :versionEndIncluding: 0.5.4

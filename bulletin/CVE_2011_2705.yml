@@ -16,15 +16,26 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'ruby'
+  :versionEndIncluding: 1.8.7-334
   :version:
   - 1.8.7
+  :version:
   - 1.8.7
+  :version:
   - 1.8.7
+  :version:
   - 1.8.7-160
+  :version:
   - 1.8.7-173
+  :version:
   - 1.8.7-248
+  :version:
   - 1.8.7-249
+  :version:
   - 1.8.7-299
+  :version:
   - 1.8.7-302
+  :version:
   - 1.8.7-330
+  :version:
   - 1.8.7-p21

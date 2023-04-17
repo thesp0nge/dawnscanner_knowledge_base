@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-0901
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:P
+cve: CVE-2017-0901
+name: CVE-2017-0901
+owasp: A9
+release_date: 31/08/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ RubyGems version 2.6.12 and earlier fails to validate specification names, allowing a maliciously crafted gem to potentially overwrite any file on the filesystem.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rubygems'
+  :versionEndIncluding: 2.6.12

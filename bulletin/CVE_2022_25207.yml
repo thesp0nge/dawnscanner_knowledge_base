@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-25207
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cve: CVE-2022-25207
+name: CVE-2022-25207
+owasp: A9
+release_date: 15/02/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ A cross-site request forgery (CSRF) vulnerability in Jenkins Chef Sinatra Plugin 1.20 and earlier allows attackers to have Jenkins send an HTTP request to an attacker-controlled URL and have it parse an XML response.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'chef_sinatra'
+  :versionEndIncluding: 1.20

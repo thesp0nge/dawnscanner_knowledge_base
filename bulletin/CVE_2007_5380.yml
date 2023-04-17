@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2007-5380
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cve: CVE-2007-5380
+name: CVE-2007-5380
+owasp: A9
+release_date: 19/10/2007
+
+kind: :unsafe_dependency_check
+message: |-
+ Session fixation vulnerability in Rails before 1.2.4, as used for Ruby on Rails, allows remote attackers to hijack web sessions via unspecified vectors related to "URL-based sessions."
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ruby_on_rails'
+  :versionEndIncluding: 1.2.3

@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2016-6582
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:P
+cve: CVE-2016-6582
+name: CVE-2016-6582
+owasp: A9
+release_date: 23/01/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ The Doorkeeper gem before 4.2.0 for Ruby might allow remote attackers to conduct replay attacks or revoke arbitrary tokens by leveraging failure to implement the OAuth 2.0 Token Revocation specification.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'doorkeeper'
+  :versionEndIncluding: 4.1.0

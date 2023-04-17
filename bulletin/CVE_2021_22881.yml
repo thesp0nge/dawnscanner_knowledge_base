@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-22881
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:N
+cve: CVE-2021-22881
+name: CVE-2021-22881
+owasp: A9
+release_date: 11/02/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ The Host Authorization middleware in Action Pack before 6.1.2.1, 6.0.3.5 suffers from an open redirect vulnerability. Specially crafted `Host` headers in combination with certain "allowed host" formats can cause the Host Authorization middleware in Action Pack to redirect users to a malicious website. Impacted applications will have allowed hosts with a leading dot. When an allowed host contains a leading dot, a specially crafted `Host` header can be used to redirect to a malicious website.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rails'
+  :versionEndExcluding: 6.0.3.5
+  :versionEndExcluding: 6.1.2.1

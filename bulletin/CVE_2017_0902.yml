@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-0902
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cve: CVE-2017-0902
+name: CVE-2017-0902
+owasp: A9
+release_date: 31/08/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ RubyGems version 2.6.12 and earlier is vulnerable to a DNS hijacking vulnerability that allows a MITM attacker to force the RubyGems client to download and install gems from a server that the attacker controls.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rubygems'
+  :versionEndIncluding: 2.6.12

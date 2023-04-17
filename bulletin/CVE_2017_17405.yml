@@ -16,5 +16,8 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'ruby'
+  :versionEndIncluding: 2.2.8
+  :versionEndIncluding: 2.3.5
+  :versionEndIncluding: 2.4.2
   :version:
   - 2.5.0

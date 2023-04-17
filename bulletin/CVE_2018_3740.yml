@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-3740
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
+cve: CVE-2018-3740
+name: CVE-2018-3740
+owasp: A9
+release_date: 30/03/2018
+
+kind: :unsafe_dependency_check
+message: |-
+ A specially crafted HTML fragment can cause Sanitize gem for Ruby to allow non-whitelisted attributes to be used on a whitelisted HTML element.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'sanitize'
+  :versionEndIncluding: 4.6.0

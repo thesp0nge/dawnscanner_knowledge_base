@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-33564
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cve: CVE-2021-33564
+name: CVE-2021-33564
+owasp: A9
+release_date: 29/05/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ An argument injection vulnerability in the Dragonfly gem before 1.4.0 for Ruby allows remote attackers to read and write to arbitrary files via a crafted URL when the verify_url option is disabled. This may lead to code execution. The problem occurs because the generate and process features mishandle use of the ImageMagick convert utility.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'dragonfly'
+  :versionEndExcluding: 1.4.0

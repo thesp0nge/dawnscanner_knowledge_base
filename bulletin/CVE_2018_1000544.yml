@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-1000544
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2018-1000544
+name: CVE-2018-1000544
+owasp: A9
+release_date: 26/06/2018
+
+kind: :unsafe_dependency_check
+message: |-
+ rubyzip gem rubyzip version 1.2.1 and earlier contains a Directory Traversal vulnerability in Zip::File component that can result in write arbitrary files to the filesystem. This attack appear to be exploitable via If a site allows uploading of .zip files , an attacker can upload a malicious file that contains symlinks or files with absolute pathnames "../" to write arbitrary files to the filesystem..
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rubyzip'
+  :versionEndIncluding: 1.2.1

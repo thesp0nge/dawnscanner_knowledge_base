@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-39281
+cvss: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
+cve: CVE-2022-39281
+name: CVE-2022-39281
+owasp: A9
+release_date: 08/10/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ fat_free_crm is a an open source, Ruby on Rails customer relationship management platform (CRM). In versions prior to 0.20.1 an authenticated user can perform a remote Denial of Service attack against Fat Free CRM via bucket access. The vulnerability has been patched in commit `c85a254` and will be available in release `0.20.1`. Users are advised to upgrade or to manually apply patch `c85a254`. There are no known workarounds for this issue.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'fatfreecrm'
+  :versionEndExcluding: 0.20.1

@@ -16,10 +16,16 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'ember.js'
+  :versionEndExcluding: 1.0.0
   :version:
   - 1.0.0
+  :version:
   - 1.0.0
+  :version:
   - 1.0.0
+  :version:
   - 1.0.0
+  :version:
   - 1.0.0
+  :version:
   - 1.0.0

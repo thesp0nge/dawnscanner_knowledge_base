@@ -1,0 +1,22 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-28965
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
+cve: CVE-2021-28965
+name: CVE-2021-28965
+owasp: A9
+release_date: 21/04/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ The REXML gem before 3.2.5 in Ruby before 2.6.7, 2.7.x before 2.7.3, and 3.x before 3.0.1 does not properly address XML round-trip issues. An incorrect document can be produced after parsing and serializing.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rexml'
+  :versionEndExcluding: 3.2.5
+  :versionEndExcluding: 2.6.7
+  :versionEndExcluding: 2.7.3
+  :versionEndExcluding: 3.0.1

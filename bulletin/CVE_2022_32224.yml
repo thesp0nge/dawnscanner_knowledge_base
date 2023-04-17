@@ -1,0 +1,22 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-32224
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+cve: CVE-2022-32224
+name: CVE-2022-32224
+owasp: A9
+release_date: 05/12/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ A possible escalation to RCE vulnerability exists when using YAML serialized columns in Active Record < 7.0.3.1, <6.1.6.1, <6.0.5.1 and <5.2.8.1 which could allow an attacker, that can manipulate data in the database (via means like SQL injection), the ability to escalate to an RCE.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'activerecord'
+  :versionEndExcluding: 5.2.8.1
+  :versionEndExcluding: 6.0.5.1
+  :versionEndExcluding: 6.1.6.1
+  :versionEndExcluding: 7.0.3.1

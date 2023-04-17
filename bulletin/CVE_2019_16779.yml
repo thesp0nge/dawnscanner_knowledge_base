@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2019-16779
+cvss: AV:N/AC:M/Au:N/C:P/I:N/A:N
+cve: CVE-2019-16779
+name: CVE-2019-16779
+owasp: A9
+release_date: 16/12/2019
+
+kind: :unsafe_dependency_check
+message: |-
+ In RubyGem excon before 0.71.0, there was a race condition around persistent connections, where a connection which is interrupted (such as by a timeout) would leave data on the socket. Subsequent requests would then read this data, returning content from the previous response. The race condition window appears to be short, and it would be difficult to purposefully exploit this.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'excon'
+  :versionEndExcluding: 0.71.0

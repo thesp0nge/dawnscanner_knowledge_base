@@ -16,5 +16,11 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'puma'
+  :versionEndIncluding: 3.12.3
+  :versionEndIncluding: 4.3.2
+  :versionEndIncluding: 2.3.0
+  :versionEndIncluding: 2.4.7
+  :versionEndIncluding: 2.5.6
+  :versionEndIncluding: 2.6.4
   :version:
   - 2.7.0

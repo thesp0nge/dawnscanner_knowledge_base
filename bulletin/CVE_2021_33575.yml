@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-33575
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2021-33575
+name: CVE-2021-33575
+owasp: A9
+release_date: 25/05/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ The Pixar ruby-jss gem before 1.6.0 allows remote attackers to execute arbitrary code because of the Plist gem's documented behavior of using Marshal.load during XML document processing.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ruby-jss'
+  :versionEndExcluding: 1.6.0

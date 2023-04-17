@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-22902
+cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
+cve: CVE-2021-22902
+name: CVE-2021-22902
+owasp: A9
+release_date: 11/06/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ The actionpack ruby gem (a framework for handling and responding to web requests in Rails) before 6.0.3.7, 6.1.3.2 suffers from a possible denial of service vulnerability in the Mime type parser of Action Dispatch. Carefully crafted Accept headers can cause the mime type parser in Action Dispatch to do catastrophic backtracking in the regular expression engine.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rails'
+  :versionEndExcluding: 6.0.3.7
+  :versionEndExcluding: 6.1.0.2

@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-5249
+cvss: AV:N/AC:L/Au:S/C:N/I:P/A:N
+cve: CVE-2020-5249
+name: CVE-2020-5249
+owasp: A9
+release_date: 02/03/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ In Puma (RubyGem) before 4.3.3 and 3.12.4, if an application using Puma allows untrusted input in an early-hints header, an attacker can use a carriage return character to end the header and inject malicious content, such as additional headers or an entirely new response body. This vulnerability is known as HTTP Response Splitting. While not an attack in itself, response splitting is a vector for several other attacks, such as cross-site scripting (XSS). This is related to CVE-2020-5247, which fixed this vulnerability but only for regular responses. This has been fixed in 4.3.3 and 3.12.4.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'puma'
+  :versionEndIncluding: 3.12.3
+  :versionEndIncluding: 4.3.2

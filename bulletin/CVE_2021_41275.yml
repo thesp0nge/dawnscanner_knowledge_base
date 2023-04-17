@@ -16,7 +16,11 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'spree_auth_devise'
+  :versionEndIncluding: 4.0.1
+  :versionEndExcluding: 4.4.1
   :version:
   - 4.1.0
+  :version:
   - 4.1.0
+  :version:
   - 4.2.0

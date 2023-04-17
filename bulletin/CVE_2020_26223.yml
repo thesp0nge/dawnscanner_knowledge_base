@@ -1,0 +1,21 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-26223
+cvss: AV:N/AC:L/Au:S/C:P/I:N/A:N
+cve: CVE-2020-26223
+name: CVE-2020-26223
+owasp: A9
+release_date: 13/11/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ Spree is a complete open source e-commerce solution built with Ruby on Rails. In Spree from version 3.7 and before versions 3.7.13, 4.0.5, and 4.1.12, there is an authorization bypass vulnerability. The perpetrator could query the API v2 Order Status endpoint with an empty string passed as an Order token. This is patched in versions 3.7.11, 4.0.4, or 4.1.11 depending on your used Spree version. Users of Spree < 3.7 are not affected.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'spree'
+  :versionEndExcluding: 3.7.13
+  :versionEndExcluding: 4.0.5
+  :versionEndExcluding: 4.1.12

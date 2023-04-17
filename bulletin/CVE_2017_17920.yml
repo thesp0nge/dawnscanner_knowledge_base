@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-17920
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cve: CVE-2017-17920
+name: CVE-2017-17920
+owasp: A9
+release_date: 29/12/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ ** DISPUTED ** SQL injection vulnerability in the 'reorder' method in Ruby on Rails 5.1.4 and earlier allows remote attackers to execute arbitrary SQL commands via the 'name' parameter. NOTE: The vendor disputes this issue because the documentation states that this method is not intended for use with untrusted input.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ruby_on_rails'
+  :versionEndIncluding: 5.1.4

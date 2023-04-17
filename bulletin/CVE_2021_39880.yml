@@ -1,0 +1,24 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-39880
+cvss: AV:N/AC:L/Au:S/C:N/I:N/A:P
+cve: CVE-2021-39880
+name: CVE-2021-39880
+owasp: A9
+release_date: 05/10/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ A Denial Of Service vulnerability in the apollo_upload_server Ruby gem in GitLab CE/EE all versions starting from 11.9 before 14.0.9, all versions starting from 14.1 before 14.1.4, and all versions starting from 14.2 before 14.2.2 allows an attacker to deny access to all users via specially crafted requests to the apollo_upload_server middleware.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'gitlab'
+  :versionEndExcluding: 14.0.9
+  :versionEndExcluding: 14.0.9
+  :versionEndExcluding: 14.1.4
+  :versionEndExcluding: 14.1.4
+  :versionEndExcluding: 14.2.2
+  :versionEndExcluding: 14.2.2

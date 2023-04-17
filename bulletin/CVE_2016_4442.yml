@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2016-4442
+cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
+cve: CVE-2016-4442
+name: CVE-2016-4442
+owasp: A9
+release_date: 02/05/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ The rack-mini-profiler gem before 0.10.1 for Ruby allows remote attackers to obtain sensitive information about allocated strings and objects by leveraging incorrect ordering of security checks.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rack-mini-profiler'
+  :versionEndIncluding: 0.9.9.2

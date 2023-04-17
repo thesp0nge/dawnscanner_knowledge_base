@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-24836
+cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
+cve: CVE-2022-24836
+name: CVE-2022-24836
+owasp: A9
+release_date: 11/04/2022
+
+kind: :unsafe_dependency_check
+message: |-
+ Nokogiri is an open source XML and HTML library for Ruby. Nokogiri `< v1.13.4` contains an inefficient regular expression that is susceptible to excessive backtracking when attempting to detect encoding in HTML documents. Users are advised to upgrade to Nokogiri `>= 1.13.4`. There are no known workarounds for this issue.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'nokogiri'
+  :versionEndExcluding: 1.13.4

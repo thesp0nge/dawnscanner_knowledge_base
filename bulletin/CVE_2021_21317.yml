@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-21317
+cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
+cve: CVE-2021-21317
+name: CVE-2021-21317
+owasp: A9
+release_date: 16/02/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ uap-core in an open-source npm package which contains the core of BrowserScope's original user agent string parser. In uap-core before version 0.11.0, some regexes are vulnerable to regular expression denial of service (REDoS) due to overlapping capture groups. This allows remote attackers to overload a server by setting the User-Agent header in an HTTP(S) request to maliciously crafted long strings. This is fixed in version 0.11.0. Downstream packages such as uap-python, uap-ruby etc which depend upon uap-core follow different version schemes.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'uap-core'
+  :versionEndExcluding: 0.11.0

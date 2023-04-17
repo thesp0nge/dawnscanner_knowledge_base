@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-8163
+cvss: AV:N/AC:L/Au:S/C:P/I:P/A:P
+cve: CVE-2020-8163
+name: CVE-2020-8163
+owasp: A9
+release_date: 02/07/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ The is a code injection vulnerability in versions of Rails prior to 5.0.1 that wouldallow an attacker who controlled the `locals` argument of a `render` call to perform a RCE.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rails'
+  :versionEndExcluding: 5.0.1

@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2014-9490
+cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
+cve: CVE-2014-9490
+name: CVE-2014-9490
+owasp: A9
+release_date: 20/01/2015
+
+kind: :unsafe_dependency_check
+message: |-
+ The numtok function in lib/raven/okjson.rb in the raven-ruby gem before 0.12.2 for Ruby allows remote attackers to cause a denial of service via a large exponent value in a scientific number.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'raven-ruby'
+  :versionEndIncluding: 0.12.1

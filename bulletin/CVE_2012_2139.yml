@@ -16,7 +16,10 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'mail_gem'
+  :versionEndIncluding: 2.4.3
   :version:
   - 2.3.2
+  :version:
   - 2.3.3
+  :version:
   - 2.4.1

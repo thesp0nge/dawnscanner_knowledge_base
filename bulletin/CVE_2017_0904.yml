@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-0904
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cve: CVE-2017-0904
+name: CVE-2017-0904
+owasp: A9
+release_date: 13/11/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ The private_address_check ruby gem before 0.4.0 is vulnerable to a bypass due to use of Ruby's Resolv.getaddresses method, which is OS-dependent and should not be relied upon for security measures, such as when used to blacklist private network addresses to prevent server-side request forgery.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'private_address_check'
+  :versionEndExcluding: 0.4.0

@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-1002201
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2017-1002201
+name: CVE-2017-1002201
+owasp: A9
+release_date: 15/10/2019
+
+kind: :unsafe_dependency_check
+message: |-
+ In haml versions prior to version 5.0.0.beta.2, when using user input to perform tasks on the server, characters like < > " ' must be escaped properly. In this case, the ' character was missed. An attacker can manipulate the input to introduce additional attributes, potentially executing code.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'haml'
+  :versionEndExcluding: 5.0.0

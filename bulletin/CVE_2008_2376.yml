@@ -1,0 +1,18 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2008-2376
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2008-2376
+name: CVE-2008-2376
+owasp: A9
+release_date: 09/07/2008
+
+kind: :unsafe_dependency_check
+message: |-
+ Integer overflow in the rb_ary_fill function in array.c in Ruby before revision 17756 allows context-dependent attackers to cause a denial of service (crash) or possibly have unspecified other impact via a call to the Array#fill method with a start (aka beg) argument greater than ARY_MAX_SIZE. NOTE: this issue exists because of an incomplete fix for other closely related integer overflows.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'fedora_8'

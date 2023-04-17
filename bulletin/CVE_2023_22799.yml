@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2023-22799
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+cve: CVE-2023-22799
+name: CVE-2023-22799
+owasp: A9
+release_date: 09/02/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ A ReDoS based DoS vulnerability in the GlobalID <1.0.1 which could allow an attacker supplying a carefully crafted input can cause the regular expression engine to take an unexpected amount of time. All users running an affected release should either upgrade or use one of the workarounds immediately.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'globalid'
+  :versionEndExcluding: 1.0.1

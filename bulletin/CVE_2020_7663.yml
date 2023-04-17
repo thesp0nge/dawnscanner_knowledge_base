@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-7663
+cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
+cve: CVE-2020-7663
+name: CVE-2020-7663
+owasp: A9
+release_date: 02/06/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ websocket-extensions ruby module prior to 0.1.5 allows Denial of Service (DoS) via Regex Backtracking. The extension parser may take quadratic time when parsing a header containing an unclosed string parameter value whose content is a repeating two-byte sequence of a backslash and some other character. This could be abused by an attacker to conduct Regex Denial Of Service (ReDoS) on a single-threaded server by providing a malicious payload with the Sec-WebSocket-Extensions header.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'websocket-extensions'
+  :versionEndExcluding: 0.1.5

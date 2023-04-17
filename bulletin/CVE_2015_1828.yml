@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2015-1828
+cvss: AV:N/AC:M/Au:N/C:P/I:N/A:N
+cve: CVE-2015-1828
+name: CVE-2015-1828
+owasp: A9
+release_date: 06/10/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ The Ruby http gem before 0.7.3 does not verify hostnames in SSL connections, which might allow remote attackers to obtain sensitive information via a man-in-the-middle-attack.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'http.rb'
+  :versionEndIncluding: 0.7.2

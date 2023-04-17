@@ -18,5 +18,7 @@ vulnerable_version_array:
 - :name: 'opensuse'
   :version:
   - 12.3
+  :version:
   - 13.1
+  :version:
   - 13.2

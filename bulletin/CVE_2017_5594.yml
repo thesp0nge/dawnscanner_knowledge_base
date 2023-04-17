@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-5594
+cvss: AV:N/AC:M/Au:N/C:P/I:N/A:N
+cve: CVE-2017-5594
+name: CVE-2017-5594
+owasp: A9
+release_date: 25/01/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ An issue was discovered in Pagekit CMS before 1.0.11. In this vulnerability the remote attacker is able to reset the registered user's password, when the debug toolbar is enabled. The password is successfully recovered using this exploit. The SecureLayer7 ID is SL7_PGKT_01.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'pagekit'
+  :versionEndIncluding: 1.0.10

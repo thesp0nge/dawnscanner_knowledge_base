@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-44566
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+cve: CVE-2022-44566
+name: CVE-2022-44566
+owasp: A9
+release_date: 09/02/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ A denial of service vulnerability present in ActiveRecord's PostgreSQL adapter <7.0.4.1 and <6.1.7.1. When a value outside the range for a 64bit signed integer is provided to the PostgreSQL connection adapter, it will treat the target column type as numeric. Comparing integer values against numeric values can result in a slow sequential scan resulting in potential Denial of Service.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'activerecord'
+  :versionEndExcluding: 6.1.7.1
+  :versionEndExcluding: 7.0.4.1

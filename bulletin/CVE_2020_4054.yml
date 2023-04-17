@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-4054
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cve: CVE-2020-4054
+name: CVE-2020-4054
+owasp: A9
+release_date: 16/06/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ In Sanitize (RubyGem sanitize) greater than or equal to 3.0.0 and less than 5.2.1, there is a cross-site scripting vulnerability. When HTML is sanitized using Sanitize's "relaxed" config, or a custom config that allows certain elements, some content in a math or svg element may not be sanitized correctly even if math and svg are not in the allowlist. You are likely to be vulnerable to this issue if you use Sanitize's relaxed config or a custom config that allows one or more of the following HTML elements: iframe, math, noembed, noframes, noscript, plaintext, script, style, svg, xmp. Using carefully crafted input, an attacker may be able to sneak arbitrary HTML through Sanitize, potentially resulting in XSS (cross-site scripting) or other undesired behavior when that HTML is rendered in a browser. This has been fixed in 5.2.1.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'sanitize'
+  :versionEndExcluding: 5.2.1

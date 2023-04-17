@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-7385
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cve: CVE-2020-7385
+name: CVE-2020-7385
+owasp: A9
+release_date: 23/04/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ By launching the drb_remote_codeexec exploit, a Metasploit Framework user will inadvertently expose Metasploit to the same deserialization issue that is exploited by that module, due to the reliance on the vulnerable Distributed Ruby class functions. Since Metasploit Framework typically runs with elevated privileges, this can lead to a system compromise on the Metasploit workstation. Note that an attacker would have to lie in wait and entice the Metasploit user to run the affected module against a malicious endpoint in a "hack-back" type of attack. Metasploit is only vulnerable when the drb_remote_codeexec module is running. In most cases, this cannot happen automatically.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'metasploit'
+  :versionEndExcluding: 4.19.0

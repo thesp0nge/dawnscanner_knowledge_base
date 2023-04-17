@@ -18,5 +18,7 @@ vulnerable_version_array:
 - :name: 'mongrel'
   :version:
   - 1.0.4
+  :version:
   - 1.1.1
+  :version:
   - 1.1.2

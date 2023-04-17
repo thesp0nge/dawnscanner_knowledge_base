@@ -1,0 +1,18 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2008-1447
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
+cve: CVE-2008-1447
+name: CVE-2008-1447
+owasp: A9
+release_date: 08/07/2008
+
+kind: :unsafe_dependency_check
+message: |-
+ The DNS protocol, as implemented in (1) BIND 8 and 9 before 9.5.0-P1, 9.4.2-P1, and 9.3.5-P1; (2) Microsoft DNS in Windows 2000 SP4, XP SP2 and SP3, and Server 2003 SP1 and SP2; and other implementations allow remote attackers to spoof DNS traffic via a birthday attack that uses in-bailiwick referrals to conduct cache poisoning against recursive resolvers, related to insufficient randomness of DNS transaction IDs and source ports, aka "DNS Insufficient Socket Entropy Vulnerability" or "the Kaminsky bug."
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ubuntu_linux'

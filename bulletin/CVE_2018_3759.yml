@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-3759
+cvss: AV:N/AC:M/Au:N/C:P/I:N/A:N
+cve: CVE-2018-3759
+name: CVE-2018-3759
+owasp: A9
+release_date: 13/06/2018
+
+kind: :unsafe_dependency_check
+message: |-
+ private_address_check ruby gem before 0.5.0 is vulnerable to a time-of-check time-of-use (TOCTOU) race condition due to the address the socket uses not being checked. DNS entries with a TTL of 0 can trigger this case where the initial resolution is a public address but the subsequent resolution is a private address.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'private_address_check'
+  :versionEndExcluding: 0.5.0

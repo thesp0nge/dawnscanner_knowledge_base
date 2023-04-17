@@ -16,7 +16,10 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'webbynode'
+  :versionEndIncluding: 1.0.5.3
   :version:
   - 1.0.5
+  :version:
   - 1.0.5.1
+  :version:
   - 1.0.5.2

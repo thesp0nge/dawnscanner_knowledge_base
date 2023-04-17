@@ -18,4 +18,6 @@ vulnerable_version_array:
 - :name: 'satellite'
   :version:
   - 6.7
+  :version:
   - 6.7
+  :versionEndExcluding: 4.0.3.4

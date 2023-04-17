@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-5241
+cvss: AV:N/AC:M/Au:S/C:N/I:P/A:N
+cve: CVE-2020-5241
+name: CVE-2020-5241
+owasp: A9
+release_date: 13/02/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ matestack-ui-core (RubyGem) before 0.7.4 is vulnerable to XSS/Script injection. This vulnerability is patched in version 0.7.4.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ui-core'
+  :versionEndExcluding: 0.7.4

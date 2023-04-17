@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2016-10173
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
+cve: CVE-2016-10173
+name: CVE-2016-10173
+owasp: A9
+release_date: 01/02/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ Directory traversal vulnerability in the minitar before 0.6 and archive-tar-minitar 0.5.2 gems for Ruby allows remote attackers to write to arbitrary files via a .. (dot dot) in a TAR archive entry.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'archive-tar-minitar'
+  :versionEndIncluding: 0.5.2
+  :versionEndIncluding: 0.5.4

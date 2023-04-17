@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-46023
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+cve: CVE-2021-46023
+name: CVE-2021-46023
+owasp: A9
+release_date: 14/02/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ An Untrusted Pointer Dereference was discovered in function mrb_vm_exec in mruby before 3.1.0-rc. The vulnerability causes a segmentation fault and application crash.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'mruby'
+  :versionEndExcluding: 3.1.0

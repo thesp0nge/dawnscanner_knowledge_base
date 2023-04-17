@@ -16,6 +16,8 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'rgpg'
+  :versionEndIncluding: 0.2.2
   :version:
   - 0.2.0
+  :version:
   - 0.2.1

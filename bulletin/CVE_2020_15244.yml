@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-15244
+cvss: AV:N/AC:L/Au:S/C:P/I:P/A:P
+cve: CVE-2020-15244
+name: CVE-2020-15244
+owasp: A9
+release_date: 21/10/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ In Magento (rubygems openmage/magento-lts package) before versions 19.4.8 and 20.0.4, an admin user can generate soap credentials that can be used to trigger RCE via PHP Object Injection through product attributes and a product. The issue is patched in versions 19.4.8 and 20.0.4.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'magento'
+  :versionEndIncluding: 19.4.8
+  :versionEndExcluding: 20.0.4

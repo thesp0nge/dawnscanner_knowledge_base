@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-23435
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:N
+cve: CVE-2021-23435
+name: CVE-2021-23435
+owasp: A9
+release_date: 12/09/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ This affects the package clearance before 2.5.0. The vulnerability can be possible when users are able to set the value of session[:return_to]. If the value used for return_to contains multiple leading slashes (/////example.com) the user ends up being redirected to the external domain that comes after the slashes (http://example.com).
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'clearance'
+  :versionEndExcluding: 2.5.0

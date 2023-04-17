@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-11627
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2018-11627
+name: CVE-2018-11627
+owasp: A9
+release_date: 31/05/2018
+
+kind: :unsafe_dependency_check
+message: |-
+ Sinatra before 2.0.2 has XSS via the 400 Bad Request page that occurs upon a params parser exception.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'sinatra'
+  :versionEndExcluding: 2.0.2

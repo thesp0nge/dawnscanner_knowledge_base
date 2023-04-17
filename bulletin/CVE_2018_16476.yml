@@ -1,0 +1,22 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-16476
+cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
+cve: CVE-2018-16476
+name: CVE-2018-16476
+owasp: A9
+release_date: 30/11/2018
+
+kind: :unsafe_dependency_check
+message: |-
+ A Broken Access Control vulnerability in Active Job versions >= 4.2.0 allows an attacker to craft user input which can cause Active Job to deserialize it using GlobalId and give them access to information that they should not have. This vulnerability has been fixed in versions 4.2.11, 5.0.7.1, 5.1.6.1, and 5.2.1.1.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rails'
+  :versionEndExcluding: 4.2.11
+  :versionEndExcluding: 5.0.7.1
+  :versionEndExcluding: 5.1.6.1
+  :versionEndExcluding: 5.2.1.1

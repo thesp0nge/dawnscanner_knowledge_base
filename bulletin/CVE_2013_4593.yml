@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2013-4593
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
+cve: CVE-2013-4593
+name: CVE-2013-4593
+owasp: A9
+release_date: 11/12/2019
+
+kind: :unsafe_dependency_check
+message: |-
+ RubyGem omniauth-facebook has an access token security vulnerability
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'omniauth-facebook'
+  :versionEndIncluding: 1.5.0

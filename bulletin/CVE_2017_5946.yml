@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-5946
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2017-5946
+name: CVE-2017-5946
+owasp: A9
+release_date: 27/02/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ The Zip::File component in the rubyzip gem before 1.2.1 for Ruby has a directory traversal vulnerability. If a site allows uploading of .zip files, an attacker can upload a malicious file that uses "../" pathname substrings to write arbitrary files to the filesystem.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rubyzip'
+  :versionEndExcluding: 1.2.1

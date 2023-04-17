@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-7540
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2017-7540
+name: CVE-2017-7540
+owasp: A9
+release_date: 21/07/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ rubygem-safemode, as used in Foreman, versions 1.3.2 and earlier are vulnerable to bypassing safe mode limitations via special Ruby syntax. This can lead to deletion of objects for which the user does not have delete permissions or possibly to privilege escalation.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'safemode'
+  :versionEndIncluding: 1.3.2

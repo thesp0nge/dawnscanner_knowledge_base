@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2016-10194
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2016-10194
+name: CVE-2016-10194
+owasp: A9
+release_date: 03/03/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ The festivaltts4r gem for Ruby allows remote attackers to execute arbitrary commands via shell metacharacters in a string to the (1) to_speech or (2) to_mp3 method in lib/festivaltts4r/festival4r.rb.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'festivaltts4r'
+
+

@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2014-5002
+cvss: AV:L/AC:L/Au:N/C:P/I:N/A:N
+cve: CVE-2014-5002
+name: CVE-2014-5002
+owasp: A9
+release_date: 10/01/2018
+
+kind: :unsafe_dependency_check
+message: |-
+ The lynx gem before 1.0.0 for Ruby places the configured password on command lines, which allows local users to obtain sensitive information by listing processes.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'lynx'
+  :versionEndExcluding: 1.0.0

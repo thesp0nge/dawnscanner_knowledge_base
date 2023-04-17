@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-16792
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2017-16792
+name: CVE-2017-16792
+owasp: A9
+release_date: 13/11/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ Stored cross-site scripting (XSS) vulnerability in "geminabox" (Gem in a Box) before 0.13.10 allows attackers to inject arbitrary web script via the "homepage" value of a ".gemspec" file, related to views/gem.erb and views/index.erb.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'geminabox'
+  :versionEndExcluding: 0.13.10

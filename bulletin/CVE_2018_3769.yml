@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-3769
+cvss: AV:N/AC:M/Au:N/C:N/I:P/A:N
+cve: CVE-2018-3769
+name: CVE-2018-3769
+owasp: A9
+release_date: 05/07/2018
+
+kind: :unsafe_dependency_check
+message: |-
+ ruby-grape ruby gem suffers from a cross-site scripting (XSS) vulnerability via "format" parameter.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'grape'
+  :versionEndIncluding: 1.0.3

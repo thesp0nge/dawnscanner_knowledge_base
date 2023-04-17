@@ -16,14 +16,24 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'creme_fraiche'
+  :versionEndIncluding: 0.6
   :version:
   - 0.4.5
+  :version:
   - 0.4.5.1
+  :version:
   - 0.4.5.2
+  :version:
   - 0.4.5.4
+  :version:
   - 0.4.5.5
+  :version:
   - 0.4.5.6
+  :version:
   - 0.5
+  :version:
   - 0.5.1
+  :version:
   - 0.5.2
+  :version:
   - 0.5.3

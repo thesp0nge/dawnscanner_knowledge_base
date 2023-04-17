@@ -16,18 +16,32 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'rdoc'
+  :versionEndExcluding: 3.12
   :version:
   - 4.0.0
+  :version:
   - 1.9
+  :version:
   - 1.9.1
+  :version:
   - 1.9.2
+  :version:
   - 1.9.3
+  :version:
   - 1.9.3
+  :version:
   - 1.9.3
+  :version:
   - 1.9.3
+  :version:
   - 1.9.3
+  :version:
   - 1.9.3
+  :version:
   - 2.0
+  :version:
   - 2.0.0
+  :version:
   - 2.0.0
+  :version:
   - 2.0.0

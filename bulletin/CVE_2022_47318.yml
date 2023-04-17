@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2022-47318
+cvss: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H
+cve: CVE-2022-47318
+name: CVE-2022-47318
+owasp: A9
+release_date: 17/01/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ ruby-git versions prior to v1.13.0 allows a remote authenticated attacker to execute an arbitrary ruby code by having a user to load a repository containing a specially crafted filename to the product. This vulnerability is different from CVE-2022-46648.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ruby-git'
+  :versionEndExcluding: 1.13.0

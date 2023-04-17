@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2018-10199
+cvss: AV:N/AC:L/Au:N/C:P/I:P/A:P
+cve: CVE-2018-10199
+name: CVE-2018-10199
+owasp: A9
+release_date: 18/04/2018
+
+kind: :unsafe_dependency_check
+message: |-
+ In versions of mruby up to and including 1.4.0, a use-after-free vulnerability exists in src/io.c::File#initilialize_copy(). An attacker that can cause Ruby code to be run can possibly use this to execute arbitrary code.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'mruby'
+  :versionEndIncluding: 1.4.0

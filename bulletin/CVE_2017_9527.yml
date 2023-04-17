@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2017-9527
+cvss: AV:N/AC:M/Au:N/C:P/I:P/A:P
+cve: CVE-2017-9527
+name: CVE-2017-9527
+owasp: A9
+release_date: 11/06/2017
+
+kind: :unsafe_dependency_check
+message: |-
+ The mark_context_stack function in gc.c in mruby through 1.2.0 allows attackers to cause a denial of service (heap-based use-after-free and application crash) or possibly have unspecified other impact via a crafted .rb file.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'mruby'
+  :versionEndIncluding: 1.2.0

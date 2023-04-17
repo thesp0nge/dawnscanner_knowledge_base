@@ -1,0 +1,21 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2020-5216
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
+cve: CVE-2020-5216
+name: CVE-2020-5216
+owasp: A9
+release_date: 23/01/2020
+
+kind: :unsafe_dependency_check
+message: |-
+ In Secure Headers (RubyGem secure_headers), a directive injection vulnerability is present in versions before 3.9.0, 5.2.0, and 6.3.0. If user-supplied input was passed into append/override_content_security_policy_directives, a newline could be injected leading to limited header injection. Upon seeing a newline in the header, rails will silently create a new Content-Security-Policy header with the remaining value of the original string. It will continue to create new headers for each newline. This has been fixed in 6.3.0, 5.2.0, and 3.9.0.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'secure_headers'
+  :versionEndExcluding: 3.9.0
+  :versionEndExcluding: 5.2.0
+  :versionEndExcluding: 6.3.0

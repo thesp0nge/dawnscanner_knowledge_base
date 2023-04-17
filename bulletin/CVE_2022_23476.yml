@@ -18,4 +18,5 @@ vulnerable_version_array:
 - :name: 'nokogiri'
   :version:
   - 1.13.8
+  :version:
   - 1.13.9

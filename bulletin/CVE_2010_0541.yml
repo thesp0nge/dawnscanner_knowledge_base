@@ -18,12 +18,21 @@ vulnerable_version_array:
 - :name: 'mac_os_x'
   :version:
   - 10.5.8
+  :version:
   - 10.6.0
+  :version:
   - 10.6.1
+  :version:
   - 10.6.2
+  :version:
   - 10.6.3
+  :version:
   - 10.5.8
+  :version:
   - 10.6.0
+  :version:
   - 10.6.1
+  :version:
   - 10.6.2
+  :version:
   - 10.6.3

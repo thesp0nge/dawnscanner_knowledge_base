@@ -1,0 +1,21 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2021-22880
+cvss: AV:N/AC:L/Au:N/C:N/I:N/A:P
+cve: CVE-2021-22880
+name: CVE-2021-22880
+owasp: A9
+release_date: 11/02/2021
+
+kind: :unsafe_dependency_check
+message: |-
+ The PostgreSQL adapter in Active Record before 6.1.2.1, 6.0.3.5, 5.2.4.5 suffers from a regular expression denial of service (REDoS) vulnerability. Carefully crafted input can cause the input validation in the `money` type of the PostgreSQL adapter in Active Record to spend too much time in a regular expression, resulting in the potential for a DoS attack. This only impacts Rails applications that are using PostgreSQL along with money type columns that take user input.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'rails'
+  :versionEndExcluding: 5.2.4.5
+  :versionEndExcluding: 6.0.3.5
+  :versionEndExcluding: 6.1.2.1
