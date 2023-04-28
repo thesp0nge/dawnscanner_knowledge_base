@@ -1,9 +1,1 @@
-https://services.nvd.nist.gov/rest/json/cves/2.0?keywordsearch=CVE-2006-6979
-https://services.nvd.nist.gov/rest/json/cves/2.0?keywordsearch=CVE-2008-1447
-https://services.nvd.nist.gov/rest/json/cves/2.0?keywordsearch=CVE-2008-2376
-https://services.nvd.nist.gov/rest/json/cves/2.0?keywordsearch=CVE-2011-4319
-https://services.nvd.nist.gov/rest/json/cves/2.0?keywordsearch=CVE-2016-10194
-https://services.nvd.nist.gov/rest/json/cves/2.0?keywordsearch=CVE-2017-1000047
-https://services.nvd.nist.gov/rest/json/cves/2.0?keywordsearch=CVE-2022-25765
-https://services.nvd.nist.gov/rest/json/cves/2.0?keywordsearch=CVE-2019-1003086
-https://services.nvd.nist.gov/rest/json/cves/2.0?keywordsearch=CVE-2011-4319
+https://services.nvd.nist.gov/rest/json/cves/2.0?keywordsearch=CVE-2023-30614
