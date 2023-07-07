@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2015-20108
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+cve: CVE-2015-20108
+name: CVE-2015-20108
+owasp: A9
+release_date: 27/05/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ xml_security.rb in the ruby-saml gem before 1.0.0 for Ruby allows XPath injection and code execution because prepared statements are not used.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'ruby-saml'
+  :versionEndExcluding: 1.0.0

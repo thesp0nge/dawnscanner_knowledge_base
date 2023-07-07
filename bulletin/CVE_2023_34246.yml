@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2023-34246
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
+cve: CVE-2023-34246
+name: CVE-2023-34246
+owasp: A9
+release_date: 12/06/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ Doorkeeper is an OAuth 2 provider for Ruby on Rails / Grape. Prior to version 5.6.6, Doorkeeper automatically processes authorization requests without user consent for public clients that have been previous approved. Public clients are inherently vulnerable to impersonation, their identity cannot be assured. This issue is fixed in version 5.6.6.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'doorkeeper'
+  :versionEndExcluding: 5.6.6

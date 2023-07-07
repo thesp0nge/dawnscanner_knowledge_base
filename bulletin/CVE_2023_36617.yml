@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2023-36617
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+cve: CVE-2023-36617
+name: CVE-2023-36617
+owasp: A9
+release_date: 29/06/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ A ReDoS issue was discovered in the URI component before 0.12.2 for Ruby. The URI parser mishandles invalid URLs that have specific characters. There is an increase in execution time for parsing strings to URI objects with rfc2396_parser.rb and rfc3986_parser.rb. NOTE: this issue exists becuse of an incomplete fix for CVE-2023-28755. Version 0.10.3 is also a fixed version.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'uri'
+  :versionEndExcluding: 0.10.3
+  :versionEndExcluding: 0.12.2
