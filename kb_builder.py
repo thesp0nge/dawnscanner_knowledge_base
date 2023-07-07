@@ -25,11 +25,13 @@ def fetch_2(k):
     code=json.loads(r.text)
     results=int(code["totalResults"])
 
-    skip=0
-    create=0
+    skip    = 0
+    create  = 0
+    count   = 0
 
     for i in code["vulnerabilities"]:
         if i["cve"]["id"] not in BLACKLIST:
+            count += 1
             filename = i["cve"]["id"].upper().replace("-", "_")
 
             out = "--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck\napplies:\n- rails\n- sinatra\n- padrino\n"
@@ -105,6 +107,7 @@ def fetch_2(k):
                 f.close()
 
     print("%d checks created (%d skipped)" % (create, skip))
+    return count
 
 def append_to_review_list(cve:str):
     REVIEWED=["https://services.nvd.nist.gov/rest/json/cves/2.0?keywordsearch=CVE-2022-25765",
@@ -118,6 +121,7 @@ def append_to_review_list(cve:str):
 
 if __name__ == "__main__":
 
+    count=0
     version=datetime.date.today().strftime("%Y%m%d")
     print(f"[+] building knowledge base for dawnscanner version {version}")
     if os.path.exists("to_review.txt"):
@@ -127,7 +131,18 @@ if __name__ == "__main__":
 
     # k=["CVE-2023-28846"]
 
+    first_count = 0
     for i in k:
         print("fetching checks for keyword: %s" % i)
-        fetch_2(i)
+        count += fetch_2(i)
+        print(count)
+        if first_count == 0:
+            first_count = count
+            count = 0
 
+    print("---")
+    print(":kb:")
+    print(f"\t:version: '{version}'")
+    print("\t:revision: '0'")
+    print("\t:api: 2.2.0")
+    print(f"\t:checks: {count + first_count}")
