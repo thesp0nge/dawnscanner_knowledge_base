@@ -16,5 +16,4 @@ message: |-
 check_family: :bulletin
 vulnerable_version_array:
 - :name: 'amarok'
-:invalid:true
-
+  :invalid: true
