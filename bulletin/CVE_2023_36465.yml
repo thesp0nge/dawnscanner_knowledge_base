@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2023-36465
+cvss: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L
+cve: CVE-2023-36465
+name: CVE-2023-36465
+owasp: A9
+release_date: 06/10/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ Decidim is a participatory democracy framework, written in Ruby on Rails, originally developed for the Barcelona City government online and offline participation website. The `templates` module doesn't enforce the correct permissions, allowing any logged-in user to access to this functionality in the administration panel. An attacker could use this vulnerability to change, create or delete templates of surveys. This issue has been patched in version 0.26.8 and 0.27.4.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'decidim'
+  :versionEndExcluding: 0.26.8
+  :versionEndExcluding: 0.27.4

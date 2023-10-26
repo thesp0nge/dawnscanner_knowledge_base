@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2023-34090
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+cve: CVE-2023-34090
+name: CVE-2023-34090
+owasp: A9
+release_date: 11/07/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ Decidim is a participatory democracy framework, written in Ruby on Rails, originally developed for the Barcelona City government online and offline participation website. Decidim uses a third-party library named Ransack for filtering certain database collections (e.g., public meetings). By default, this library allows filtering on all data attributes and associations. This allows an unauthenticated remote attacker to exfiltrate non-public data from the underlying database of a Decidim instance (e.g., exfiltrating data from the user table). This issue may lead to Sensitive Data Disclosure. The problem was patched in version 0.27.3. 
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'decidim'
+  :versionEndExcluding: 0.27.3

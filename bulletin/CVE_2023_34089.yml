@@ -1,0 +1,21 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2023-34089
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+cve: CVE-2023-34089
+name: CVE-2023-34089
+owasp: A9
+release_date: 11/07/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ Decidim is a participatory democracy framework, written in Ruby on Rails, originally developed for the Barcelona City government online and offline participation website. The processes filter feature is susceptible to Cross-site scripting. This allows a remote attacker to execute JavaScript code in the context of a currently logged-in user. An attacker could use this vulnerability to make other users endorse or support proposals they have no intention of supporting or endorsing. The problem was patched in version 0.27.3 and 0.26.7.
+
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'decidim'
+  :versionEndExcluding: 0.26.7
+  :versionEndExcluding: 0.27.3
