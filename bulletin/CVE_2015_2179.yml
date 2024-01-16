@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2015-2179
+cvss: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N
+cve: CVE-2015-2179
+name: CVE-2015-2179
+owasp: A9
+release_date: 12/12/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ The xaviershay-dm-rails gem 0.10.3.8 for Ruby allows local users to discover MySQL credentials by listing a process and its arguments.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'xaviershay-dm-rails'
+  :version:
+  - 0.10.3.8

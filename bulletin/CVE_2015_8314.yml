@@ -1,0 +1,19 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2015-8314
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+cve: CVE-2015-8314
+name: CVE-2015-8314
+owasp: A9
+release_date: 12/12/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ The Devise gem before 3.5.4 for Ruby mishandles Remember Me cookies for sessions, which may allow an adversary to obtain unauthorized persistent application access.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'devise'
+  :versionEndExcluding: 3.5.4

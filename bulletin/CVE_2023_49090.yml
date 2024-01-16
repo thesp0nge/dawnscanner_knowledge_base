@@ -1,0 +1,20 @@
+--- !ruby/object:Dawn::Kb::UnsafeDependencyCheck
+applies:
+- rails
+- sinatra
+- padrino
+title: CVE-2023-49090
+cvss: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
+cve: CVE-2023-49090
+name: CVE-2023-49090
+owasp: A9
+release_date: 29/11/2023
+
+kind: :unsafe_dependency_check
+message: |-
+ CarrierWave is a solution for file uploads for Rails, Sinatra and other Ruby web frameworks. CarrierWave has a Content-Type allowlist bypass vulnerability, possibly leading to XSS. The validation in `allowlisted_content_type?` determines Content-Type permissions by performing a partial match. If the `content_type` argument of `allowlisted_content_type?` is passed a value crafted by the attacker, Content-Types not included in the `content_type_allowlist` will be allowed. This issue has been patched in versions 2.2.5 and 3.0.5.
+check_family: :bulletin
+vulnerable_version_array:
+- :name: 'carrierwave'
+  :versionEndExcluding: 2.2.5
+  :versionEndExcluding: 3.0.5
